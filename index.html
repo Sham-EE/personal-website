@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shameem Monjazeb</title>
+<meta name="description" content="Shameem Monjazeb — Electrical Engineering student and builder. A living archive of projects, writing, philosophy, and the things I'm reading, building, and thinking about.">
+<meta property="og:title" content="Shameem Monjazeb">
+<meta property="og:description" content="Engineer · College Student · Builder — a living archive of projects, writing, and ideas.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -81,62 +86,6 @@ p{color:var(--ink-mid);font-size:0.93rem;max-width:60ch;margin-bottom:1rem;}
   color:var(--ink-faint);min-width:82px;flex-shrink:0;
 }
 
-/* ── INTERACTIVE HABIT LIST ── */
-.habit-list{list-style:none;margin-top:0.2rem;}
-.habit-item{
-  display:flex;align-items:center;gap:0.85rem;
-  padding:0.72rem 0;border-bottom:1px solid var(--cd);
-  font-size:0.91rem;color:var(--ink-mid);
-  cursor:pointer;user-select:none;transition:color .15s;
-}
-.habit-item:last-child{border-bottom:none;}
-.habit-check{
-  width:16px;height:16px;border:1.5px solid var(--ink-faint);
-  border-radius:3px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  transition:all .18s;background:transparent;
-}
-.habit-item.done .habit-check{
-  background:var(--gold);border-color:var(--gold);
-}
-.habit-item.done .habit-check::after{
-  content:'✓';font-size:0.62rem;color:#fff;line-height:1;font-weight:600;
-}
-.habit-item.done{color:var(--ink-faint);text-decoration:line-through;text-decoration-color:var(--ink-faint);}
-.habit-label{flex:1;}
-
-/* ── HABIT TRACKER / HEATMAP ── */
-.habit-tracker{margin-top:2.8rem;}
-.ht-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.5rem;}
-.ht-today{font-family:var(--serif);font-style:italic;font-size:0.9rem;color:var(--ink-faint);}
-.ht-score{font-size:0.75rem;color:var(--ink-mid);}
-.ht-score strong{color:var(--gold);font-weight:500;}
-.hm-wrap{margin-top:1.4rem;}
-.hm-grid-outer{overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--cd) transparent;padding-bottom:4px;}
-.hm-grid{display:grid;grid-template-rows:repeat(7,13px);grid-auto-flow:column;gap:3px;width:fit-content;}
-.hm-cell{width:13px;height:13px;border-radius:2px;background:var(--cd);cursor:default;position:relative;}
-.hm-cell:hover .hm-tip{display:block;}
-.hm-tip{
-  display:none;position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);
-  background:var(--ink);color:var(--cream);font-size:0.62rem;padding:4px 8px;border-radius:3px;
-  white-space:nowrap;z-index:20;pointer-events:none;
-  font-family:var(--sans);letter-spacing:0.02em;line-height:1.5;
-}
-.hm-tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:4px solid transparent;border-top-color:var(--ink);}
-.hm-c0{background:var(--cd);}
-.hm-c1{background:#E0CA87;}
-.hm-c2{background:#C9A85C;}
-.hm-c3{background:#A8802A;}
-.hm-c4{background:var(--gold);}
-.hm-today-cell{outline:2px solid var(--gold);outline-offset:1px;}
-.hm-legend{display:flex;align-items:center;gap:0.45rem;margin-top:0.9rem;}
-.hm-legend-label{font-size:0.62rem;color:var(--ink-faint);}
-.hm-legend-cell{width:11px;height:11px;border-radius:2px;}
-.ht-stats{display:flex;gap:2rem;margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--cd);flex-wrap:wrap;}
-.ht-stat{display:flex;flex-direction:column;gap:0.1rem;}
-.ht-stat-val{font-family:var(--serif);font-size:1.2rem;color:var(--ink);}
-.ht-stat-lbl{font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faint);}
-
 /* ── SHARED LABEL ── */
 .label{
   font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;
@@ -175,11 +124,21 @@ p{color:var(--ink-mid);font-size:0.93rem;max-width:60ch;margin-bottom:1rem;}
 .mi.open .mi-icon{transform:rotate(45deg);}
 
 /* ── PROJECTS ── */
-.pcard{border:1px solid var(--cd);border-radius:5px;padding:1.2rem 1.4rem;margin-bottom:0.9rem;transition:border-color .2s;}
+.pp{display:none;}
+.pp.active{display:block;}
+.pcard{display:block;border:1px solid var(--cd);border-radius:5px;padding:1.2rem 1.4rem;margin-bottom:0.9rem;transition:border-color .2s,box-shadow .2s,transform .2s;text-decoration:none;color:inherit;}
 .pcard:hover{border-color:var(--ink-faint);}
-.ptitle{font-family:var(--serif);font-size:1.08rem;color:var(--ink);margin-bottom:0.25rem;}
+/* linked cards (have href) get a stronger affordance */
+a.pcard{cursor:pointer;}
+a.pcard:hover{border-color:var(--gold);box-shadow:0 5px 20px rgba(26,23,20,.07);transform:translateY(-2px);}
+.ptitle{font-family:var(--serif);font-size:1.08rem;color:var(--ink);margin-bottom:0.25rem;display:flex;align-items:center;gap:0.5rem;}
+.parrow{font-size:0.8rem;color:var(--gold);opacity:0;transition:opacity .2s,transform .2s;}
+a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .pdesc{font-size:0.86rem;color:var(--ink-mid);max-width:55ch;}
 .pstat{font-size:0.64rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-top:0.55rem;font-weight:500;}
+.psub{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;margin:1.8rem 0 1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--cd);}
+.psub:first-of-type{margin-top:1.4rem;}
+.pempty{font-family:var(--serif);font-style:italic;font-size:0.9rem;color:var(--ink-faint);margin-bottom:0.9rem;}
 .mfsto{border-left:2px solid var(--gold-light);padding:1rem 1.4rem;margin:1.8rem 0;font-family:var(--serif);font-style:italic;font-size:0.97rem;color:var(--ink-mid);max-width:55ch;}
 
 /* ── COURSE ACCORDION ── */
@@ -321,6 +280,17 @@ p{color:var(--ink-mid);font-size:0.93rem;max-width:60ch;margin-bottom:1rem;}
   color:var(--ink);line-height:1.5;
 }
 
+/* ── FOOTER ── */
+.site-footer{
+  border-top:1px solid var(--cd);
+  padding:2rem 0 3rem;
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:1rem;flex-wrap:wrap;
+}
+.footer-name{font-family:var(--serif);font-style:italic;font-size:0.9rem;color:var(--ink-faint);}
+.footer-updated{font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;}
+.footer-updated strong{color:var(--gold);font-weight:500;}
+
 @media(max-width:600px){
   .shell{padding:0 1.2rem;}
   .cg{grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:0.7rem;}
@@ -379,56 +349,6 @@ p{color:var(--ink-mid);font-size:0.93rem;max-width:60ch;margin-bottom:1rem;}
     <div class="currently-item"><span class="c-type">Rewiring</span><span>Dopamine Circuitry</span></div>
     <div class="currently-item"><span class="c-type">Reminding</span><span>It takes time — growth moves slower than doubt, but runs deeper.</span></div>
     <div class="currently-item"><span class="c-type">Rabbit hole</span><span>Waves: Cosine, Sine, Fourier Transforms, Phasors. In awe of how nature's complexity and our reality's fabric are woven from simple oscillations.</span></div>
-  </div>
-
-  <hr class="rule">
-
-  <!-- Interactive Habit Tracker -->
-  <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.2rem;">
-    <span class="label" style="margin-bottom:0;">Daily Habits</span>
-    <span id="ht-date-label" class="ht-today"></span>
-  </div>
-
-  <ul class="habit-list" id="habit-list">
-    <li class="habit-item" data-idx="0" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Wake up @ 7am</span></li>
-    <li class="habit-item" data-idx="1" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Weigh</span></li>
-    <li class="habit-item" data-idx="2" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Make bed</span></li>
-    <li class="habit-item" data-idx="3" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Morning Sunlight</span></li>
-    <li class="habit-item" data-idx="4" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Farsi (1–2 modules on Mango Languages)</span></li>
-    <li class="habit-item" data-idx="5" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Guitar (20 mins 4×/week)</span></li>
-    <li class="habit-item" data-idx="6" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Lift → Run → Stretch (3×/week)</span></li>
-    <li class="habit-item" data-idx="7" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Meditate (3×/week)</span></li>
-    <li class="habit-item" data-idx="8" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Study (5 hrs)</span></li>
-    <li class="habit-item" data-idx="9" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Meal Prep (2×/week)</span></li>
-    <li class="habit-item" data-idx="10" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Thaw Food + Pack lunch/snacks</span></li>
-    <li class="habit-item" data-idx="11" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Journal (Digital or Written)</span></li>
-    <li class="habit-item" data-idx="12" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Read (Nightly)</span></li>
-    <li class="habit-item" data-idx="13" onclick="toggleHabit(this)"><div class="habit-check"></div><span class="habit-label">Wind down after 10pm (no screens)</span></li>
-  </ul>
-
-  <!-- Heatmap -->
-  <div class="habit-tracker">
-    <span class="label">All-Time View</span>
-    <div class="hm-wrap">
-      <div class="hm-grid-outer">
-        <div class="hm-grid" id="hm-grid"></div>
-      </div>
-      <div class="hm-legend">
-        <span class="hm-legend-label">Less</span>
-        <div class="hm-legend-cell hm-c0"></div>
-        <div class="hm-legend-cell hm-c1"></div>
-        <div class="hm-legend-cell hm-c2"></div>
-        <div class="hm-legend-cell hm-c3"></div>
-        <div class="hm-legend-cell hm-c4"></div>
-        <span class="hm-legend-label">More</span>
-      </div>
-    </div>
-    <div class="ht-stats">
-      <div class="ht-stat"><span class="ht-stat-val" id="stat-streak">0</span><span class="ht-stat-lbl">Day streak</span></div>
-      <div class="ht-stat"><span class="ht-stat-val" id="stat-best">0</span><span class="ht-stat-lbl">Best streak</span></div>
-      <div class="ht-stat"><span class="ht-stat-val" id="stat-total">0</span><span class="ht-stat-lbl">Days tracked</span></div>
-      <div class="ht-stat"><span class="ht-stat-val" id="stat-avg">—</span><span class="ht-stat-lbl">Avg completion</span></div>
-    </div>
   </div>
 
 </section>
@@ -584,13 +504,46 @@ p{color:var(--ink-mid);font-size:0.93rem;max-width:60ch;margin-bottom:1rem;}
 <!-- ═══ PROJECTS ═══ -->
 <section id="tab-projects" class="screen">
   <h1>Projects</h1>
-  <p>Things I'm building, studying, or shipping.</p>
-  <hr class="rule">
-  <span class="ey">Building</span>
-  <div class="pcard"><div class="ptitle">AM Radio Transmitter</div><div class="pdesc">Breadboard-level design exploring amplitude modulation. Goal: transmit audio to an FM/AM receiver 10ft away without an IC.</div><div class="pstat">In progress</div></div>
-  <div class="pcard"><div class="ptitle">Late Night Jotter</div><div class="pdesc">A minimal, local-first note-taking app for thoughts that arrive after midnight. No cloud, no formatting. Just text and timestamp.</div><div class="pstat">In progress</div></div>
-  <div class="pcard"><div class="ptitle">Personal Site (this one)</div><div class="pdesc">A living archive for everything I'm reading, building, thinking about. No CMS — just one HTML file updated by hand.</div><div class="pstat">Ongoing</div></div>
-  <div class="pcard"><div class="ptitle">Signal-Processing Notebook</div><div class="pdesc">A public reference for the math and intuition behind Fourier transforms, filters, and convolution — written for the student who hates black boxes.</div><div class="pstat">Drafting</div></div>
+  <p>Things I'm building, studying, or shipping. Click any card with an ↗ to open the live site (software) or the full build log — photos, progress, demos, what broke and what I learned (hardware).</p>
+
+  <!--
+    HOW TO ADD A LINK:
+    Software → set href to the live website URL.
+    Hardware → set href to the project's build-log page (Hackaday.io project, GitHub repo, etc.).
+    A card with no link yet can stay a <div class="pcard"> (no arrow); turn it into
+    <a class="pcard" href="..." target="_blank" rel="noopener"> once the link exists.
+  -->
+
+  <div class="subnav">
+    <button class="sbt active" data-proj="software">Software</button>
+    <button class="sbt" data-proj="hardware">Hardware</button>
+  </div>
+
+  <!-- ── SOFTWARE ── -->
+  <div class="pp active" id="proj-software">
+    <div class="psub">Complete</div>
+    <div class="pempty">Nothing shipped here yet — soon.</div>
+
+    <div class="psub">In Progress</div>
+    <a class="pcard" href="#" target="_blank" rel="noopener"><div class="ptitle">Late Night Jotter <span class="parrow">↗</span></div><div class="pdesc">A minimal, local-first note-taking app for thoughts that arrive after midnight. No cloud, no formatting. Just text and timestamp.</div><div class="pstat">In progress</div></a>
+    <a class="pcard" href="#" target="_blank" rel="noopener"><div class="ptitle">Personal Site (this one) <span class="parrow">↗</span></div><div class="pdesc">A living archive for everything I'm reading, building, thinking about. No CMS — just one HTML file updated by hand.</div><div class="pstat">Ongoing</div></a>
+    <a class="pcard" href="#" target="_blank" rel="noopener"><div class="ptitle">Signal-Processing Notebook <span class="parrow">↗</span></div><div class="pdesc">A public reference for the math and intuition behind Fourier transforms, filters, and convolution — written for the student who hates black boxes.</div><div class="pstat">Drafting</div></a>
+
+    <div class="psub">Upcoming</div>
+    <div class="pempty">Ideas in the notebook, not yet started.</div>
+  </div>
+
+  <!-- ── HARDWARE ── -->
+  <div class="pp" id="proj-hardware">
+    <div class="psub">Complete</div>
+    <div class="pempty">Nothing finished here yet — soon.</div>
+
+    <div class="psub">In Progress</div>
+    <a class="pcard" href="#" target="_blank" rel="noopener"><div class="ptitle">AM Radio Transmitter <span class="parrow">↗</span></div><div class="pdesc">Breadboard-level design exploring amplitude modulation. Goal: transmit audio to an FM/AM receiver 10ft away without an IC.</div><div class="pstat">In progress · build log</div></a>
+
+    <div class="psub">Upcoming</div>
+    <div class="pempty">Ideas in the notebook, not yet started.</div>
+  </div>
 
   <hr class="rule">
   <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
@@ -993,6 +946,12 @@ p{color:var(--ink-mid);font-size:0.93rem;max-width:60ch;margin-bottom:1rem;}
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer class="site-footer">
+  <span class="footer-name">Shameem Monjazeb</span>
+  <span class="footer-updated">Last updated <strong>June 2026</strong></span>
+</footer>
+
 </div><!-- /.shell -->
 
 <script>
@@ -1012,12 +971,21 @@ document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>
 requestAnimationFrame(()=>requestAnimationFrame(()=>document.getElementById('tab-home').classList.add('visible')));
 
 /* ENT SUB-NAV */
-document.querySelectorAll('.sbt').forEach(t=>t.addEventListener('click',()=>{
+document.querySelectorAll('.sbt[data-ent]').forEach(t=>t.addEventListener('click',()=>{
   const id=t.dataset.ent;
-  document.querySelectorAll('.sbt').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.sbt[data-ent]').forEach(x=>x.classList.remove('active'));
   t.classList.add('active');
   document.querySelectorAll('.ep').forEach(p=>p.classList.remove('active'));
   document.getElementById('ent-'+id).classList.add('active');
+}));
+
+/* PROJECTS SUB-NAV */
+document.querySelectorAll('.sbt[data-proj]').forEach(t=>t.addEventListener('click',()=>{
+  const id=t.dataset.proj;
+  document.querySelectorAll('.sbt[data-proj]').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  document.querySelectorAll('.pp').forEach(p=>p.classList.remove('active'));
+  document.getElementById('proj-'+id).classList.add('active');
 }));
 
 /* COURSE ACCORDION */
@@ -1035,156 +1003,6 @@ function ts(btn){btn.closest('.soc').classList.toggle('open');}
 
 /* PHILOSOPHY EXPAND */
 function togglePhil(el){el.classList.toggle('open');}
-
-/* ════════════════════════════════════════════
-   HABIT TRACKER
-   Storage key: habitData → { "YYYY-MM-DD": [0,2,5,...] }
-════════════════════════════════════════════ */
-
-const TOTAL_HABITS = 14;
-
-function todayKey(){
-  const d=new Date();
-  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
-}
-
-function loadData(){
-  try{return JSON.parse(localStorage.getItem('habitData')||'{}');}
-  catch{return {};}
-}
-
-function saveData(data){
-  localStorage.setItem('habitData',JSON.stringify(data));
-}
-
-function getToday(){
-  const data=loadData();
-  return new Set(data[todayKey()]||[]);
-}
-
-function initHabits(){
-  const done=getToday();
-  document.querySelectorAll('.habit-item').forEach(el=>{
-    const idx=parseInt(el.dataset.idx);
-    el.classList.toggle('done',done.has(idx));
-  });
-  updateDateLabel();
-  buildHeatmap();
-  updateStats();
-}
-
-function toggleHabit(el){
-  const idx=parseInt(el.dataset.idx);
-  const data=loadData();
-  const key=todayKey();
-  const set=new Set(data[key]||[]);
-  if(set.has(idx)){set.delete(idx);}else{set.add(idx);}
-  data[key]=Array.from(set);
-  saveData(data);
-  el.classList.toggle('done',set.has(idx));
-  buildHeatmap();
-  updateStats();
-}
-
-function updateDateLabel(){
-  const el=document.getElementById('ht-date-label');
-  if(!el)return;
-  const d=new Date();
-  el.textContent=d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
-}
-
-/* ── HEATMAP ── */
-function buildHeatmap(){
-  const grid=document.getElementById('hm-grid');
-  if(!grid)return;
-  grid.innerHTML='';
-
-  const data=loadData();
-  const today=new Date();
-  today.setHours(0,0,0,0);
-
-  // We'll show 91 days (13 weeks)
-  const DAYS=91;
-  const start=new Date(today);
-  start.setDate(start.getDate()-(DAYS-1));
-
-  // Pad so the grid starts on Sunday
-  const startDow=start.getDay(); // 0=Sun
-  for(let p=0;p<startDow;p++){
-    const pad=document.createElement('div');
-    pad.style.cssText='width:13px;height:13px;';
-    grid.appendChild(pad);
-  }
-
-  const todayStr=todayKey();
-
-  for(let i=0;i<DAYS;i++){
-    const d=new Date(start);
-    d.setDate(d.getDate()+i);
-    const key=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
-    const completed=(data[key]||[]).length;
-    const pct=completed/TOTAL_HABITS;
-
-    const cell=document.createElement('div');
-    cell.className='hm-cell';
-    if(pct===0) cell.classList.add('hm-c0');
-    else if(pct<=0.25) cell.classList.add('hm-c1');
-    else if(pct<=0.5) cell.classList.add('hm-c2');
-    else if(pct<=0.75) cell.classList.add('hm-c3');
-    else cell.classList.add('hm-c4');
-
-    if(key===todayStr) cell.classList.add('hm-today-cell');
-
-    const label=d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
-    cell.innerHTML=`<div class="hm-tip">${label} · ${completed}/${TOTAL_HABITS} habits</div>`;
-    grid.appendChild(cell);
-  }
-}
-
-function updateStats(){
-  const data=loadData();
-  const today=new Date();
-  today.setHours(0,0,0,0);
-
-  // Current streak
-  let streak=0;
-  for(let i=0;i<365;i++){
-    const d=new Date(today);
-    d.setDate(d.getDate()-i);
-    const key=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
-    const n=(data[key]||[]).length;
-    if(n>0){streak++;}else{break;}
-  }
-
-  // Best streak
-  const keys=Object.keys(data).filter(k=>data[k].length>0).sort();
-  let best=0,cur2=0,prev=null;
-  keys.forEach(k=>{
-    if(!prev){cur2=1;}else{
-      const pd=new Date(prev);pd.setDate(pd.getDate()+1);
-      const cd=new Date(k);
-      cur2=(pd.toDateString()===cd.toDateString())?cur2+1:1;
-    }
-    if(cur2>best)best=cur2;
-    prev=k;
-  });
-
-  const total=keys.length;
-  const avgArr=keys.map(k=>(data[k]||[]).length/TOTAL_HABITS*100);
-  const avg=avgArr.length?Math.round(avgArr.reduce((a,b)=>a+b,0)/avgArr.length):null;
-
-  const ss=document.getElementById('stat-streak');
-  const sb=document.getElementById('stat-best');
-  const st=document.getElementById('stat-total');
-  const sa=document.getElementById('stat-avg');
-  if(ss)ss.textContent=streak;
-  if(sb)sb.textContent=best;
-  if(st)st.textContent=total;
-  if(sa)sa.textContent=avg!==null?avg+'%':'—';
-}
-
-// Init on load
-initHabits();
 </script>
 </body>
 </html>
