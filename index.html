@@ -284,9 +284,16 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .site-footer{
   border-top:1px solid var(--cd);
   padding:2rem 0 3rem;
-  display:flex;align-items:baseline;justify-content:space-between;
-  gap:1rem;flex-wrap:wrap;
+  margin-top:1rem;
 }
+.footer-links{display:flex;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.5rem;}
+.footer-links a{
+  font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--ink-light);text-decoration:none;font-weight:500;
+  transition:color .18s;
+}
+.footer-links a:hover{color:var(--gold);}
+.footer-meta{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
 .footer-name{font-family:var(--serif);font-style:italic;font-size:0.9rem;color:var(--ink-faint);}
 .footer-updated{font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;}
 .footer-updated strong{color:var(--gold);font-weight:500;}
@@ -917,8 +924,18 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <span class="footer-name">Shameem Monjazeb</span>
-  <span class="footer-updated">Last updated <strong>June 2026</strong></span>
+  <!-- Replace each href with your real profile URL. Delete any line you don't want public. -->
+  <div class="footer-links">
+    <a href="https://github.com/shameemmonj-a11y" target="_blank" rel="noopener">GitHub</a>
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="#" target="_blank" rel="noopener">Instagram</a>
+    <a href="#" target="_blank" rel="noopener">Hackaday</a>
+    <a href="mailto:shameemmonj@gmail.com">Email</a>
+  </div>
+  <div class="footer-meta">
+    <span class="footer-name">Shameem Monjazeb</span>
+    <span class="footer-updated">Last updated <strong>June 2026</strong></span>
+  </div>
 </footer>
 
 </div><!-- /.shell -->
