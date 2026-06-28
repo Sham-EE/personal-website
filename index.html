@@ -210,18 +210,9 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .hp{display:none;}
 .hp.active{display:block;}
 .mb-inst{margin-bottom:0.5rem;}
-.mb-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:0.3rem;}
 .mb-inst .ssl{margin-top:1.6rem;}
-.spotify-link{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  font-size:0.64rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;
-  color:var(--ink-mid);text-decoration:none;
-  border:1px solid var(--cd);border-radius:20px;padding:0.42rem 0.9rem;
-  transition:border-color .15s,color .15s;
-}
-.spotify-link:hover{border-color:#1DB954;color:#1DB954;}
-.sp-dot{width:8px;height:8px;border-radius:50%;background:#1DB954;flex-shrink:0;}
-.sp-arrow{font-size:0.72rem;opacity:0.55;}
+.mb-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:0 0 0.9rem;}
+.mb-name{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:var(--ink);margin:0;}
 .songrow{display:flex;align-items:baseline;gap:0.7rem;flex-wrap:wrap;padding:0.55rem 0;border-bottom:1px solid var(--cd);}
 .songrow:last-child{border-bottom:none;}
 .song-t{font-family:var(--serif);font-size:0.99rem;color:var(--ink);}
@@ -815,8 +806,8 @@ body.modal-open{overflow:hidden;}
     <!-- PIANO -->
     <div class="mb-inst">
       <div class="mb-head">
-        <h2 style="margin-top:0;">Piano</h2>
-        <a class="spotify-link" href="#" target="_blank" rel="noopener"><span class="sp-dot"></span>Piano to Learn<span class="sp-arrow">↗</span></a>
+        <h2 class="mb-name">Piano</h2>
+        <svg class="deco" width="62" height="38" viewBox="0 0 62 38" fill="none" style="opacity:1;flex-shrink:0;"><rect x="1" y="9" width="60" height="26" rx="1.5" stroke="#1A1714" stroke-width="1"/><line x1="13" y1="9" x2="13" y2="35" stroke="#1A1714" stroke-width="0.8"/><line x1="25" y1="9" x2="25" y2="35" stroke="#1A1714" stroke-width="0.8"/><line x1="37" y1="9" x2="37" y2="35" stroke="#1A1714" stroke-width="0.8"/><line x1="49" y1="9" x2="49" y2="35" stroke="#1A1714" stroke-width="0.8"/><rect x="9" y="9" width="7" height="15" fill="#1A1714"/><rect x="21" y="9" width="7" height="15" fill="#1A1714"/><rect x="33" y="9" width="7" height="15" fill="#1A1714"/><rect x="45" y="9" width="7" height="15" fill="#1A1714"/></svg>
       </div>
 
       <div class="ssl">Learned</div>
@@ -837,8 +828,8 @@ body.modal-open{overflow:hidden;}
     <!-- GUITAR -->
     <div class="mb-inst">
       <div class="mb-head">
-        <h2 style="margin-top:0;">Guitar</h2>
-        <a class="spotify-link" href="#" target="_blank" rel="noopener"><span class="sp-dot"></span>Guitar to Learn<span class="sp-arrow">↗</span></a>
+        <h2 class="mb-name">Guitar</h2>
+        <svg class="deco" width="38" height="44" viewBox="0 0 38 44" fill="none" style="opacity:1;flex-shrink:0;"><rect x="14.5" y="2" width="9" height="6" rx="1.2" stroke="#1A1714" stroke-width="0.8"/><rect x="16.5" y="8" width="5" height="14" stroke="#1A1714" stroke-width="0.7"/><path d="M19 22 C12 22 8 27 8 32 C8 38 13 42.5 19 42.5 C25 42.5 30 38 30 32 C30 27 26 22 19 22 Z" stroke="#1A1714" stroke-width="1"/><circle cx="19" cy="31" r="3.3" stroke="#1A1714" stroke-width="0.8"/><line x1="14" y1="37" x2="24" y2="37" stroke="#1A1714" stroke-width="0.7"/></svg>
       </div>
 
       <div class="ssl">Learned</div>
@@ -852,6 +843,15 @@ body.modal-open{overflow:hidden;}
       <div class="ssl">To Learn</div>
       <div class="songrow"><span class="song-t">Tears in Heaven</span><span class="song-a">Eric Clapton</span><span class="song-c">A · E · F#m</span></div>
       <div class="songrow"><span class="song-t">Asturias (Leyenda)</span><span class="song-a">Albéniz</span><span class="song-c">Em</span></div>
+    </div>
+
+    <hr class="rule">
+
+    <h2>Playlists</h2>
+    <!-- Replace the ID after /playlist/ in each iframe with your own playlist's ID -->
+    <div class="pl-grid">
+      <div class="pl-embed"><iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+      <div class="pl-embed"><iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXRqgorJj26U?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
     </div>
   </div>
 </section>
