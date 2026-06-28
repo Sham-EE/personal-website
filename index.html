@@ -280,6 +280,98 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
   color:var(--ink);line-height:1.5;
 }
 
+/* ── ENTERTAINMENT DETAIL: CARD HINT ── */
+.has-detail{cursor:pointer;}
+.dhint{
+  position:absolute;top:0.45rem;left:0.5rem;z-index:3;
+  width:16px;height:16px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--gold);color:#fff;font-size:0.78rem;line-height:1;font-weight:400;
+  opacity:0.92;transition:transform .2s,opacity .2s;
+}
+.has-detail:hover .dhint{transform:scale(1.18);opacity:1;}
+
+/* ── DETAIL MODAL ── */
+.modal-overlay{
+  position:fixed;inset:0;z-index:100;
+  background:rgba(20,16,10,0.55);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
+  display:none;align-items:flex-start;justify-content:center;
+  padding:4vh 1rem;overflow-y:auto;
+}
+.modal-overlay.open{display:flex;}
+body.modal-open{overflow:hidden;}
+.modal{
+  background:var(--cream);border:1px solid var(--cd);border-radius:8px;
+  max-width:680px;width:100%;margin:auto;position:relative;
+  padding:2.2rem 2.2rem 2.6rem;
+  box-shadow:0 24px 70px rgba(20,16,10,0.35);
+  animation:modalIn .28s ease;
+}
+@keyframes modalIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+.modal-close{
+  position:absolute;top:0.8rem;right:1rem;background:none;border:none;
+  font-size:1.5rem;line-height:1;color:var(--ink-faint);cursor:pointer;transition:color .15s;
+}
+.modal-close:hover{color:var(--ink);}
+.modal-head{display:flex;gap:1.4rem;align-items:flex-start;margin-bottom:1.5rem;padding-right:1.6rem;}
+.modal-cover{
+  width:84px;aspect-ratio:2/3;flex-shrink:0;border-radius:4px;
+  background:var(--cream-dark);border:1px solid var(--cd);object-fit:cover;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-style:italic;font-size:0.66rem;color:var(--ink-faint);text-align:center;padding:0.4rem;
+}
+.modal-title{font-family:var(--serif);font-size:1.5rem;color:var(--ink);line-height:1.2;}
+.modal-sub{font-size:0.8rem;color:var(--ink-faint);letter-spacing:0.04em;margin-top:0.25rem;}
+.modal-badge{
+  display:inline-block;margin-top:0.75rem;
+  font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;
+  padding:3px 9px;border-radius:3px;background:#E4ECD9;color:#47622E;
+}
+.modal-badge.reading{background:var(--cream-dark);color:var(--ink);border:1px solid var(--ink);}
+.modal-stats{
+  display:flex;gap:1.9rem;flex-wrap:wrap;
+  padding:1rem 0;border-top:1px solid var(--cd);border-bottom:1px solid var(--cd);margin-bottom:1.6rem;
+}
+.mstat{display:flex;flex-direction:column;gap:0.15rem;}
+.mstat-v{font-family:var(--serif);font-size:1.05rem;color:var(--ink);line-height:1;}
+.mstat-l{font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faint);}
+.modal-section{margin-bottom:1.8rem;}
+.modal-section:last-child{margin-bottom:0;}
+.modal-slabel{
+  font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;
+  margin:0 0 0.95rem;padding-bottom:0.4rem;border-bottom:1px solid var(--cd);
+}
+.mquote{
+  font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--ink-mid);line-height:1.55;
+  padding:0.15rem 0 0.15rem 1rem;border-left:2px solid var(--gold-light);margin-bottom:0.9rem;
+}
+.mquote:last-child{margin-bottom:0;}
+.modal-notes{font-size:0.9rem;color:var(--ink-mid);line-height:1.72;}
+
+/* ── QUOTE NAVIGATOR (one passage at a time, by page) ── */
+.qx-stage{
+  position:relative;border:1px solid var(--cd);border-radius:6px;background:var(--cream-dark);
+  border-left:3px solid var(--gold);
+  padding:1.7rem 1.7rem;min-height:150px;
+  display:flex;flex-direction:column;justify-content:center;
+  max-height:48vh;overflow-y:auto;
+}
+.qx-page{
+  font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;margin-bottom:0.85rem;
+}
+.qx-text{font-family:var(--serif);font-style:italic;font-size:1.08rem;line-height:1.62;color:var(--ink);}
+.qx-controls{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:0.95rem;}
+.qx-btn{
+  width:36px;height:36px;border-radius:50%;cursor:pointer;
+  border:1px solid var(--cd);background:var(--cream);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;line-height:1;
+  transition:background .15s,border-color .15s;
+}
+.qx-btn:hover{background:var(--cream-dark);border-color:var(--ink-faint);}
+.qx-counter{font-size:0.7rem;color:var(--ink-faint);letter-spacing:0.08em;white-space:nowrap;}
+@media(max-width:600px){.modal{padding:1.6rem 1.3rem 2rem;}}
+
 /* ── FOOTER ── */
 .site-footer{
   border-top:1px solid var(--cd);
@@ -629,18 +721,18 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
   <!-- ── BOOKS ── -->
   <div class="ep active" id="ent-books">
     <div class="ss"><div class="ssl">Favorite</div><div class="cg">
-      <div class="tc2-fav"><img src="" alt="Gödel, Escher, Bach" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Gödel, Escher, Bach</div><div class="cs">Hofstadter</div></div>
+      <div class="tc2-fav has-detail" data-item="geb"><span class="dhint">+</span><img src="" alt="Gödel, Escher, Bach" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Gödel, Escher, Bach</div><div class="cs">Hofstadter</div></div>
     </div></div>
     <div class="ss"><div class="ssl">Currently reading</div><div class="cg">
-      <div class="tc2"><img src="" alt="The Double" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Double</div><div class="cs">Dostoevsky</div></div>
+      <div class="tc2 has-detail" data-item="the-double"><span class="dhint">+</span><img src="" alt="The Double" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Double</div><div class="cs">Dostoevsky</div></div>
       <div class="tc2"><img src="" alt="The Art of Electronics" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Art of Electronics</div><div class="cs">Horowitz &amp; Hill</div></div>
     </div></div>
     <div class="ss"><div class="ssl">Read</div><div class="cg">
-      <div class="tc2"><img src="" alt="Gödel, Escher, Bach" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Gödel, Escher, Bach</div><div class="cs">Hofstadter</div></div>
+      <div class="tc2 has-detail" data-item="geb"><span class="dhint">+</span><img src="" alt="Gödel, Escher, Bach" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Gödel, Escher, Bach</div><div class="cs">Hofstadter</div></div>
       <div class="tc2"><img src="" alt="The Design of Everyday Things" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Design of Everyday Things</div><div class="cs">Don Norman</div></div>
       <div class="tc2"><img src="" alt="Permanent Record" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Permanent Record</div><div class="cs">Snowden</div></div>
       <div class="tc2"><img src="" alt="Thinking, Fast and Slow" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Thinking, Fast and Slow</div><div class="cs">Kahneman</div></div>
-      <div class="tc2"><img src="" alt="Crime and Punishment" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Crime and Punishment</div><div class="cs">Dostoevsky</div></div>
+      <div class="tc2 has-detail" data-item="crime-and-punishment"><span class="dhint">+</span><img src="" alt="Crime and Punishment" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Crime and Punishment</div><div class="cs">Dostoevsky</div></div>
       <div class="tc2"><img src="" alt="Surely You're Joking, Mr. Feynman" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Surely You're Joking, Mr. Feynman</div><div class="cs">Feynman</div></div>
     </div></div>
     <div class="ss"><div class="ssl">To read</div><div class="cg">
@@ -654,7 +746,7 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
   <!-- ── MOVIES ── -->
   <div class="ep" id="ent-movies">
     <div class="ss"><div class="ssl">Favorite</div><div class="cg">
-      <div class="tc2-fav"><img src="" alt="Stalker" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Stalker</div><div class="cs">Tarkovsky, 1979</div></div>
+      <div class="tc2-fav has-detail" data-item="stalker"><span class="dhint">+</span><img src="" alt="Stalker" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Stalker</div><div class="cs">Tarkovsky, 1979</div></div>
     </div></div>
     <div class="ss"><div class="ssl">Currently watching</div><div class="cg">
       <div class="tc2"><img src="" alt="Dune: Part Two" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Dune: Part Two</div><div class="cs">Villeneuve, 2024</div></div>
@@ -940,6 +1032,11 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 
 </div><!-- /.shell -->
 
+<!-- DETAIL MODAL (one reusable overlay for every entertainment item) -->
+<div class="modal-overlay" id="detail-overlay" aria-hidden="true">
+  <div class="modal" id="detail-modal" role="dialog" aria-modal="true"></div>
+</div>
+
 <script>
 /* ════════════════════════════════════════════
    TAB SWITCHING
@@ -989,6 +1086,205 @@ function ts(btn){btn.closest('.soc').classList.toggle('open');}
 
 /* PHILOSOPHY EXPAND */
 function togglePhil(el){el.classList.toggle('open');}
+
+/* ════════════════════════════════════════════
+   ENTERTAINMENT DETAIL MODAL
+   To add a detailed item: give its card
+     class="... has-detail" data-item="SLUG"
+   and add a matching entry below.
+
+   `quotes` is a list of passages you liked, each:
+     { p: <page number>, t: "the quote or paragraph" }
+   They auto-sort by page and are shown ONE AT A TIME
+   with prev/next (and ← → keys). For non-paged media
+   (film, etc.) use `loc:"1:12:00"` instead of `p`.
+════════════════════════════════════════════ */
+const entDetails = {
+  "geb":{
+    title:"Gödel, Escher, Bach",
+    sub:"Douglas Hofstadter · 1979",
+    cover:"",                         // e.g. "images/books/geb/cover.jpg"
+    badge:{text:"Finished",type:"done"},
+    stats:[
+      {v:"Jan 2025",l:"Finished"},
+      {v:"★★★★★",l:"Rating"},
+      {v:"777 pp",l:"Length"},
+      {v:"3rd",l:"Re-read"}
+    ],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      {p:152,t:"“Meaning lies as much in the mind of the reader as in the Haiku.”"},
+      {p:10,t:"“A strange loop arises when, by moving upwards (or downwards) through the levels of some hierarchical system, we unexpectedly find ourselves right back where we started.”"},
+      {p:301,t:"“Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.”"},
+      {p:68,t:"“Sometimes a system of reasoning can be its own subject matter, and can fold back on itself in the most unexpected ways.”"}
+    ],
+    notes:"The book that made me fall in love with self-reference. Every re-read I notice a loop I missed before — which is, fittingly, the whole point."
+  },
+  "crime-and-punishment":{
+    title:"Crime and Punishment",
+    sub:"Fyodor Dostoevsky · 1866",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[
+      {v:"Dec 2024",l:"Finished"},
+      {v:"★★★★★",l:"Rating"},
+      {v:"671 pp",l:"Length"}
+    ],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      {p:421,t:"“Pain and suffering are always inevitable for a large intelligence and a deep heart.”"},
+      {p:58,t:"“To go wrong in one's own way is better than to go right in someone else's.”"},
+      {p:233,t:"“It takes something more than intelligence to act intelligently.”"}
+    ],
+    notes:"Read it in two feverish weeks. The interrogation chapters are the best psychological tension I've read."
+  },
+  "the-double":{
+    title:"The Double",
+    sub:"Fyodor Dostoevsky · 1846",
+    cover:"",
+    badge:{text:"Currently reading",type:"reading"},
+    stats:[
+      {v:"In progress",l:"Status"},
+      {v:"~40%",l:"Progress"},
+      {v:"Started Jun 2026",l:"Began"}
+    ],
+    quotesLabel:"Passages I've marked",
+    quotes:[
+      {p:44,t:"“He felt that he was free… but at the same time he felt that something was wrong.”"}
+    ],
+    notes:"Just started. Updating this page as I go — I'll add passages with their page numbers as I read."
+  },
+  "stalker":{
+    title:"Stalker",
+    sub:"Andrei Tarkovsky · 1979",
+    cover:"",
+    badge:{text:"Watched",type:"done"},
+    stats:[
+      {v:"Feb 2025",l:"Watched"},
+      {v:"★★★★★",l:"Rating"},
+      {v:"162 min",l:"Runtime"}
+    ],
+    quotesLabel:"Favorite Lines",
+    quotes:[
+      {loc:"1:48:00",t:"“Let everything that's been planned come true. Let them believe. And let them have a laugh at their passions.”"},
+      {loc:"0:52:10",t:"“Weakness is a great thing, and strength is nothing.”"}
+    ],
+    notes:"Shows the same view works for any category — for film, a timestamp (loc) stands in for a page number."
+  }
+};
+
+/* sort a quote list by page (items without a page go last, keeping order) */
+function sortQuotes(qs){
+  return qs.map((q,i)=>({q,i}))
+    .sort((a,b)=>{
+      const pa=(a.q.p!=null)?a.q.p:Infinity, pb=(b.q.p!=null)?b.q.p:Infinity;
+      return pa===pb ? a.i-b.i : pa-pb;
+    })
+    .map(x=>x.q);
+}
+function quoteLabel(q){
+  if(q.p!=null) return 'Page '+q.p;
+  if(q.loc) return q.loc;
+  return '';
+}
+
+let qxState={items:[],idx:0};
+
+function openDetail(slug){
+  const d=entDetails[slug];
+  if(!d)return;
+  const modal=document.getElementById('detail-modal');
+  const statsHtml=(d.stats||[]).map(s=>`<div class="mstat"><span class="mstat-v">${s.v}</span><span class="mstat-l">${s.l}</span></div>`).join('');
+  const coverHtml=d.cover
+    ? `<img class="modal-cover" src="${d.cover}" alt="${d.title}">`
+    : `<div class="modal-cover">${d.title}</div>`;
+
+  let sections='';
+  if(d.quotes&&d.quotes.length){
+    sections+=`<div class="modal-section">
+      <div class="modal-slabel">${d.quotesLabel||'Favorite Passages'}</div>
+      <div class="qx-stage"><div class="qx-page" id="qx-page"></div><div class="qx-text" id="qx-text"></div></div>
+      <div class="qx-controls">
+        <button class="qx-btn" onclick="qxGo(-1)" aria-label="Previous">‹</button>
+        <span class="qx-counter" id="qx-count"></span>
+        <button class="qx-btn" onclick="qxGo(1)" aria-label="Next">›</button>
+      </div>
+    </div>`;
+  }
+  if(d.notes){
+    sections+=`<div class="modal-section"><div class="modal-slabel">Notes</div><div class="modal-notes">${d.notes}</div></div>`;
+  }
+
+  modal.innerHTML=`
+    <button class="modal-close" onclick="closeDetail()" aria-label="Close">×</button>
+    <div class="modal-head">
+      ${coverHtml}
+      <div>
+        <div class="modal-title">${d.title}</div>
+        <div class="modal-sub">${d.sub||''}</div>
+        ${d.badge?`<span class="modal-badge ${d.badge.type==='reading'?'reading':''}">${d.badge.text}</span>`:''}
+      </div>
+    </div>
+    ${statsHtml?`<div class="modal-stats">${statsHtml}</div>`:''}
+    ${sections}
+  `;
+
+  if(d.quotes&&d.quotes.length){
+    qxState={items:sortQuotes(d.quotes),idx:0};
+    // hide single-item controls
+    if(qxState.items.length<2){
+      modal.querySelectorAll('.qx-btn').forEach(b=>b.style.display='none');
+    }
+    updateQx();
+  }
+
+  const ov=document.getElementById('detail-overlay');
+  ov.classList.add('open');
+  ov.setAttribute('aria-hidden','false');
+  document.body.classList.add('modal-open');
+}
+
+function updateQx(){
+  const q=qxState.items[qxState.idx];
+  if(!q)return;
+  const pg=document.getElementById('qx-page');
+  const tx=document.getElementById('qx-text');
+  const ct=document.getElementById('qx-count');
+  const stage=document.querySelector('.qx-stage');
+  if(pg)pg.textContent=quoteLabel(q);
+  if(tx)tx.textContent=q.t;
+  if(ct)ct.textContent=`${qxState.idx+1} / ${qxState.items.length}`;
+  if(stage)stage.scrollTop=0;
+}
+
+function qxGo(dir){
+  if(!qxState.items.length)return;
+  qxState.idx=(qxState.idx+dir+qxState.items.length)%qxState.items.length;
+  updateQx();
+}
+
+function closeDetail(){
+  const ov=document.getElementById('detail-overlay');
+  ov.classList.remove('open');
+  ov.setAttribute('aria-hidden','true');
+  document.body.classList.remove('modal-open');
+}
+
+// open on card click
+document.querySelectorAll('[data-item]').forEach(c=>{
+  c.addEventListener('click',()=>openDetail(c.dataset.item));
+});
+// close on outside click
+document.getElementById('detail-overlay').addEventListener('click',e=>{
+  if(e.target.id==='detail-overlay')closeDetail();
+});
+// keyboard: esc closes, arrows flip through passages
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('detail-overlay').classList.contains('open'))return;
+  if(e.key==='Escape')closeDetail();
+  else if(e.key==='ArrowLeft')qxGo(-1);
+  else if(e.key==='ArrowRight')qxGo(1);
+});
 </script>
 </body>
 </html>
