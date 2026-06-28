@@ -435,7 +435,6 @@ body.modal-open{overflow:hidden;}
 .np-bar{flex:1;min-width:2px;border-radius:1px;background:rgba(245,241,232,0.18);transition:background .15s,height .2s;}
 .np-bar.played{background:#1DB954;}
 .np-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;}
-.np-time{font-size:0.66rem;color:rgba(245,241,232,0.55);letter-spacing:0.04em;font-variant-numeric:tabular-nums;}
 .np-link{color:#1DB954;text-decoration:none;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;}
 .np-link:hover{text-decoration:underline;}
 .np-when{font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(245,241,232,0.55);}
@@ -449,8 +448,6 @@ body.modal-open{overflow:hidden;}
 .tt-plays{margin-left:auto;font-size:0.6rem;letter-spacing:0.05em;color:var(--gold);white-space:nowrap;}
 .pl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.3rem;}
 .pl-embed iframe{display:block;width:100%;border:0;border-radius:12px;}
-.pl-note{font-family:var(--serif);font-style:italic;font-size:0.72rem;color:var(--ink-faint);margin-top:0.45rem;}
-.music-foot{font-family:var(--serif);font-style:italic;font-size:0.78rem;color:var(--ink-faint);line-height:1.6;border-top:1px solid var(--cd);padding-top:1.2rem;}
 .snap-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:0.9rem;padding-bottom:0.5rem;border-bottom:1px solid var(--cd);}
 .snap-title{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;}
 .snap-card{background:var(--cream-dark);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:1.2rem 1.4rem;}
@@ -472,13 +469,10 @@ body.modal-open{overflow:hidden;}
   padding:2rem 0 3rem;
   margin-top:1rem;
 }
-.footer-links{display:flex;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.5rem;}
-.footer-links a{
-  font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;
-  color:var(--ink-light);text-decoration:none;font-weight:500;
-  transition:color .18s;
-}
-.footer-links a:hover{color:var(--gold);}
+.footer-links{display:flex;justify-content:space-between;align-items:center;gap:1rem;max-width:340px;margin:0 auto 1.8rem;}
+.footer-links a{color:var(--ink-light);display:flex;transition:color .18s,transform .18s;}
+.footer-links a:hover{color:var(--gold);transform:translateY(-2px);}
+.footer-links a svg{width:21px;height:21px;display:block;fill:currentColor;}
 .footer-meta{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
 .footer-name{font-family:var(--serif);font-style:italic;font-size:0.9rem;color:var(--ink-faint);}
 .footer-updated{font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;}
@@ -985,10 +979,8 @@ body.modal-open{overflow:hidden;}
       <div class="tc2"><img src="" alt="Return of the Obra Dinn" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Return of the Obra Dinn</div><div class="cs">Lucas Pope, 2018</div></div>
     </div></div>
   </div>
-  <!-- ── MUSIC (the hidden ♪ tab) ── -->
   <div class="ep" id="ent-music">
 
-    <!-- LAST PLAYED (from your real recently-played archive) -->
     <div class="np">
       <div class="np-top">
         <span class="np-eyebrow">Last Played</span>
@@ -1002,14 +994,12 @@ body.modal-open{overflow:hidden;}
           <div class="np-album" id="np-album"></div>
           <div class="np-wave" id="np-wave"></div>
           <div class="np-meta">
-            <span class="np-time" id="np-time">0:00 / 0:00</span>
             <a class="np-link" id="np-link" href="#" target="_blank" rel="noopener">↗ Open in Spotify</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- LISTENING SNAPSHOTS (saved every so often; toggle through history) -->
     <div class="music-sec">
       <div class="snap-head">
         <span class="snap-title">Recently Played</span>
@@ -1021,7 +1011,6 @@ body.modal-open{overflow:hidden;}
       <div class="snap-card" id="snap-card"></div>
     </div>
 
-    <!-- TOP — MONTHLY (page back through months with Older/Newer) -->
     <div class="music-sec">
       <div class="snap-head">
         <span class="snap-title">Top &middot; <span id="topm-month">This Month</span></span>
@@ -1036,22 +1025,16 @@ body.modal-open{overflow:hidden;}
       <ul class="toptracks" id="topm-tracks"></ul>
     </div>
 
-    <!-- PLAYLISTS (real Spotify embeds; swap the IDs for your own) -->
     <div class="music-sec">
       <div class="ssl">Playlists</div>
+      <!-- For each playlist: replace the ID after /playlist/ with your own (see below) -->
       <div class="pl-grid">
-        <div class="pl-embed">
-          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          <div class="pl-note">Demo embed — replace the playlist ID with your “Piano to Learn.”</div>
-        </div>
-        <div class="pl-embed">
-          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXRqgorJj26U?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          <div class="pl-note">Demo embed — replace the playlist ID with your “Guitar to Learn.”</div>
-        </div>
+        <div class="pl-embed"><iframe src="https://open.spotify.com/embed/playlist/5HDXr86cy4uPBZDtVv2tyA?utm_source=generator&theme=0" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+        <div class="pl-embed"><iframe src="https://open.spotify.com/embed/playlist/6TnnqRJqxlIxqV8VKDrG1N?utm_source=generator" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+        <div class="pl-embed"><iframe src="https://open.spotify.com/embed/playlist/0pVbogMsHOeE8YtblfeCaw?utm_source=generator" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+        <div class="pl-embed"><iframe src="https://open.spotify.com/embed/playlist/1erWzAhCZbFCOBnyvGF67s?utm_source=generator" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
       </div>
     </div>
-
-    <p class="music-foot">Now-playing &amp; top tracks are <strong>mock data</strong> for this preview — the track even “plays” so you can watch the waveform fill. Wiring it to your real Spotify is the next step: a small serverless function for true live data, or a GitHub Action snapshot if you stay on GitHub Pages. Playlist embeds above are already real.</p>
 
   </div>
 </section>
@@ -1242,13 +1225,12 @@ body.modal-open{overflow:hidden;}
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <!-- Replace each href with your real profile URL. Delete any line you don't want public. -->
   <div class="footer-links">
-    <a href="https://github.com/shameemmonj-a11y" target="_blank" rel="noopener">GitHub</a>
-    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="#" target="_blank" rel="noopener">Instagram</a>
-    <a href="#" target="_blank" rel="noopener">Hackaday</a>
-    <a href="mailto:shameemmonj@gmail.com">Email</a>
+    <a href="https://github.com/shameemmonj-a11y" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+    <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="#" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+    <a href="#" target="_blank" rel="noopener" aria-label="Hackaday" title="Hackaday"><svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></a>
+    <a href="mailto:shameemmonj@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
   </div>
   <div class="footer-meta">
     <span class="footer-name">Shameem Monjazeb</span>
