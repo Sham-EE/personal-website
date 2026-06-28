@@ -1,0 +1,42 @@
+# Snapshots your current Spotify track into snapshots.json every 30 min,
+# so the "Listening Snapshots" archive works on plain GitHub Pages.
+# Add CLIENT_ID / CLIENT_SECRET / REFRESH_TOKEN under
+# Settings → Secrets and variables → Actions.
+name: spotify-snapshot
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 minutes (GitHub may delay during peak load)
+  workflow_dispatch: {}        # allow manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Take snapshots
+        working-directory: spotify-dev
+        env:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+        run: |
+          node snapshot.mjs        # now-playing → snapshots.json
+          node monthly.mjs         # top artists+tracks → top-archive.json (this month)
+      - name: Commit if changed
+        run: |
+          git config user.name "spotify-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add snapshots.json top-archive.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: spotify snapshot"
+            git push
+          else
+            echo "No change."
+          fi

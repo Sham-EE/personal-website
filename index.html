@@ -76,6 +76,24 @@ p{color:var(--ink-mid);font-size:0.93rem;max-width:60ch;margin-bottom:1rem;}
   font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;
   color:var(--gold);font-weight:500;display:block;margin-bottom:1rem;
 }
+.currently-head{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:0.8rem 1rem;flex-wrap:wrap;margin-bottom:1.1rem;
+}
+.currently-head .block-label{margin-bottom:0;}
+.week-tag{
+  display:inline-block;margin-left:0.6rem;
+  font-size:0.55rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;
+  color:var(--gold);border:1px solid var(--gold-light);border-radius:3px;padding:1px 5px;vertical-align:middle;
+}
+.week-nav{display:flex;gap:0.4rem;flex-shrink:0;}
+.week-btn{
+  font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;
+  color:var(--ink-light);background:none;border:1px solid var(--cd);border-radius:4px;
+  padding:0.32rem 0.6rem;cursor:pointer;transition:color .15s,border-color .15s,opacity .15s;
+}
+.week-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold);}
+.week-btn:disabled{opacity:0.3;cursor:default;}
 .currently-item{
   display:flex;gap:0.7rem;align-items:baseline;
   margin-bottom:0.55rem;font-size:0.91rem;color:var(--ink-mid);
@@ -187,6 +205,28 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .fhi{font-size:1.1rem;line-height:1;flex-shrink:0;opacity:0.4;margin-top:0.2rem;}
 .fhn{font-family:var(--serif);font-size:1rem;color:var(--ink);margin-bottom:0.2rem;}
 .fhno{font-size:0.84rem;color:var(--ink-mid);}
+
+/* ── MUSICAL BENCH ── */
+.hp{display:none;}
+.hp.active{display:block;}
+.mb-inst{margin-bottom:0.5rem;}
+.mb-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:0.3rem;}
+.mb-inst .ssl{margin-top:1.6rem;}
+.spotify-link{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  font-size:0.64rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;
+  color:var(--ink-mid);text-decoration:none;
+  border:1px solid var(--cd);border-radius:20px;padding:0.42rem 0.9rem;
+  transition:border-color .15s,color .15s;
+}
+.spotify-link:hover{border-color:#1DB954;color:#1DB954;}
+.sp-dot{width:8px;height:8px;border-radius:50%;background:#1DB954;flex-shrink:0;}
+.sp-arrow{font-size:0.72rem;opacity:0.55;}
+.songrow{display:flex;align-items:baseline;gap:0.7rem;flex-wrap:wrap;padding:0.55rem 0;border-bottom:1px solid var(--cd);}
+.songrow:last-child{border-bottom:none;}
+.song-t{font-family:var(--serif);font-size:0.99rem;color:var(--ink);}
+.song-a{font-size:0.8rem;color:var(--ink-faint);}
+.song-c{margin-left:auto;font-size:0.6rem;letter-spacing:0.06em;color:var(--gold);border:1px solid var(--gold-light);border-radius:3px;padding:1px 7px;white-space:nowrap;flex-shrink:0;}
 
 /* ── ENTERTAINMENT CARDS ── */
 .subnav{display:flex;border-bottom:1px solid var(--cd);margin-bottom:2.8rem;overflow-x:auto;scrollbar-width:none;}
@@ -372,6 +412,60 @@ body.modal-open{overflow:hidden;}
 .qx-counter{font-size:0.7rem;color:var(--ink-faint);letter-spacing:0.08em;white-space:nowrap;}
 @media(max-width:600px){.modal{padding:1.6rem 1.3rem 2rem;}}
 
+/* ── MUSIC PAGE ── */
+.sbt-music{margin-left:auto;font-size:1rem;padding-left:1.2rem;padding-right:0.3rem;color:var(--ink-faint);}
+.sbt-music.active{border-bottom-color:#1DB954;color:#1DB954;}
+.np{background:#14110A;color:var(--cream);border-radius:10px;padding:1.7rem 1.8rem 1.9rem;margin-bottom:2.6rem;position:relative;overflow:hidden;}
+.np-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.4rem;}
+.np-eyebrow{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,241,232,0.5);font-weight:500;}
+.np-live{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.56rem;letter-spacing:0.16em;text-transform:uppercase;color:#1DB954;}
+.np-live-dot{width:7px;height:7px;border-radius:50%;background:#1DB954;animation:npPulse 1.6s ease-in-out infinite;}
+@keyframes npPulse{0%,100%{opacity:1;}50%{opacity:0.25;}}
+.np-body{display:flex;gap:1.7rem;align-items:center;flex-wrap:wrap;}
+.np-vinyl{width:118px;height:118px;border-radius:50%;flex-shrink:0;position:relative;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 26px rgba(0,0,0,0.55);background:repeating-radial-gradient(circle at center,#0a0807 0 2px,#1c1916 2px 4px);}
+.np-vinyl::after{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:#14110A;z-index:2;}
+.np-vinyl.spin{animation:npSpin 6s linear infinite;}
+@keyframes npSpin{to{transform:rotate(360deg);}}
+.np-art{width:52px;height:52px;border-radius:50%;object-fit:cover;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:#14110A;background:var(--gold-light);border:2px solid #14110A;position:relative;z-index:1;}
+.np-info{flex:1;min-width:220px;}
+.np-track{font-family:var(--serif);font-size:1.32rem;color:var(--cream);line-height:1.2;}
+.np-artist{font-size:0.86rem;color:rgba(245,241,232,0.72);margin-top:0.25rem;}
+.np-album{font-family:var(--serif);font-style:italic;font-size:0.74rem;color:rgba(245,241,232,0.45);margin-top:0.1rem;}
+.np-wave{display:flex;align-items:flex-end;gap:2px;height:44px;margin:1.15rem 0 0.55rem;}
+.np-bar{flex:1;min-width:2px;border-radius:1px;background:rgba(245,241,232,0.18);transition:background .15s,height .2s;}
+.np-bar.played{background:#1DB954;}
+.np-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.np-time{font-size:0.66rem;color:rgba(245,241,232,0.55);letter-spacing:0.04em;font-variant-numeric:tabular-nums;}
+.np-link{color:#1DB954;text-decoration:none;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;}
+.np-link:hover{text-decoration:underline;}
+.np-when{font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(245,241,232,0.55);}
+.music-sec{margin-bottom:2.6rem;}
+.toptracks{list-style:none;}
+.tt-row{display:flex;align-items:baseline;gap:0.85rem;padding:0.52rem 0;border-bottom:1px solid var(--cd);}
+.tt-row:last-child{border-bottom:none;}
+.tt-n{font-family:var(--serif);font-style:italic;font-size:0.8rem;color:var(--ink-faint);min-width:18px;}
+.tt-t{font-family:var(--serif);font-size:0.99rem;color:var(--ink);}
+.tt-a{font-size:0.8rem;color:var(--ink-faint);}
+.tt-plays{margin-left:auto;font-size:0.6rem;letter-spacing:0.05em;color:var(--gold);white-space:nowrap;}
+.pl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.3rem;}
+.pl-embed iframe{display:block;width:100%;border:0;border-radius:12px;}
+.pl-note{font-family:var(--serif);font-style:italic;font-size:0.72rem;color:var(--ink-faint);margin-top:0.45rem;}
+.music-foot{font-family:var(--serif);font-style:italic;font-size:0.78rem;color:var(--ink-faint);line-height:1.6;border-top:1px solid var(--cd);padding-top:1.2rem;}
+.snap-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:0.9rem;padding-bottom:0.5rem;border-bottom:1px solid var(--cd);}
+.snap-title{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;}
+.snap-card{background:var(--cream-dark);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:1.2rem 1.4rem;}
+.snap-when{font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.7rem;}
+.snap-track{font-family:var(--serif);font-size:1.15rem;color:var(--ink);line-height:1.25;}
+.snap-artist{font-size:0.84rem;color:var(--ink-mid);margin-top:0.18rem;}
+.snap-album{font-family:var(--serif);font-style:italic;font-size:0.74rem;color:var(--ink-faint);margin-top:0.1rem;}
+.snap-count{font-size:0.62rem;color:var(--ink-faint);letter-spacing:0.05em;margin-top:0.9rem;padding-top:0.7rem;border-top:1px solid var(--cd);}
+.artist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:1.1rem 0.8rem;margin-bottom:0.6rem;}
+.artist-cell{text-align:center;}
+.artist-pic{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;background:var(--cream-dark);border:1px solid var(--cd);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.5rem;color:var(--ink-faint);}
+.artist-name{font-family:var(--serif);font-size:0.82rem;color:var(--ink);margin-top:0.5rem;line-height:1.22;}
+.artist-rank{font-size:0.56rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-faint);margin-top:0.12rem;}
+.liked-count{font-size:0.6rem;letter-spacing:0.06em;color:var(--gold);margin-left:0.35rem;}
+
 /* ── FOOTER ── */
 .site-footer{
   border-top:1px solid var(--cd);
@@ -440,14 +534,14 @@ body.modal-open{overflow:hidden;}
 
   <span class="label">Currently</span>
   <div class="currently-block">
-    <span class="block-label">This week</span>
-    <div class="currently-item"><span class="c-type">Reading</span><span>The Double — Dostoevsky</span></div>
-    <div class="currently-item"><span class="c-type">Building</span><span>Late Night Jotter</span></div>
-    <div class="currently-item"><span class="c-type">Learning</span><span>Farsi · Guitar · Muay Thai</span></div>
-    <div class="currently-item"><span class="c-type">Fitness</span><span>Lift · Run · Stretch (3×/week)</span></div>
-    <div class="currently-item"><span class="c-type">Rewiring</span><span>Dopamine Circuitry</span></div>
-    <div class="currently-item"><span class="c-type">Reminding</span><span>It takes time — growth moves slower than doubt, but runs deeper.</span></div>
-    <div class="currently-item"><span class="c-type">Rabbit hole</span><span>Waves: Cosine, Sine, Fourier Transforms, Phasors. In awe of how nature's complexity and our reality's fabric are woven from simple oscillations.</span></div>
+    <div class="currently-head">
+      <span class="block-label" id="week-label"></span>
+      <div class="week-nav">
+        <button class="week-btn" id="week-older" onclick="weekGo(1)">‹ Older</button>
+        <button class="week-btn" id="week-newer" onclick="weekGo(-1)">Newer ›</button>
+      </div>
+    </div>
+    <div id="week-body"></div>
   </div>
 
 </section>
@@ -676,6 +770,13 @@ body.modal-open{overflow:hidden;}
 <!-- ═══ HOBBIES ═══ -->
 <section id="tab-hobbies" class="screen">
   <h1>Hobbies</h1>
+  <div class="subnav">
+    <button class="sbt active" data-hob="practices">Practices</button>
+    <button class="sbt" data-hob="music">Musical Bench</button>
+  </div>
+
+  <!-- ── PRACTICES ── -->
+  <div class="hp active" id="hob-practices">
   <div class="hobbies-intro">
     <p>What I practice, how far I've gotten, and what's worth trying.</p>
   </div>
@@ -704,6 +805,61 @@ body.modal-open{overflow:hidden;}
   <div class="fhc"><div class="fhi">◎</div><div><div class="fhn">Film Photography</div><div class="fhno">35mm, black &amp; white to start. I want to develop my own rolls and understand the chemistry of the process — not just the composition.</div></div></div>
   <div class="fhc"><div class="fhi">◎</div><div><div class="fhn">Woodworking</div><div class="fhno">Hand tools only for the first year. A cutting board, then a box, then whatever the wood suggests. Patient work that can't be rushed.</div></div></div>
   <div class="fhc"><div class="fhi">◎</div><div><div class="fhn">Calligraphy (Nastaliq Script)</div><div class="fhno">A natural extension of learning Farsi. Nastaliq is one of the most beautiful scripts in the world — learning to slow down written into the form itself.</div></div></div>
+  </div>
+
+  <!-- ── MUSICAL BENCH ──
+    Edit the song lists freely. Each row:
+      <div class="songrow"><span class="song-t">Title</span><span class="song-a">Artist</span><span class="song-c">chords / key</span></div>
+    The .song-c tag is optional — drop it if you don't want to show chords.
+    Set the two Spotify hrefs to your real playlist links.
+  -->
+  <div class="hp" id="hob-music">
+    <div class="hobbies-intro">
+      <p>Songs and chords I'm working through, instrument by instrument — what's under my fingers, what I'm drilling now, and what's queued up.</p>
+    </div>
+
+    <!-- PIANO -->
+    <div class="mb-inst">
+      <div class="mb-head">
+        <h2 style="margin-top:0;">Piano</h2>
+        <a class="spotify-link" href="#" target="_blank" rel="noopener"><span class="sp-dot"></span>Piano to Learn<span class="sp-arrow">↗</span></a>
+      </div>
+
+      <div class="ssl">Learned</div>
+      <div class="songrow"><span class="song-t">Gymnopédie No. 1</span><span class="song-a">Erik Satie</span><span class="song-c">D maj</span></div>
+      <div class="songrow"><span class="song-t">Clair de Lune (opening)</span><span class="song-a">Debussy</span><span class="song-c">D♭ maj</span></div>
+
+      <div class="ssl">Currently Learning</div>
+      <div class="songrow"><span class="song-t">Comptine d'un autre été</span><span class="song-a">Yann Tiersen</span><span class="song-c">Em</span></div>
+      <div class="songrow"><span class="song-t">River Flows in You</span><span class="song-a">Yiruma</span><span class="song-c">A maj</span></div>
+
+      <div class="ssl">To Learn</div>
+      <div class="songrow"><span class="song-t">Nuvole Bianche</span><span class="song-a">Ludovico Einaudi</span><span class="song-c">B♭ min</span></div>
+      <div class="songrow"><span class="song-t">Prelude in C</span><span class="song-a">J.S. Bach</span><span class="song-c">C maj</span></div>
+    </div>
+
+    <hr class="rule">
+
+    <!-- GUITAR -->
+    <div class="mb-inst">
+      <div class="mb-head">
+        <h2 style="margin-top:0;">Guitar</h2>
+        <a class="spotify-link" href="#" target="_blank" rel="noopener"><span class="sp-dot"></span>Guitar to Learn<span class="sp-arrow">↗</span></a>
+      </div>
+
+      <div class="ssl">Learned</div>
+      <div class="songrow"><span class="song-t">Blackbird</span><span class="song-a">The Beatles</span><span class="song-c">G · Am · C</span></div>
+      <div class="songrow"><span class="song-t">Dust in the Wind</span><span class="song-a">Kansas</span><span class="song-c">C · Cmaj7 · Am</span></div>
+
+      <div class="ssl">Currently Learning</div>
+      <div class="songrow"><span class="song-t">Windy and Warm</span><span class="song-a">Chet Atkins</span><span class="song-c">Am · E7</span></div>
+      <div class="songrow"><span class="song-t">Classical Gas</span><span class="song-a">Mason Williams</span><span class="song-c">Am · G · F</span></div>
+
+      <div class="ssl">To Learn</div>
+      <div class="songrow"><span class="song-t">Tears in Heaven</span><span class="song-a">Eric Clapton</span><span class="song-c">A · E · F#m</span></div>
+      <div class="songrow"><span class="song-t">Asturias (Leyenda)</span><span class="song-a">Albéniz</span><span class="song-c">Em</span></div>
+    </div>
+  </div>
 </section>
 
 
@@ -716,6 +872,7 @@ body.modal-open{overflow:hidden;}
     <button class="sbt" data-ent="shows">Shows</button>
     <button class="sbt" data-ent="anime">Anime</button>
     <button class="sbt" data-ent="games">Games</button>
+    <button class="sbt sbt-music" data-ent="music" title="Music">♪</button>
   </div>
 
   <!-- ── BOOKS ── -->
@@ -827,6 +984,75 @@ body.modal-open{overflow:hidden;}
       <div class="tc2"><img src="" alt="Disco Elysium" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Disco Elysium</div><div class="cs">ZA/UM, 2019</div></div>
       <div class="tc2"><img src="" alt="Return of the Obra Dinn" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Return of the Obra Dinn</div><div class="cs">Lucas Pope, 2018</div></div>
     </div></div>
+  </div>
+  <!-- ── MUSIC (the hidden ♪ tab) ── -->
+  <div class="ep" id="ent-music">
+
+    <!-- LAST PLAYED (from your real recently-played archive) -->
+    <div class="np">
+      <div class="np-top">
+        <span class="np-eyebrow">Last Played</span>
+        <span class="np-when" id="np-when"></span>
+      </div>
+      <div class="np-body">
+        <div class="np-vinyl spin" id="np-vinyl"><div class="np-art" id="np-art">♪</div></div>
+        <div class="np-info">
+          <div class="np-track" id="np-track"></div>
+          <div class="np-artist" id="np-artist"></div>
+          <div class="np-album" id="np-album"></div>
+          <div class="np-wave" id="np-wave"></div>
+          <div class="np-meta">
+            <span class="np-time" id="np-time">0:00 / 0:00</span>
+            <a class="np-link" id="np-link" href="#" target="_blank" rel="noopener">↗ Open in Spotify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LISTENING SNAPSHOTS (saved every so often; toggle through history) -->
+    <div class="music-sec">
+      <div class="snap-head">
+        <span class="snap-title">Recently Played</span>
+        <div class="week-nav">
+          <button class="week-btn" id="snap-older" onclick="snapGo(1)">‹ Older</button>
+          <button class="week-btn" id="snap-newer" onclick="snapGo(-1)">Newer ›</button>
+        </div>
+      </div>
+      <div class="snap-card" id="snap-card"></div>
+    </div>
+
+    <!-- TOP — MONTHLY (page back through months with Older/Newer) -->
+    <div class="music-sec">
+      <div class="snap-head">
+        <span class="snap-title">Top &middot; <span id="topm-month">This Month</span></span>
+        <div class="week-nav">
+          <button class="week-btn" id="topm-older" onclick="topmGo(1)">&lsaquo; Older</button>
+          <button class="week-btn" id="topm-newer" onclick="topmGo(-1)">Newer &rsaquo;</button>
+        </div>
+      </div>
+      <div class="ssl" style="margin-top:0.3rem;">Top Artists</div>
+      <div class="artist-grid" id="topm-artists"></div>
+      <div class="ssl">Top Tracks</div>
+      <ul class="toptracks" id="topm-tracks"></ul>
+    </div>
+
+    <!-- PLAYLISTS (real Spotify embeds; swap the IDs for your own) -->
+    <div class="music-sec">
+      <div class="ssl">Playlists</div>
+      <div class="pl-grid">
+        <div class="pl-embed">
+          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <div class="pl-note">Demo embed — replace the playlist ID with your “Piano to Learn.”</div>
+        </div>
+        <div class="pl-embed">
+          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXRqgorJj26U?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <div class="pl-note">Demo embed — replace the playlist ID with your “Guitar to Learn.”</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="music-foot">Now-playing &amp; top tracks are <strong>mock data</strong> for this preview — the track even “plays” so you can watch the waveform fill. Wiring it to your real Spotify is the next step: a small serverless function for true live data, or a GitHub Action snapshot if you stay on GitHub Pages. Playlist embeds above are already real.</p>
+
   </div>
 </section>
 
@@ -1071,6 +1297,15 @@ document.querySelectorAll('.sbt[data-proj]').forEach(t=>t.addEventListener('clic
   document.getElementById('proj-'+id).classList.add('active');
 }));
 
+/* HOBBIES SUB-NAV */
+document.querySelectorAll('.sbt[data-hob]').forEach(t=>t.addEventListener('click',()=>{
+  const id=t.dataset.hob;
+  document.querySelectorAll('.sbt[data-hob]').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  document.querySelectorAll('.hp').forEach(p=>p.classList.remove('active'));
+  document.getElementById('hob-'+id).classList.add('active');
+}));
+
 /* COURSE ACCORDION */
 function tc(btn){
   const c=btn.closest('.crs');
@@ -1086,6 +1321,67 @@ function ts(btn){btn.closest('.soc').classList.toggle('open');}
 
 /* PHILOSOPHY EXPAND */
 function togglePhil(el){el.classList.toggle('open');}
+
+/* ════════════════════════════════════════════
+   WEEK LOG  ("Currently")
+   Newest week first (index 0 = the current week).
+   To post a NEW week: add one object to the TOP of
+   this array. Old weeks stay and become reachable
+   with the Older / Newer buttons. Each item is
+   ["Label", "Text"].
+════════════════════════════════════════════ */
+const weekLog = [
+    {
+    date:"June 28, 2026",
+    items:[
+      ["Reading","Anna Karenina (95/817) — Tolstoy"],
+      ["Building","LiDAR WWD Toolkit · LectureHall · SleepJT"],
+      ["Learning","Farsi: Alphabet · Guitar: D,C,E,Em,Am · Piano: Gymnopédie No. 1"],
+      ["Fitness","Lift · Run · Stretch (3×/week)"],
+      ["Rewiring","Dopamine Circuitry"],
+      ["Reminding","Take the initiative to start the activites you find meaningful and you will find you can't stop"],
+      ["Rabbit hole","Cooperative Perception, V2X, LiDAR"]
+    ]
+  },
+  {
+    date:"April 15, 2026",
+    items:[
+      ["Reading","The Double — Dostoevsky"],
+      ["Building","Late Night Jotter"],
+      ["Learning","Farsi · Guitar · Muay Thai"],
+      ["Fitness","Lift · Run · Stretch (3×/week)"],
+      ["Rewiring","Dopamine Circuitry"],
+      ["Reminding","It takes time, growth moves slower than doubt, but runs deeper."],
+      ["Rabbit hole","Waves: Cosine, Sine, Fourier Transforms, Phasors. In awe of how nature's complexity and our reality's fabric are woven from simple oscillations."]
+    ]
+  }
+  // ,{
+  //   date:"April 8, 2026",
+  //   items:[
+  //     ["Reading","..."],
+  //     ["Building","..."]
+  //   ]
+  // }
+];
+
+let weekIdx=0;
+
+function renderWeek(){
+  const w=weekLog[weekIdx];
+  if(!w)return;
+  const isCurrent=weekIdx===0;
+  document.getElementById('week-label').innerHTML =
+    isCurrent ? `${w.date}<span class="week-tag">Current</span>` : w.date;
+  document.getElementById('week-body').innerHTML =
+    w.items.map(it=>`<div class="currently-item"><span class="c-type">${it[0]}</span><span>${it[1]}</span></div>`).join('');
+  document.getElementById('week-newer').disabled = weekIdx<=0;
+  document.getElementById('week-older').disabled = weekIdx>=weekLog.length-1;
+}
+function weekGo(dir){
+  weekIdx=Math.min(Math.max(weekIdx+dir,0),weekLog.length-1);
+  renderWeek();
+}
+renderWeek();
 
 /* ════════════════════════════════════════════
    ENTERTAINMENT DETAIL MODAL
@@ -1285,6 +1581,110 @@ document.addEventListener('keydown',e=>{
   else if(e.key==='ArrowLeft')qxGo(-1);
   else if(e.key==='ArrowRight')qxGo(1);
 });
+
+/* ════════════════════════════════════════════
+   MUSIC — LAST PLAYED (driven by the recently-played archive)
+   Replace `nowPlaying` + `npTick` with a fetch from
+   your Spotify proxy later. Everything else stays.
+════════════════════════════════════════════ */
+const NP_BARS=72;
+function npBuildWave(){
+  const wrap=document.getElementById('np-wave');
+  if(!wrap)return;
+  let html='';
+  for(let i=0;i<NP_BARS;i++){
+    const h=0.30+0.70*Math.abs(Math.sin(i*0.5)*0.6+Math.sin(i*1.73+1)*0.4);
+    html+='<div class="np-bar played" style="height:'+Math.round(Math.min(100,Math.max(14,h*100)))+'%"></div>';
+  }
+  wrap.innerHTML=html;
+}
+function npRender(lp){
+  if(!lp)return;
+  const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  set('np-track',lp.title||''); set('np-artist',lp.artist||''); set('np-album',lp.album||'');
+  const w=document.getElementById('np-when'); if(w)w.textContent=lp.when?('Last played \u00b7 '+lp.when):'Most recent';
+  const art=document.getElementById('np-art');
+  if(art){ if(lp.art){art.innerHTML='<img src="'+lp.art+'" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover">';} else {art.textContent='\u266a';} }
+  const link=document.getElementById('np-link'); if(link)link.href=lp.url||'#';
+}
+npBuildWave();
+npRender({title:"Comptine d'un autre \u00e9t\u00e9",artist:"Yann Tiersen",album:"Am\u00e9lie \u2014 OST",when:""});
+
+/* ── LISTENING SNAPSHOTS (Older / Newer archive) ──
+   Mock seed below. A real run appends to snapshots.json
+   (see spotify-dev/), served at /api/snapshots, newest first. */
+const listenLog = [
+  {when:"Jun 28, 2026 \u00b7 9:14 PM", title:"Comptine d'un autre \u00e9t\u00e9", artist:"Yann Tiersen", album:"Am\u00e9lie \u2014 OST"},
+  {when:"Jun 28, 2026 \u00b7 3:02 PM", title:"Windy and Warm", artist:"Chet Atkins", album:"The Best of Chet Atkins"},
+  {when:"Jun 27, 2026 \u00b7 11:40 PM", title:"Re:Stacks", artist:"Bon Iver", album:"For Emma, Forever Ago"},
+  {when:"Jun 27, 2026 \u00b7 6:18 PM", title:"Nuvole Bianche", artist:"Ludovico Einaudi", album:"Una Mattina"},
+  {when:"Jun 26, 2026 \u00b7 8:55 AM", title:"Time", artist:"Hans Zimmer", album:"Inception \u2014 OST"}
+];
+let snapIdx=0;
+function snapRender(){
+  const s=listenLog[snapIdx]; if(!s)return;
+  document.getElementById('snap-card').innerHTML=
+    '<div class="snap-when">'+s.when+'</div>'+
+    '<div class="snap-track">'+s.title+'</div>'+
+    '<div class="snap-artist">'+s.artist+'</div>'+
+    '<div class="snap-album">'+s.album+'</div>'+
+    '<div class="snap-count">'+(snapIdx+1)+' of '+listenLog.length+' \u00b7 most recent first</div>';
+  document.getElementById('snap-newer').disabled=snapIdx<=0;
+  document.getElementById('snap-older').disabled=snapIdx>=listenLog.length-1;
+}
+function snapGo(d){snapIdx=Math.min(Math.max(snapIdx+d,0),listenLog.length-1);snapRender();}
+async function loadSnapshots(){
+  for(const url of ['/api/recently-played','snapshots.json']){
+    try{
+      const r=await fetch(url,{cache:'no-store'});
+      if(!r.ok)continue;
+      const d=await r.json();
+      if(Array.isArray(d)&&d.length){listenLog.length=0;listenLog.push(...d);snapIdx=0;snapRender();npRender(listenLog[0]);return;}
+    }catch(e){/* try next source */}
+  }
+}
+setInterval(loadSnapshots,60000);
+snapRender();
+npRender(listenLog[0]);
+loadSnapshots();
+
+/* ── TOP — MONTHLY ARCHIVE (Older / Newer) ──
+   Mock seed; real months come from top-archive.json,
+   written by spotify-dev/monthly.mjs (newest first). */
+const topArchive = [
+  {month:"June 2026",
+   artists:[{name:"Yann Tiersen",img:""},{name:"Chet Atkins",img:""},{name:"Ludovico Einaudi",img:""},{name:"Bon Iver",img:""},{name:"Hans Zimmer",img:""},{name:"Nils Frahm",img:""}],
+   tracks:[{title:"Comptine d'un autre \u00e9t\u00e9",artist:"Yann Tiersen"},{title:"Windy and Warm",artist:"Chet Atkins"},{title:"Nuvole Bianche",artist:"Ludovico Einaudi"},{title:"Re:Stacks",artist:"Bon Iver"},{title:"Time",artist:"Hans Zimmer"}]},
+  {month:"May 2026",
+   artists:[{name:"Bon Iver",img:""},{name:"Debussy",img:""},{name:"Radiohead",img:""},{name:"Yann Tiersen",img:""},{name:"Erik Satie",img:""},{name:"Aphex Twin",img:""}],
+   tracks:[{title:"Holocene",artist:"Bon Iver"},{title:"Clair de Lune",artist:"Debussy"},{title:"Weird Fishes/Arpeggi",artist:"Radiohead"},{title:"Gymnop\u00e9die No. 1",artist:"Erik Satie"},{title:"Avril 14th",artist:"Aphex Twin"}]},
+  {month:"April 2026",
+   artists:[{name:"Radiohead",img:""},{name:"Hans Zimmer",img:""},{name:"Bill Evans",img:""},{name:"Chopin",img:""},{name:"Khruangbin",img:""},{name:"J Dilla",img:""}],
+   tracks:[{title:"Nude",artist:"Radiohead"},{title:"Cornfield Chase",artist:"Hans Zimmer"},{title:"Peace Piece",artist:"Bill Evans"},{title:"Nocturne Op.9 No.2",artist:"Chopin"},{title:"So We Won't Forget",artist:"Khruangbin"}]}
+];
+let topmIdx=0;
+function topmRender(){
+  const m=topArchive[topmIdx]; if(!m)return;
+  const mo=document.getElementById('topm-month'); if(mo)mo.textContent=m.month;
+  const ag=document.getElementById('topm-artists');
+  if(ag)ag.innerHTML=(m.artists||[]).map((a,i)=>
+    '<div class="artist-cell">'+
+      (a.img?'<img class="artist-pic" src="'+a.img+'" alt="'+a.name+'">':'<div class="artist-pic">'+(a.name||'?').charAt(0)+'</div>')+
+      '<div class="artist-name">'+a.name+'</div><div class="artist-rank">#'+(i+1)+'</div>'+
+    '</div>').join('');
+  const tg=document.getElementById('topm-tracks');
+  if(tg)tg.innerHTML=(m.tracks||[]).map((t,i)=>
+    '<li class="tt-row"><span class="tt-n">'+(i+1)+'</span><span class="tt-t">'+t.title+'</span><span class="tt-a">'+t.artist+'</span></li>').join('');
+  const nw=document.getElementById('topm-newer'); if(nw)nw.disabled=topmIdx<=0;
+  const ol=document.getElementById('topm-older'); if(ol)ol.disabled=topmIdx>=topArchive.length-1;
+}
+function topmGo(d){topmIdx=Math.min(Math.max(topmIdx+d,0),topArchive.length-1);topmRender();}
+async function loadTopArchive(){
+  try{const r=await fetch('top-archive.json',{cache:'no-store'});if(!r.ok)return;const d=await r.json();
+    if(Array.isArray(d)&&d.length){topArchive.length=0;topArchive.push(...d);topmIdx=0;topmRender();}}catch(e){/* no archive yet */}
+}
+topmRender(); loadTopArchive();
+
 </script>
 </body>
 </html>
