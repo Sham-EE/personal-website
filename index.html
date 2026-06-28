@@ -1598,11 +1598,19 @@ function npBuildWave(){
   }
   wrap.innerHTML=html;
 }
+function fmtTs(iso){
+  if(!iso)return '';
+  const d=new Date(iso);
+  if(isNaN(d))return '';
+  const day=d.toLocaleDateString(undefined,{month:'short',day:'numeric'});
+  const time=d.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'});
+  return day+' \u00b7 '+time;
+}
 function npRender(lp){
   if(!lp)return;
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   set('np-track',lp.title||''); set('np-artist',lp.artist||''); set('np-album',lp.album||'');
-  const w=document.getElementById('np-when'); if(w)w.textContent=lp.when?('Last played \u00b7 '+lp.when):'Most recent';
+  const wt=fmtTs(lp.ts)||lp.when||''; const w=document.getElementById('np-when'); if(w)w.textContent=wt?('Last played \u00b7 '+wt):'Most recent';
   const art=document.getElementById('np-art');
   if(art){ if(lp.art){art.innerHTML='<img src="'+lp.art+'" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover">';} else {art.textContent='\u266a';} }
   const link=document.getElementById('np-link'); if(link)link.href=lp.url||'#';
@@ -1624,7 +1632,7 @@ let snapIdx=0;
 function snapRender(){
   const s=listenLog[snapIdx]; if(!s)return;
   document.getElementById('snap-card').innerHTML=
-    '<div class="snap-when">'+s.when+'</div>'+
+    '<div class="snap-when">'+(fmtTs(s.ts)||s.when||'')+'</div>'+
     '<div class="snap-track">'+s.title+'</div>'+
     '<div class="snap-artist">'+s.artist+'</div>'+
     '<div class="snap-album">'+s.album+'</div>'+
