@@ -6,8 +6,8 @@ name: spotify-snapshot
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # every 30 minutes (GitHub may delay during peak load)
-  workflow_dispatch: {}        # allow manual runs
+    - cron: '0 * * * *'    # hourly, on the hour (GitHub may delay during peak load)
+  workflow_dispatch: {}    # allow manual runs
 
 permissions:
   contents: write
