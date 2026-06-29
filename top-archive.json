@@ -18,11 +18,6 @@
         "genres": []
       },
       {
-        "name": "The Smiths",
-        "img": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
-        "genres": []
-      },
-      {
         "name": "Lorien Testard",
         "img": "https://i.scdn.co/image/ab676161000051747c8cb25dd4b569706864a26d",
         "genres": []
@@ -30,6 +25,11 @@
       {
         "name": "An April March",
         "img": "https://i.scdn.co/image/ab67616100005174ca3a3374c45fae5c11dbe159",
+        "genres": []
+      },
+      {
+        "name": "The Smiths",
+        "img": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
         "genres": []
       },
       {
