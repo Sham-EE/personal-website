@@ -13,6 +13,11 @@
         "genres": []
       },
       {
+        "name": "The Cure",
+        "img": "https://i.scdn.co/image/ab67616100005174dd427c765c409ec02dc3a868",
+        "genres": []
+      },
+      {
         "name": "The Smiths",
         "img": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
         "genres": []
@@ -35,11 +40,6 @@
       {
         "name": "You'll Never Get to Heaven",
         "img": "https://i.scdn.co/image/ef05e431091838e7fb2c4b3ad202c755b421f2d2",
-        "genres": []
-      },
-      {
-        "name": "The Cure",
-        "img": "https://i.scdn.co/image/ab67616100005174dd427c765c409ec02dc3a868",
         "genres": []
       }
     ],
