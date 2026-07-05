@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-05T15:06:34.969Z",
+    "when": "Jul 5 · 3:06 PM",
+    "title": "Una Mattina",
+    "artist": "Ludovico Einaudi",
+    "album": "Una Mattina"
+  },
+  {
     "ts": "2026-07-05T04:39:59.191Z",
     "when": "Jul 5 · 4:39 AM",
     "title": "Silver Soul",
@@ -2091,12 +2098,5 @@
     "title": "Talk To You (54’s Version)",
     "artist": "54 Ultra",
     "album": "Talk To You (54’s Version)"
-  },
-  {
-    "ts": "2026-06-28T21:04:42.984Z",
-    "when": "Jun 28 · 9:04 PM",
-    "title": "Cherry Stars Collide",
-    "artist": "Swallow",
-    "album": "Blow"
   }
 ]
