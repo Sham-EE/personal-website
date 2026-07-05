@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-05T04:39:59.191Z",
+    "when": "Jul 5 · 4:39 AM",
+    "title": "Silver Soul",
+    "artist": "Beach House",
+    "album": "Teen Dream"
+  },
+  {
     "ts": "2026-07-04T23:45:47.754Z",
     "when": "Jul 4 · 11:45 PM",
     "title": "Myth",
@@ -2091,12 +2098,5 @@
     "title": "Cherry Stars Collide",
     "artist": "Swallow",
     "album": "Blow"
-  },
-  {
-    "ts": "2026-06-28T20:03:48.854Z",
-    "when": "Jun 28 · 8:03 PM",
-    "title": "So Far Away",
-    "artist": "Alison's Halo",
-    "album": "Skywide"
   }
 ]
