@@ -219,6 +219,24 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .song-a{font-size:0.8rem;color:var(--ink-faint);}
 .song-c{margin-left:auto;font-size:0.6rem;letter-spacing:0.06em;color:var(--gold);border:1px solid var(--gold-light);border-radius:3px;padding:1px 7px;white-space:nowrap;flex-shrink:0;}
 
+/* ── SCALES (collapsible) ── */
+.scales-block{margin-top:0.6rem;}
+.scales-toggle{width:100%;text-align:left;background:none;border:none;padding:0.9rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.scales-toggle:hover .scales-toggle-label{opacity:0.65;}
+.scales-toggle-label{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;transition:opacity .15s;}
+.scales-block .soce{transform:rotate(0);}
+.scales-block.open .scales-toggle .soce{transform:rotate(45deg);}
+.scales-body{display:none;padding:0.2rem 0 1.2rem;overflow-x:auto;}
+.scales-block.open .scales-body{display:block;}
+.scale-table{width:100%;border-collapse:collapse;font-size:0.85rem;white-space:nowrap;}
+.scale-table th{text-align:left;font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;padding:0 1.2rem 0.5rem 0;border-bottom:1px solid var(--cd);}
+.scale-table td{padding:0.55rem 1.2rem 0.55rem 0;border-bottom:1px solid var(--cd);color:var(--ink-mid);font-family:var(--serif);}
+.scale-table tr:last-child td{border-bottom:none;}
+.scale-fingering{font-weight:600;color:var(--ink);}
+.fing-toggle{background:none;border:none;cursor:pointer;color:var(--ink-faint);font-size:0.62rem;padding:0;margin-left:0.3rem;vertical-align:middle;line-height:1;transition:color .15s,transform .15s;}
+.fing-toggle:hover{color:var(--gold);}
+th.desc .fing-toggle{transform:rotate(180deg);}
+
 /* ── ENTERTAINMENT CARDS ── */
 .subnav{display:flex;border-bottom:1px solid var(--cd);margin-bottom:2.8rem;overflow-x:auto;scrollbar-width:none;}
 .subnav::-webkit-scrollbar{display:none;}
@@ -811,16 +829,33 @@ body.modal-open{overflow:hidden;}
       </div>
 
       <div class="ssl">Learned</div>
-      <div class="songrow"><span class="song-t">Gymnopédie No. 1</span><span class="song-a">Erik Satie</span><span class="song-c">D maj</span></div>
-      <div class="songrow"><span class="song-t">Clair de Lune (opening)</span><span class="song-a">Debussy</span><span class="song-c">D♭ maj</span></div>
+      <div class="songrow"><span class="song-t">Gymnopédie No. 1 (1/2 Endings)</span><span class="song-a">Erik Satie</span><span class="song-c">D maj</span></div>
 
       <div class="ssl">Currently Learning</div>
-      <div class="songrow"><span class="song-t">Comptine d'un autre été</span><span class="song-a">Yann Tiersen</span><span class="song-c">Em</span></div>
-      <div class="songrow"><span class="song-t">River Flows in You</span><span class="song-a">Yiruma</span><span class="song-c">A maj</span></div>
+      <div class="songrow"><span class="song-t">Mrs. Magic – Intro</span><span class="song-a">Strawberry Guy</span><span class="song-c">E♭ maj</span></div>
 
       <div class="ssl">To Learn</div>
-      <div class="songrow"><span class="song-t">Nuvole Bianche</span><span class="song-a">Ludovico Einaudi</span><span class="song-c">B♭ min</span></div>
-      <div class="songrow"><span class="song-t">Prelude in C</span><span class="song-a">J.S. Bach</span><span class="song-c">C maj</span></div>
+      <div class="songrow"><span class="song-t">City of Stars</span><span class="song-a">La La Land</span><span class="song-c">Dm</span></div>
+      <div class="songrow"><span class="song-t">Comptine d'un autre été</span><span class="song-a">Yann Tiersen</span><span class="song-c">Em</span></div>
+
+      <div class="scales-block">
+        <button class="scales-toggle" onclick="toggleScales(this)">
+          <span class="scales-toggle-label">🎹 Scales Learned</span>
+          <span class="soce">+</span>
+        </button>
+        <div class="scales-body">
+          <table class="scale-table">
+            <thead>
+              <tr><th>Scale</th><th>Notes</th><th>Right Hand <button class="fing-toggle" onclick="toggleFingerDir(this,'rh-finger')" title="Toggle ascending / descending fingering" aria-label="Toggle ascending / descending fingering">▲</button></th><th>Left Hand <button class="fing-toggle" onclick="toggleFingerDir(this,'lh-finger')" title="Toggle ascending / descending fingering" aria-label="Toggle ascending / descending fingering">▲</button></th></tr>
+            </thead>
+            <tbody>
+              <tr><td>C Major</td><td>C D E F G A B C</td><td class="scale-fingering rh-finger" data-asc="12312345">12312345</td><td class="scale-fingering lh-finger" data-asc="54321321">54321321</td></tr>
+              <tr><td>D Major</td><td>D E F♯ G A B C♯ D</td><td class="scale-fingering rh-finger" data-asc="12312345">12312345</td><td class="scale-fingering lh-finger" data-asc="54321321">54321321</td></tr>
+              <tr><td>E♭ Major</td><td>E♭ F G A♭ B♭ C D E♭</td><td class="scale-fingering rh-finger" data-asc="23123123">23123123</td><td class="scale-fingering lh-finger" data-asc="32143213">32143213</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <hr class="rule">
@@ -833,16 +868,16 @@ body.modal-open{overflow:hidden;}
       </div>
 
       <div class="ssl">Learned</div>
-      <div class="songrow"><span class="song-t">Blackbird</span><span class="song-a">The Beatles</span><span class="song-c">G · Am · C</span></div>
-      <div class="songrow"><span class="song-t">Dust in the Wind</span><span class="song-a">Kansas</span><span class="song-c">C · Cmaj7 · Am</span></div>
+      <div class="songrow"><span class="song-t">Peter Gunn Riff</span><span class="song-a">Henry Mancini </span><span class="song-c">N/A</span></div>
+      <div class="songrow"><span class="song-t">Seven Nation Army – Intro</span><span class="song-a">The White Stripes</span><span class="song-c">N/A</span></div>
+      <div class="songrow"><span class="song-t">A Horse with No Name – Intro</span><span class="song-a">America</span><span class="song-c">Em · G6/7 </span></div>
 
       <div class="ssl">Currently Learning</div>
-      <div class="songrow"><span class="song-t">Windy and Warm</span><span class="song-a">Chet Atkins</span><span class="song-c">Am · E7</span></div>
-      <div class="songrow"><span class="song-t">Classical Gas</span><span class="song-a">Mason Williams</span><span class="song-c">Am · G · F</span></div>
+      <div class="songrow"><span class="song-t">D, A, E, Em, Am Chords</span><span class="song-a"></span><span class="song-c"></span></div>
 
       <div class="ssl">To Learn</div>
-      <div class="songrow"><span class="song-t">Tears in Heaven</span><span class="song-a">Eric Clapton</span><span class="song-c">A · E · F#m</span></div>
-      <div class="songrow"><span class="song-t">Asturias (Leyenda)</span><span class="song-a">Albéniz</span><span class="song-c">Em</span></div>
+      <div class="songrow"><span class="song-t">Wish You Were Here</span><span class="song-a">Pink Floyd</span><span class="song-c">A · E · F#m</span></div>
+      <div class="songrow"><span class="song-t">Velvet Ring</span><span class="song-a">Big Thief</span><span class="song-c">Em</span></div>
     </div>
 
     <hr class="rule">
@@ -1300,6 +1335,21 @@ document.querySelectorAll('.crs').forEach(c=>{
 
 /* SOC EXPAND */
 function ts(btn){btn.closest('.soc').classList.toggle('open');}
+
+/* SCALES EXPAND */
+function toggleScales(btn){btn.closest('.scales-block').classList.toggle('open');}
+
+/* SCALES: ASC/DESC FINGERING TOGGLE (per hand) */
+function toggleFingerDir(btn,target){
+  const th=btn.closest('th');
+  const table=th.closest('table');
+  const desc=th.classList.toggle('desc');
+  btn.textContent=desc?'▼':'▲';
+  table.querySelectorAll('.'+target).forEach(td=>{
+    const asc=td.dataset.asc;
+    td.textContent=desc?asc.split('').reverse().join(''):asc;
+  });
+}
 
 /* PHILOSOPHY EXPAND */
 function togglePhil(el){el.classList.toggle('open');}

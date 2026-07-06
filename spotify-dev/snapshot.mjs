@@ -11,7 +11,7 @@ import { getRecentlyPlayed } from './lib.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.resolve(__dirname, '..', 'snapshots.json'); // served at /snapshots.json
-const MAX = 300; // keep the archive bounded
+const MAX = 100; // keep only the last 100 plays
 
 const recent = await getRecentlyPlayed(50);
 if (!recent || !recent.length) { console.log('No recently-played data.'); process.exit(0); }
