@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-07T22:10:10.138Z",
+    "when": "Jul 7 · 10:10 PM",
+    "title": "Reputation (feat. Dominic Fike)",
+    "artist": "Ravyn Lenae, Dominic Fike",
+    "album": "Reputation (feat. Dominic Fike)"
+  },
+  {
     "ts": "2026-07-07T22:04:48.027Z",
     "when": "Jul 7 · 10:04 PM",
     "title": "Television / So Far So Good",
@@ -691,12 +698,5 @@
     "title": "Una Mattina",
     "artist": "Ludovico Einaudi",
     "album": "Una Mattina"
-  },
-  {
-    "ts": "2026-07-05T04:39:59.191Z",
-    "when": "Jul 5 · 4:39 AM",
-    "title": "Silver Soul",
-    "artist": "Beach House",
-    "album": "Teen Dream"
   }
 ]
