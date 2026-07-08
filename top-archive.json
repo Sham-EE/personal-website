@@ -23,11 +23,6 @@
         "genres": []
       },
       {
-        "name": "The Smiths",
-        "img": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
-        "genres": []
-      },
-      {
         "name": "Mac DeMarco",
         "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
         "genres": []
@@ -40,6 +35,11 @@
       {
         "name": "An April March",
         "img": "https://i.scdn.co/image/ab67616100005174ca3a3374c45fae5c11dbe159",
+        "genres": []
+      },
+      {
+        "name": "The Radio Dept.",
+        "img": "https://i.scdn.co/image/ab67616100005174761a16ffa877c8086e28c5b0",
         "genres": []
       }
     ],
