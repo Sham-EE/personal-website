@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-09T05:02:20.328Z",
+    "when": "Jul 9 · 5:02 AM",
+    "title": "Pictures of You - 2010 Remaster",
+    "artist": "The Cure",
+    "album": "Disintegration (Deluxe Edition)"
+  },
+  {
     "ts": "2026-07-09T04:54:51.402Z",
     "when": "Jul 9 · 4:54 AM",
     "title": "Lover, You Should've Come Over",
@@ -691,12 +698,5 @@
     "title": "I Know It's Over",
     "artist": "Jeff Buckley",
     "album": "You and I (Expanded Edition)"
-  },
-  {
-    "ts": "2026-07-06T21:24:18.809Z",
-    "when": "Jul 6 · 9:24 PM",
-    "title": "Je te veux",
-    "artist": "Erik Satie, Klara Kormendi",
-    "album": "Satie (The Best Of)"
   }
 ]
