@@ -28,6 +28,11 @@
         "genres": []
       },
       {
+        "name": "TV Girl",
+        "img": "https://i.scdn.co/image/ab67616100005174d80695211689a9c8c3fee3b0",
+        "genres": []
+      },
+      {
         "name": "The Smiths",
         "img": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
         "genres": []
@@ -35,11 +40,6 @@
       {
         "name": "An April March",
         "img": "https://i.scdn.co/image/ab67616100005174ca3a3374c45fae5c11dbe159",
-        "genres": []
-      },
-      {
-        "name": "TV Girl",
-        "img": "https://i.scdn.co/image/ab67616100005174d80695211689a9c8c3fee3b0",
         "genres": []
       }
     ],
