@@ -3,23 +3,23 @@
     "month": "July 2026",
     "artists": [
       {
-        "name": "Jeff Buckley",
-        "img": "https://i.scdn.co/image/248e8ddbf1be229fd0c31722fb0a01b31b01f474",
-        "genres": []
-      },
-      {
         "name": "Malcolm Todd",
         "img": "https://i.scdn.co/image/ab676161000051749f6f7c2d12975d2a4b3a0fd8",
         "genres": []
       },
       {
-        "name": "Mac DeMarco",
-        "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
+        "name": "Jeff Buckley",
+        "img": "https://i.scdn.co/image/248e8ddbf1be229fd0c31722fb0a01b31b01f474",
         "genres": []
       },
       {
         "name": "Vacations",
         "img": "https://i.scdn.co/image/ab67616100005174601c3f85fe11328b87142999",
+        "genres": []
+      },
+      {
+        "name": "Mac DeMarco",
+        "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
         "genres": []
       },
       {
