@@ -43,7 +43,28 @@
         "genres": []
       }
     ],
-    "tracks": []
+    "tracks": [
+      {
+        "title": "Lazy Nina",
+        "artist": "Greg Phillinganes"
+      },
+      {
+        "title": "Earrings",
+        "artist": "Malcolm Todd"
+      },
+      {
+        "title": "Sometimes",
+        "artist": "Dreamgirl"
+      },
+      {
+        "title": "Je N'en Connais Pas La Fin - Live at Sin-é, New York, NY - July/August 1993",
+        "artist": "Jeff Buckley"
+      },
+      {
+        "title": "zzz",
+        "artist": "60 juno"
+      }
+    ]
   },
   {
     "month": "June 2026",

@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-07-18T19:12:07.832Z",
+    "when": "Jul 18 · 7:12 PM",
+    "title": "Point of No Return",
+    "artist": "Exposé",
+    "album": "Exposure"
+  },
+  {
+    "ts": "2026-07-18T19:08:39.498Z",
+    "when": "Jul 18 · 7:08 PM",
+    "title": "Starting Over",
+    "artist": "LSD and the Search for God",
+    "album": "LSD and the Search for God"
+  },
+  {
     "ts": "2026-07-18T15:12:52.084Z",
     "when": "Jul 18 · 3:12 PM",
     "title": "Do That Again",
@@ -684,19 +698,5 @@
     "title": "You've Been Had",
     "artist": "An April March",
     "album": "Lessons in Vengeance"
-  },
-  {
-    "ts": "2026-07-16T13:54:06.476Z",
-    "when": "Jul 16 · 1:54 PM",
-    "title": "Lazy Nina",
-    "artist": "Greg Phillinganes",
-    "album": "Pulse (Expanded Edition)"
-  },
-  {
-    "ts": "2026-07-16T13:48:25.636Z",
-    "when": "Jul 16 · 1:48 PM",
-    "title": "Attention",
-    "artist": "Malcolm Todd",
-    "album": "Malcolm Todd (still)"
   }
 ]
