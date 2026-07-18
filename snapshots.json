@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-07-18T20:49:08.348Z",
+    "when": "Jul 18 · 8:49 PM",
+    "title": "Nick The Stripper",
+    "artist": "The Birthday Party",
+    "album": "Prayers on Fire"
+  },
+  {
+    "ts": "2026-07-18T20:08:30.562Z",
+    "when": "Jul 18 · 8:08 PM",
+    "title": "Hedonists",
+    "artist": "Dreamgirl",
+    "album": "Dreamgirl"
+  },
+  {
     "ts": "2026-07-18T19:12:07.832Z",
     "when": "Jul 18 · 7:12 PM",
     "title": "Point of No Return",
@@ -684,19 +698,5 @@
     "title": "Lazy Nina",
     "artist": "Greg Phillinganes",
     "album": "Pulse (Expanded Edition)"
-  },
-  {
-    "ts": "2026-07-16T14:56:18.051Z",
-    "when": "Jul 16 · 2:56 PM",
-    "title": "honeydew blue - Remastered",
-    "artist": "800 cherries",
-    "album": "romantico (2022 Remaster)"
-  },
-  {
-    "ts": "2026-07-16T13:58:34.140Z",
-    "when": "Jul 16 · 1:58 PM",
-    "title": "You've Been Had",
-    "artist": "An April March",
-    "album": "Lessons in Vengeance"
   }
 ]
