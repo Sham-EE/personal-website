@@ -28,11 +28,6 @@
         "genres": []
       },
       {
-        "name": "You'll Never Get to Heaven",
-        "img": "https://i.scdn.co/image/ef05e431091838e7fb2c4b3ad202c755b421f2d2",
-        "genres": []
-      },
-      {
         "name": "60 juno",
         "img": "https://i.scdn.co/image/ab67616100005174bdcd953113216fe9c804ac67",
         "genres": []
@@ -40,6 +35,11 @@
       {
         "name": "The Smiths",
         "img": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
+        "genres": []
+      },
+      {
+        "name": "54 Ultra",
+        "img": "https://i.scdn.co/image/ab676161000051748fdf273bf26657879cccdc74",
         "genres": []
       }
     ],
@@ -57,12 +57,12 @@
         "artist": "Dreamgirl"
       },
       {
-        "title": "Je N'en Connais Pas La Fin - Live at Sin-é, New York, NY - July/August 1993",
-        "artist": "Jeff Buckley"
+        "title": "Malcolm In The Middle",
+        "artist": "Malcolm Todd"
       },
       {
-        "title": "zzz",
-        "artist": "60 juno"
+        "title": "Je N'en Connais Pas La Fin - Live at Sin-é, New York, NY - July/August 1993",
+        "artist": "Jeff Buckley"
       }
     ]
   },
