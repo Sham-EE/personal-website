@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-20T04:45:55.542Z",
+    "when": "Jul 20 · 4:45 AM",
+    "title": "4'33\"",
+    "artist": "John Cage, Khatia Buniatishvili",
+    "album": "Labyrinth"
+  },
+  {
     "ts": "2026-07-20T02:40:36.028Z",
     "when": "Jul 20 · 2:40 AM",
     "title": "Ruthless",
@@ -691,12 +698,5 @@
     "title": "zzz",
     "artist": "60 juno",
     "album": "zzz"
-  },
-  {
-    "ts": "2026-07-17T18:15:35.817Z",
-    "when": "Jul 17 · 6:15 PM",
-    "title": "You Can Call Me Al",
-    "artist": "Paul Simon",
-    "album": "Graceland (25th Anniversary Deluxe Edition)"
   }
 ]
