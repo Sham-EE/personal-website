@@ -43,7 +43,28 @@
         "genres": []
       }
     ],
-    "tracks": []
+    "tracks": [
+      {
+        "title": "Earrings",
+        "artist": "Malcolm Todd"
+      },
+      {
+        "title": "Lazy Nina",
+        "artist": "Greg Phillinganes"
+      },
+      {
+        "title": "Malcolm In The Middle",
+        "artist": "Malcolm Todd"
+      },
+      {
+        "title": "Sometimes",
+        "artist": "Dreamgirl"
+      },
+      {
+        "title": "zzz",
+        "artist": "60 juno"
+      }
+    ]
   },
   {
     "month": "June 2026",
