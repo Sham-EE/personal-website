@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-24T18:03:17.122Z",
+    "when": "Jul 24 · 6:03 PM",
+    "title": "Malcolm In The Middle",
+    "artist": "Malcolm Todd",
+    "album": "Do That Again"
+  },
+  {
     "ts": "2026-07-24T15:07:14.737Z",
     "when": "Jul 24 · 3:07 PM",
     "title": "Another One",
@@ -691,12 +698,5 @@
     "title": "Starting Over",
     "artist": "LSD and the Search for God",
     "album": "LSD and the Search for God"
-  },
-  {
-    "ts": "2026-07-23T02:20:02.313Z",
-    "when": "Jul 23 · 2:20 AM",
-    "title": "Earrings",
-    "artist": "Malcolm Todd",
-    "album": "Sweet Boy"
   }
 ]
