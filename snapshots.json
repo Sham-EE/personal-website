@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-24T15:07:14.737Z",
+    "when": "Jul 24 · 3:07 PM",
+    "title": "Another One",
+    "artist": "Mac DeMarco",
+    "album": "Another One"
+  },
+  {
     "ts": "2026-07-24T14:50:58.293Z",
     "when": "Jul 24 · 2:50 PM",
     "title": "Someday",
@@ -691,12 +698,5 @@
     "title": "Earrings",
     "artist": "Malcolm Todd",
     "album": "Sweet Boy"
-  },
-  {
-    "ts": "2026-07-23T02:19:51.752Z",
-    "when": "Jul 23 · 2:19 AM",
-    "title": "Hotel Room",
-    "artist": "Ax and the Hatchetmen",
-    "album": "So Much To Tell You"
   }
 ]
