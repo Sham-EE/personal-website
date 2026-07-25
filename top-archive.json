@@ -18,6 +18,11 @@
         "genres": []
       },
       {
+        "name": "You'll Never Get to Heaven",
+        "img": "https://i.scdn.co/image/ef05e431091838e7fb2c4b3ad202c755b421f2d2",
+        "genres": []
+      },
+      {
         "name": "Mac DeMarco",
         "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
         "genres": []
@@ -25,11 +30,6 @@
       {
         "name": "Vacations",
         "img": "https://i.scdn.co/image/ab67616100005174601c3f85fe11328b87142999",
-        "genres": []
-      },
-      {
-        "name": "You'll Never Get to Heaven",
-        "img": "https://i.scdn.co/image/ef05e431091838e7fb2c4b3ad202c755b421f2d2",
         "genres": []
       },
       {
