@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-07-28T01:05:08.614Z",
+    "when": "Jul 28 · 1:05 AM",
+    "title": "The Lamp Is Low",
+    "artist": "Laurindo Almeida",
+    "album": "Classical Current"
+  },
+  {
     "ts": "2026-07-27T23:01:07.286Z",
     "when": "Jul 27 · 11:01 PM",
     "title": "Boogie Wonderland (with The Emotions)",
@@ -691,12 +698,5 @@
     "title": "On the Level",
     "artist": "Mac DeMarco",
     "album": "This Old Dog"
-  },
-  {
-    "ts": "2026-07-26T20:13:01.163Z",
-    "when": "Jul 26 · 8:13 PM",
-    "title": "Subwoofer Lullaby",
-    "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
   }
 ]
