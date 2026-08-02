@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-02T03:54:05.816Z",
+    "when": "Aug 2 · 3:54 AM",
+    "title": "Let It Go",
+    "artist": "Peter Broderick",
+    "album": "Blackberry"
+  },
+  {
     "ts": "2026-08-01T23:37:00.310Z",
     "when": "Aug 1 · 11:37 PM",
     "title": "Yes I'm Changing",
@@ -359,16 +366,16 @@
   {
     "ts": "2026-07-31T23:24:56.436Z",
     "when": "Jul 31 · 11:24 PM",
-    "title": "Floating / Sinking",
-    "artist": "Peter Broderick",
-    "album": "Float"
+    "title": "Adeleine",
+    "artist": "Water From Your Eyes",
+    "album": "Somebody Else's Song"
   },
   {
     "ts": "2026-07-31T23:24:56.436Z",
     "when": "Jul 31 · 11:24 PM",
-    "title": "Adeleine",
-    "artist": "Water From Your Eyes",
-    "album": "Somebody Else's Song"
+    "title": "Floating / Sinking",
+    "artist": "Peter Broderick",
+    "album": "Float"
   },
   {
     "ts": "2026-07-31T22:54:03.207Z",
@@ -691,12 +698,5 @@
     "title": "Homecoming",
     "artist": "Peter Broderick, Machinefabriek",
     "album": "Blank Grey Canvas Sky"
-  },
-  {
-    "ts": "2026-07-31T18:09:15.276Z",
-    "when": "Jul 31 · 6:09 PM",
-    "title": "What Happened to Your Heart - Bing & Ruth Rework – Part II",
-    "artist": "Peter Broderick, Bing & Ruth",
-    "album": "The Wind That Shakes the Bramble"
   }
 ]
