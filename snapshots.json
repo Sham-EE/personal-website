@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-06T01:49:29.524Z",
+    "when": "Aug 6 · 1:49 AM",
+    "title": "One Summer Day",
+    "artist": "Joe Hisaishi",
+    "album": "Spirited Away Soundtrack"
+  },
+  {
     "ts": "2026-08-05T16:36:01.935Z",
     "when": "Aug 5 · 4:36 PM",
     "title": "Talk 2 Me",
@@ -691,12 +698,5 @@
     "title": "The Lamp Is Low",
     "artist": "Laurindo Almeida",
     "album": "Classical Current"
-  },
-  {
-    "ts": "2026-08-04T00:36:35.352Z",
-    "when": "Aug 4 · 12:36 AM",
-    "title": "Rip It Up",
-    "artist": "Orange Juice",
-    "album": "Rip It Up"
   }
 ]
