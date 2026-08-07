@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-07T01:35:59.993Z",
+    "when": "Aug 7 · 1:35 AM",
+    "title": "Heaven or Las Vegas",
+    "artist": "Cocteau Twins",
+    "album": "Heaven or Las Vegas"
+  },
+  {
     "ts": "2026-08-06T20:46:06.825Z",
     "when": "Aug 6 · 8:46 PM",
     "title": "The Way You'd Love Her",
@@ -691,12 +698,5 @@
     "title": "Lover, You Should've Come Over",
     "artist": "Jeff Buckley",
     "album": "Grace"
-  },
-  {
-    "ts": "2026-08-04T02:19:48.169Z",
-    "when": "Aug 4 · 2:19 AM",
-    "title": "Let Down",
-    "artist": "Radiohead",
-    "album": "OK Computer"
   }
 ]
