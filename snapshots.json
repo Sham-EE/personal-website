@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-08T18:49:06.493Z",
+    "when": "Aug 8 · 6:49 PM",
+    "title": "Sue me",
+    "artist": "Audrey Hobert",
+    "album": "Who's the Clown?"
+  },
+  {
     "ts": "2026-08-08T18:35:47.675Z",
     "when": "Aug 8 · 6:35 PM",
     "title": "Attention",
@@ -691,12 +698,5 @@
     "title": "Beyond the Sea",
     "artist": "Bobby Darin",
     "album": "That's All"
-  },
-  {
-    "ts": "2026-08-04T16:54:22.842Z",
-    "when": "Aug 4 · 4:54 PM",
-    "title": "One More Love Song",
-    "artist": "Mac DeMarco",
-    "album": "This Old Dog"
   }
 ]
