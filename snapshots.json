@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-08T05:42:48.644Z",
+    "when": "Aug 8 · 5:42 AM",
+    "title": "Didn't Cha Know",
+    "artist": "Erykah Badu",
+    "album": "Mama's Gun"
+  },
+  {
     "ts": "2026-08-08T03:34:52.609Z",
     "when": "Aug 8 · 3:34 AM",
     "title": "the feeling",
@@ -691,12 +698,5 @@
     "title": "Go Easy",
     "artist": "Mac DeMarco",
     "album": "Salad Days Demos"
-  },
-  {
-    "ts": "2026-08-04T07:16:52.171Z",
-    "when": "Aug 4 · 7:16 AM",
-    "title": "This Night Has Opened My Eyes - 2011 Remaster",
-    "artist": "The Smiths",
-    "album": "Hatful of Hollow"
   }
 ]
