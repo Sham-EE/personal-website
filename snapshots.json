@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-09T16:42:28.843Z",
+    "when": "Aug 9 · 4:42 PM",
+    "title": "All Those Friendly People",
+    "artist": "Funeral Suits",
+    "album": "Lily of the Valley"
+  },
+  {
     "ts": "2026-08-09T16:37:49.341Z",
     "when": "Aug 9 · 4:37 PM",
     "title": "Golden Brown",
@@ -691,12 +698,5 @@
     "title": "Subwoofer Lullaby",
     "artist": "C418",
     "album": "Minecraft - Volume Alpha"
-  },
-  {
-    "ts": "2026-08-04T18:30:33.116Z",
-    "when": "Aug 4 · 6:30 PM",
-    "title": "Starting Over",
-    "artist": "LSD and the Search for God",
-    "album": "LSD and the Search for God"
   }
 ]
