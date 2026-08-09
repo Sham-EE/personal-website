@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-08-09T20:39:54.102Z",
+    "when": "Aug 9 · 8:39 PM",
+    "title": "eternal",
+    "artist": "dottie",
+    "album": "eternal"
+  },
+  {
+    "ts": "2026-08-09T20:36:13.593Z",
+    "when": "Aug 9 · 8:36 PM",
+    "title": "ranger",
+    "artist": "dottie",
+    "album": "single"
+  },
+  {
     "ts": "2026-08-09T16:42:28.843Z",
     "when": "Aug 9 · 4:42 PM",
     "title": "All Those Friendly People",
@@ -684,19 +698,5 @@
     "title": "Yes I'm Changing",
     "artist": "Tame Impala",
     "album": "Currents"
-  },
-  {
-    "ts": "2026-08-04T18:37:21.924Z",
-    "when": "Aug 4 · 6:37 PM",
-    "title": "Just Friends",
-    "artist": "Dreamgirl",
-    "album": "Dreamgirl"
-  },
-  {
-    "ts": "2026-08-04T18:34:02.218Z",
-    "when": "Aug 4 · 6:34 PM",
-    "title": "Subwoofer Lullaby",
-    "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
   }
 ]
