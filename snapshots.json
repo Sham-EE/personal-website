@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-08-10T21:40:52.785Z",
+    "when": "Aug 10 · 9:40 PM",
+    "title": "Eyes Are Mosaics",
+    "artist": "Cocteau Twins, Harold Budd",
+    "album": "The Moon and the Melodies"
+  },
+  {
+    "ts": "2026-08-10T18:03:56.616Z",
+    "when": "Aug 10 · 6:03 PM",
+    "title": "Better Views",
+    "artist": "Yellow House",
+    "album": "Better Views"
+  },
+  {
     "ts": "2026-08-09T20:39:54.102Z",
     "when": "Aug 9 · 8:39 PM",
     "title": "eternal",
@@ -684,19 +698,5 @@
     "title": "Hinoki Wood",
     "artist": "Gia Margaret",
     "album": "Romantic Piano"
-  },
-  {
-    "ts": "2026-08-04T18:46:52.370Z",
-    "when": "Aug 4 · 6:46 PM",
-    "title": "Last Goodbye",
-    "artist": "Jeff Buckley",
-    "album": "Grace"
-  },
-  {
-    "ts": "2026-08-04T18:41:53.132Z",
-    "when": "Aug 4 · 6:41 PM",
-    "title": "Yes I'm Changing",
-    "artist": "Tame Impala",
-    "album": "Currents"
   }
 ]
