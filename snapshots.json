@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-13T23:19:09.471Z",
+    "when": "Aug 13 · 11:19 PM",
+    "title": "Garden (Live)",
+    "artist": "Auji",
+    "album": "LIVE at Brick"
+  },
+  {
     "ts": "2026-08-13T22:35:19.263Z",
     "when": "Aug 13 · 10:35 PM",
     "title": "(in charge of) Breaking My Heart",
@@ -691,12 +698,5 @@
     "title": "Just like Heaven",
     "artist": "The Cure",
     "album": "Kiss Me, Kiss Me, Kiss Me"
-  },
-  {
-    "ts": "2026-08-12T01:40:23.628Z",
-    "when": "Aug 12 · 1:40 AM",
-    "title": "Six Different Ways - 2006 Remaster",
-    "artist": "The Cure",
-    "album": "The Head on the Door (Deluxed Edition)"
   }
 ]
