@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-08-15T08:21:13.624Z",
+    "when": "Aug 15 · 8:21 AM",
+    "title": "Tonight, Tonight - Remastered 2012",
+    "artist": "The Smashing Pumpkins",
+    "album": "Mellon Collie And The Infinite Sadness (Deluxe Edition)"
+  },
+  {
     "ts": "2026-08-15T03:22:50.394Z",
     "when": "Aug 15 · 3:22 AM",
     "title": "Birdmad Girl - 2006 Remaster",
@@ -691,12 +698,5 @@
     "title": "Those Years Are Over",
     "artist": "The Sha La Das",
     "album": "Love in the Wind"
-  },
-  {
-    "ts": "2026-08-13T17:26:48.441Z",
-    "when": "Aug 13 · 5:26 PM",
-    "title": "With the Wind",
-    "artist": "Auji",
-    "album": "With the Wind"
   }
 ]
