@@ -1,5 +1,26 @@
 [
   {
+    "ts": "2026-08-18T21:56:55.791Z",
+    "when": "Aug 18 · 9:56 PM",
+    "title": "You Got Me Doing Things",
+    "artist": "Frank Vandenkloot",
+    "album": "Heavy Days Are Here Again"
+  },
+  {
+    "ts": "2026-08-18T21:52:56.326Z",
+    "when": "Aug 18 · 9:52 PM",
+    "title": "Who Do You Know",
+    "artist": "Kevin Krauter",
+    "album": "Toss Up"
+  },
+  {
+    "ts": "2026-08-18T21:52:10.730Z",
+    "when": "Aug 18 · 9:52 PM",
+    "title": "Who Do You Know",
+    "artist": "Kevin Krauter",
+    "album": "Toss Up"
+  },
+  {
     "ts": "2026-08-18T20:54:35.293Z",
     "when": "Aug 18 · 8:54 PM",
     "title": "20200820 Turn My TV On",
@@ -675,27 +696,6 @@
     "ts": "2026-08-17T04:06:41.687Z",
     "when": "Aug 17 · 4:06 AM",
     "title": "Kyoto Song - Fitz / F2 Studios Demo 2/85",
-    "artist": "The Cure",
-    "album": "The Head on the Door (Deluxed Edition)"
-  },
-  {
-    "ts": "2026-08-17T04:02:15.272Z",
-    "when": "Aug 17 · 4:02 AM",
-    "title": "Lime Time - Fitz / F2 Studios Demo 2/85",
-    "artist": "The Cure",
-    "album": "The Head on the Door (Deluxed Edition)"
-  },
-  {
-    "ts": "2026-08-17T03:59:20.128Z",
-    "when": "Aug 17 · 3:59 AM",
-    "title": "Screw - Fitz / F2 Studios Demo 2/85",
-    "artist": "The Cure",
-    "album": "The Head on the Door (Deluxed Edition)"
-  },
-  {
-    "ts": "2026-08-17T03:56:12.407Z",
-    "when": "Aug 17 · 3:56 AM",
-    "title": "Mansolidgone - Fitz / F2 Studios Demo 2/85",
     "artist": "The Cure",
     "album": "The Head on the Door (Deluxed Edition)"
   }
