@@ -1,5 +1,33 @@
 [
   {
+    "ts": "2026-08-18T19:24:34.412Z",
+    "when": "Aug 18 · 7:24 PM",
+    "title": "Your True Name",
+    "artist": "The Radio Dept.",
+    "album": "Your True Name"
+  },
+  {
+    "ts": "2026-08-18T19:20:28.347Z",
+    "when": "Aug 18 · 7:20 PM",
+    "title": "Sweet Boy",
+    "artist": "Malcolm Todd",
+    "album": "Sweet Boy"
+  },
+  {
+    "ts": "2026-08-18T19:16:59.863Z",
+    "when": "Aug 18 · 7:16 PM",
+    "title": "Now And Then",
+    "artist": "The Beatles",
+    "album": "Now And Then"
+  },
+  {
+    "ts": "2026-08-18T19:12:47.440Z",
+    "when": "Aug 18 · 7:12 PM",
+    "title": "Let My Baby Stay",
+    "artist": "Mac DeMarco",
+    "album": "Salad Days"
+  },
+  {
     "ts": "2026-08-18T18:23:31.314Z",
     "when": "Aug 18 · 6:23 PM",
     "title": "Which Way Is Up (Live)",
@@ -668,34 +696,6 @@
     "ts": "2026-08-17T00:11:22.883Z",
     "when": "Aug 17 · 12:11 AM",
     "title": "Garden (Live)",
-    "artist": "Auji",
-    "album": "LIVE at Brick"
-  },
-  {
-    "ts": "2026-08-17T00:05:23.838Z",
-    "when": "Aug 17 · 12:05 AM",
-    "title": "Which Way Is Up (Live)",
-    "artist": "Auji",
-    "album": "LIVE at Brick"
-  },
-  {
-    "ts": "2026-08-17T00:00:23.448Z",
-    "when": "Aug 17 · 12:00 AM",
-    "title": "Wait (Live)",
-    "artist": "Auji",
-    "album": "LIVE at Brick"
-  },
-  {
-    "ts": "2026-08-16T22:40:35.453Z",
-    "when": "Aug 16 · 10:40 PM",
-    "title": "Is It Cold (Live)",
-    "artist": "Auji",
-    "album": "LIVE at Brick"
-  },
-  {
-    "ts": "2026-08-16T22:37:17.619Z",
-    "when": "Aug 16 · 10:37 PM",
-    "title": "Paper Hearts (Live)",
     "artist": "Auji",
     "album": "LIVE at Brick"
   }
