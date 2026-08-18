@@ -28,11 +28,6 @@
         "genres": []
       },
       {
-        "name": "You'll Never Get to Heaven",
-        "img": "https://i.scdn.co/image/ef05e431091838e7fb2c4b3ad202c755b421f2d2",
-        "genres": []
-      },
-      {
         "name": "Jeff Buckley",
         "img": "https://i.scdn.co/image/248e8ddbf1be229fd0c31722fb0a01b31b01f474",
         "genres": []
@@ -40,6 +35,11 @@
       {
         "name": "Mac DeMarco",
         "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
+        "genres": []
+      },
+      {
+        "name": "Malcolm Todd",
+        "img": "https://i.scdn.co/image/ab676161000051749f6f7c2d12975d2a4b3a0fd8",
         "genres": []
       }
     ],
