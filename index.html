@@ -214,6 +214,8 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .mb-inst .ssl{margin-top:1.6rem;}
 .mb-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:0 0 0.9rem;}
 .mb-name{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:var(--ink);margin:0;}
+.mb-title{display:flex;flex-direction:column;gap:0.18rem;min-width:0;}
+.mb-sub{font-size:0.7rem;letter-spacing:0.04em;color:var(--ink-faint);font-style:italic;margin:0;}
 .songrow{display:flex;align-items:baseline;gap:0.7rem;flex-wrap:wrap;padding:0.55rem 0;border-bottom:1px solid var(--cd);}
 .songrow:last-child{border-bottom:none;}
 .song-t{font-family:var(--serif);font-size:0.99rem;color:var(--ink);}
@@ -776,7 +778,7 @@ body.modal-open{overflow:hidden;}
   -->
   <div class="hp" id="hob-music">
     <div class="hobbies-intro">
-      <p>Songs and chords I'm working through, instrument by instrument — what's under my fingers, what I'm drilling now, and what's queued up.</p>
+      <p>Songs and chords I'm working through, instrument by instrument: what's under my fingers, what I'm drilling now, and what's queued up.</p>
     </div>
 
     <!-- PIANO -->
@@ -788,13 +790,24 @@ body.modal-open{overflow:hidden;}
 
       <div class="ssl">Learned</div>
       <div class="songrow"><span class="song-t">Gymnopédie No. 1 (1/2 Endings)</span><span class="song-a">Erik Satie</span><span class="song-c">D maj</span></div>
+      <div class="songrow"><span class="song-t">Enfantillages pittoresques: II. Berceuse</span><span class="song-a">Erik Satie</span><span class="song-c">C maj</span></div>
+      <div class="songrow"><span class="song-t">By This River</span><span class="song-a">Brian Eno</span><span class="song-c">Gm</span></div>
+      
 
       <div class="ssl">Currently Learning</div>
       <div class="songrow"><span class="song-t">Mrs. Magic – Intro</span><span class="song-a">Strawberry Guy</span><span class="song-c">E♭ maj</span></div>
+      <div class="songrow"><span class="song-t">Comptine d'un autre été</span><span class="song-a">Yann Tiersen</span><span class="song-c">Em</span></div>
 
       <div class="ssl">To Learn</div>
       <div class="songrow"><span class="song-t">City of Stars</span><span class="song-a">La La Land</span><span class="song-c">Dm</span></div>
-      <div class="songrow"><span class="song-t">Comptine d'un autre été</span><span class="song-a">Yann Tiersen</span><span class="song-c">Em</span></div>
+      <div class="songrow"><span class="song-t">Chamber of Reflection</span><span class="song-a">Mac DeMarco</span><span class="song-c">Em</span></div>
+
+
+      <div class="ssl">Riffs</div>
+      <div class="songrow"><span class="song-t">Sunday Morning – Intro Riff</span><span class="song-a">Maroon 5</span><span class="song-c">C maj</span></div>
+      <div class="songrow"><span class="song-t">Fallen Down</span><span class="song-a">Toby Fox · Undertale</span><span class="song-c">D maj</span></div>
+      <div class="songrow"><span class="song-t">Passacaglia</span><span class="song-a">Handel / Halvorsen</span><span class="song-c">Gm</span></div>
+      <div class="songrow"><span class="song-t">Mia &amp; Sebastian’s Theme</span><span class="song-a">Justin Hurwitz · La La Land</span><span class="song-c">A maj</span></div>
 
       <div class="scales-block">
         <button class="scales-toggle" onclick="toggleScales(this)">
@@ -821,7 +834,10 @@ body.modal-open{overflow:hidden;}
     <!-- GUITAR -->
     <div class="mb-inst">
       <div class="mb-head">
-        <h2 class="mb-name">Guitar</h2>
+        <div class="mb-title">
+          <h2 class="mb-name">Guitar</h2>
+          <p class="mb-sub">Currently on hold: planning to switch to electric.</p>
+        </div>
         <svg class="deco" width="38" height="44" viewBox="0 0 38 44" fill="none" style="opacity:1;flex-shrink:0;"><rect x="14.5" y="2" width="9" height="6" rx="1.2" stroke="#1A1714" stroke-width="0.8"/><rect x="16.5" y="8" width="5" height="14" stroke="#1A1714" stroke-width="0.7"/><path d="M19 22 C12 22 8 27 8 32 C8 38 13 42.5 19 42.5 C25 42.5 30 38 30 32 C30 27 26 22 19 22 Z" stroke="#1A1714" stroke-width="1"/><circle cx="19" cy="31" r="3.3" stroke="#1A1714" stroke-width="0.8"/><line x1="14" y1="37" x2="24" y2="37" stroke="#1A1714" stroke-width="0.7"/></svg>
       </div>
 
@@ -865,11 +881,11 @@ body.modal-open{overflow:hidden;}
   <!-- ── BOOKS ── -->
   <div class="ep active" id="ent-books">
     <div class="ss"><div class="ssl">Favorites</div><div class="cg">
-      <div class="tc2-fav has-detail" data-item="brothers-karamazov"><span class="dhint">+</span><img src="/Users/shameemmonjazeb/ClaudeProjects/Personal Website/images/books/The Brothers Karamazov.jpg" alt="The Brothers Karamazov" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Brothers Karamazov</div><div class="cs">Dostoevsky</div></div>
-      <div class="tc2 has-detail" data-item="brave-new-world"><span class="dhint">+</span><img src="/Users/shameemmonjazeb/ClaudeProjects/Personal Website/images/books/Brave New World.jpg" alt="Brave New World" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Brave New World</div><div class="cs">Huxley</div></div>
+      <div class="tc2-fav has-detail" data-item="brothers-karamazov"><span class="dhint">+</span><img src="images/books/The%20Brothers%20Karamazov.jpg" alt="The Brothers Karamazov" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Brothers Karamazov</div><div class="cs">Dostoevsky</div></div>
+      <div class="tc2 has-detail" data-item="brave-new-world"><span class="dhint">+</span><img src="images/books/Brave%20New%20World.jpg" alt="Brave New World" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Brave New World</div><div class="cs">Huxley</div></div>
     </div></div>
     <div class="ss"><div class="ssl">Currently reading</div><div class="cg">
-      <div class="tc2 has-detail" data-item="anna-karenina"><span class="dhint">+</span><img src="/Users/shameemmonjazeb/ClaudeProjects/Personal Website/images/books/Anna Karenina.jpg" alt="Anna Karenina" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Anna Karenina</div><div class="cs">Tolstoy</div></div>
+      <div class="tc2 has-detail" data-item="anna-karenina"><span class="dhint">+</span><img src="images/books/Anna%20Karenina.jpg" alt="Anna Karenina" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Anna Karenina</div><div class="cs">Tolstoy</div></div>
     </div></div>
     <div class="ss"><div class="ssl">Read</div><div class="cg">
       <div class="tc2 has-detail" data-item="brothers-karamazov"><span class="dhint">+</span><img src="" alt="The Brothers Karamazov" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Brothers Karamazov</div><div class="cs">Dostoevsky</div></div>
