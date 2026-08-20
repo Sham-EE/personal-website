@@ -419,6 +419,10 @@ body.modal-open{overflow:hidden;}
 }
 .qx-btn:hover{background:var(--cream-dark);border-color:var(--ink-faint);}
 .qx-counter{font-size:0.7rem;color:var(--ink-faint);letter-spacing:0.08em;white-space:nowrap;}
+.qx-part-row{display:none;align-items:center;justify-content:center;gap:0.9rem;margin-bottom:0.6rem;}
+.qx-part-btn{background:none;border:none;cursor:pointer;color:var(--ink-faint);font-size:0.95rem;line-height:1;padding:0.1rem 0.3rem;transition:color .15s;}
+.qx-part-btn:hover{color:var(--gold);}
+.qx-part-label{font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-mid);white-space:nowrap;}
 @media(max-width:600px){.modal{padding:1.6rem 1.3rem 2rem;}}
 
 /* ── MUSIC PAGE ── */
@@ -531,8 +535,8 @@ body.modal-open{overflow:hidden;}
 
   <!-- Clean intro block -->
   <div class="home-hero">
-    <p class="lead">I have an ardent desire to create — one that extends across any domain that captures my interest. I'm in pursuit of a life filled with meaning, knowing that the pursuit itself may never truly end. And maybe that's the point: the pursuit is the meaning. I try not to lose sight of the beauty in small things — even in the mundane phases of this journey — and I pause, from time to time, to take it all in. </p>
-    <p class="intro-detail">Studying Electrical Engineering at Texas A&amp;M. Currently fascinated by RF/Microwaves, V2X, electronics, computer engineering, and quantum computing.</p>
+    <p class="lead">I have an ardent desire to create, one that extends across any domain that captures my interest. I'm in pursuit of a life filled with meaning, knowing that the pursuit itself may never truly end. And maybe that's the point: the pursuit is the meaning. I try not to lose sight of the beauty in small things, even in the mundane phases of this journey, and I pause from time to time to take it all in.</p>
+    <p class="intro-detail">Electrical Engineering student at Texas A&amp;M and researcher at the Texas A&amp;M Transportation Institute. Currently focused on RF/microwave systems, V2X communication, computer networking, and embedded electronics.</p>
   </div>
 
   <span class="label">Currently</span>
@@ -906,26 +910,30 @@ body.modal-open{overflow:hidden;}
 
   <!-- ── BOOKS ── -->
   <div class="ep active" id="ent-books">
-    <div class="ss"><div class="ssl">Favorite</div><div class="cg">
-      <div class="tc2-fav has-detail" data-item="geb"><span class="dhint">+</span><img src="" alt="Gödel, Escher, Bach" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Gödel, Escher, Bach</div><div class="cs">Hofstadter</div></div>
+    <div class="ss"><div class="ssl">Favorites</div><div class="cg">
+      <div class="tc2-fav has-detail" data-item="brothers-karamazov"><span class="dhint">+</span><img src="/Users/shameemmonjazeb/ClaudeProjects/Personal Website/images/books/The Brothers Karamazov.jpg" alt="The Brothers Karamazov" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Brothers Karamazov</div><div class="cs">Dostoevsky</div></div>
+      <div class="tc2 has-detail" data-item="brave-new-world"><span class="dhint">+</span><img src="/Users/shameemmonjazeb/ClaudeProjects/Personal Website/images/books/Brave New World.jpg" alt="Brave New World" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Brave New World</div><div class="cs">Huxley</div></div>
     </div></div>
     <div class="ss"><div class="ssl">Currently reading</div><div class="cg">
-      <div class="tc2 has-detail" data-item="the-double"><span class="dhint">+</span><img src="" alt="The Double" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Double</div><div class="cs">Dostoevsky</div></div>
-      <div class="tc2"><img src="" alt="The Art of Electronics" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Art of Electronics</div><div class="cs">Horowitz &amp; Hill</div></div>
+      <div class="tc2 has-detail" data-item="anna-karenina"><span class="dhint">+</span><img src="/Users/shameemmonjazeb/ClaudeProjects/Personal Website/images/books/Anna Karenina.jpg" alt="Anna Karenina" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Anna Karenina</div><div class="cs">Tolstoy</div></div>
     </div></div>
     <div class="ss"><div class="ssl">Read</div><div class="cg">
-      <div class="tc2 has-detail" data-item="geb"><span class="dhint">+</span><img src="" alt="Gödel, Escher, Bach" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Gödel, Escher, Bach</div><div class="cs">Hofstadter</div></div>
-      <div class="tc2"><img src="" alt="The Design of Everyday Things" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Design of Everyday Things</div><div class="cs">Don Norman</div></div>
-      <div class="tc2"><img src="" alt="Permanent Record" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Permanent Record</div><div class="cs">Snowden</div></div>
-      <div class="tc2"><img src="" alt="Thinking, Fast and Slow" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Thinking, Fast and Slow</div><div class="cs">Kahneman</div></div>
-      <div class="tc2 has-detail" data-item="crime-and-punishment"><span class="dhint">+</span><img src="" alt="Crime and Punishment" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Crime and Punishment</div><div class="cs">Dostoevsky</div></div>
-      <div class="tc2"><img src="" alt="Surely You're Joking, Mr. Feynman" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Surely You're Joking, Mr. Feynman</div><div class="cs">Feynman</div></div>
+      <div class="tc2 has-detail" data-item="brothers-karamazov"><span class="dhint">+</span><img src="" alt="The Brothers Karamazov" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Brothers Karamazov</div><div class="cs">Dostoevsky</div></div>
+      <div class="tc2 has-detail" data-item="brave-new-world"><span class="dhint">+</span><img src="" alt="Brave New World" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Brave New World</div><div class="cs">Huxley</div></div>
+      <div class="tc2 has-detail" data-item="white-nights"><span class="dhint">+</span><img src="" alt="White Nights" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">White Nights</div><div class="cs">Dostoevsky</div></div>
+      <div class="tc2 has-detail" data-item="nineteen-eighty-four"><span class="dhint">+</span><img src="" alt="1984" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">1984</div><div class="cs">Orwell</div></div>
+      <div class="tc2 has-detail" data-item="dorian-gray"><span class="dhint">+</span><img src="" alt="The Picture of Dorian Gray" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Picture of Dorian Gray</div><div class="cs">Wilde</div></div>
+      <div class="tc2 has-detail" data-item="what-i-believe"><span class="dhint">+</span><img src="" alt="What I Believe" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">What I Believe</div><div class="cs">Tolstoy</div></div>
+      <div class="tc2 has-detail" data-item="einstein-life-and-universe"><span class="dhint">+</span><img src="" alt="Einstein: His Life and Universe" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Einstein: His Life and Universe</div><div class="cs">Isaacson</div></div>
+      <div class="tc2 has-detail" data-item="steve-jobs"><span class="dhint">+</span><img src="" alt="Steve Jobs" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Steve Jobs</div><div class="cs">Isaacson</div></div>
+      <div class="tc2 has-detail" data-item="mans-search-for-meaning"><span class="dhint">+</span><img src="" alt="Man's Search for Meaning" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Man's Search for Meaning</div><div class="cs">Frankl</div></div>
+      <div class="tc2 has-detail" data-item="slaughterhouse-five"><span class="dhint">+</span><img src="" alt="Slaughterhouse-Five" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Slaughterhouse-Five</div><div class="cs">Vonnegut</div></div>
+      <div class="tc2 has-detail" data-item="the-double"><span class="dhint">+</span><img src="" alt="The Double" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Double</div><div class="cs">Dostoevsky</div></div>
     </div></div>
     <div class="ss"><div class="ssl">To read</div><div class="cg">
-      <div class="tc2"><img src="" alt="The Code Book" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Code Book</div><div class="cs">Simon Singh</div></div>
-      <div class="tc2"><img src="" alt="Hackers" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Hackers</div><div class="cs">Steven Levy</div></div>
-      <div class="tc2"><img src="" alt="The Dream Machine" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Dream Machine</div><div class="cs">M. Mitchell Waldrop</div></div>
-      <div class="tc2"><img src="" alt="The Brothers Karamazov" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">The Brothers Karamazov</div><div class="cs">Dostoevsky</div></div>
+      <div class="tc2"><img src="" alt="Gödel, Escher, Bach" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Gödel, Escher, Bach</div><div class="cs">Hofstadter</div></div>
+      <div class="tc2"><img src="" alt="Rameau's Nephew / D'Alembert's Dream" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Rameau's Nephew / D'Alembert's Dream</div><div class="cs">Diderot</div></div>
+      <div class="tc2"><img src="" alt="Symposium" class="tc-img" onerror="this.style.display='none'"><div class="tc-overlay"></div><div class="ct">Symposium</div><div class="cs">Plato</div></div>
     </div></div>
   </div>
 
@@ -1428,59 +1436,161 @@ renderWeek();
    (film, etc.) use `loc:"1:12:00"` instead of `p`.
 ════════════════════════════════════════════ */
 const entDetails = {
-  "geb":{
-    title:"Gödel, Escher, Bach",
-    sub:"Douglas Hofstadter · 1979",
-    cover:"",                         // e.g. "images/books/geb/cover.jpg"
-    badge:{text:"Finished",type:"done"},
-    stats:[
-      {v:"Jan 2025",l:"Finished"},
-      {v:"★★★★★",l:"Rating"},
-      {v:"777 pp",l:"Length"},
-      {v:"3rd",l:"Re-read"}
-    ],
-    quotesLabel:"Favorite Passages",
-    quotes:[
-      {p:152,t:"“Meaning lies as much in the mind of the reader as in the Haiku.”"},
-      {p:10,t:"“A strange loop arises when, by moving upwards (or downwards) through the levels of some hierarchical system, we unexpectedly find ourselves right back where we started.”"},
-      {p:301,t:"“Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.”"},
-      {p:68,t:"“Sometimes a system of reasoning can be its own subject matter, and can fold back on itself in the most unexpected ways.”"}
-    ],
-    notes:"The book that made me fall in love with self-reference. Every re-read I notice a loop I missed before — which is, fittingly, the whole point."
-  },
-  "crime-and-punishment":{
-    title:"Crime and Punishment",
-    sub:"Fyodor Dostoevsky · 1866",
-    cover:"",
-    badge:{text:"Finished",type:"done"},
-    stats:[
-      {v:"Dec 2024",l:"Finished"},
-      {v:"★★★★★",l:"Rating"},
-      {v:"671 pp",l:"Length"}
-    ],
-    quotesLabel:"Favorite Passages",
-    quotes:[
-      {p:421,t:"“Pain and suffering are always inevitable for a large intelligence and a deep heart.”"},
-      {p:58,t:"“To go wrong in one's own way is better than to go right in someone else's.”"},
-      {p:233,t:"“It takes something more than intelligence to act intelligently.”"}
-    ],
-    notes:"Read it in two feverish weeks. The interrogation chapters are the best psychological tension I've read."
-  },
   "the-double":{
     title:"The Double",
     sub:"Fyodor Dostoevsky · 1846",
     cover:"",
-    badge:{text:"Currently reading",type:"reading"},
+    badge:{text:"Finished",type:"done"},
     stats:[
-      {v:"In progress",l:"Status"},
-      {v:"~40%",l:"Progress"},
       {v:"Started Jun 2026",l:"Began"}
+      // add a "Finished" stat once you know the month, e.g. {v:"Jul 2026",l:"Finished"}
     ],
     quotesLabel:"Passages I've marked",
     quotes:[
       {p:44,t:"“He felt that he was free… but at the same time he felt that something was wrong.”"}
+      // add more: {p:<page>, t:"<quote>"}
     ],
     notes:"Just started. Updating this page as I go — I'll add passages with their page numbers as I read."
+  },
+  "anna-karenina":{
+    title:"Anna Karenina",
+    sub:"Leo Tolstoy · 1877",
+    cover:"",
+    badge:{text:"Currently reading",type:"reading"},
+    stats:[
+      {v:"In progress",l:"Status"}
+    ],
+    quotesLabel:"Passages I've marked",
+    quotes:[
+      {part:1,p:1,t:"Happy families are all alike; every unhappy family is unhappy in its own way."},
+      {part:1,p:6,t:"“There was no answer, except the general answer life gives to all the most complex and insoluble questions. That answer is: one must live for the needs of the day, in other words, become oblivious.”"}
+      // add more as you go: {part:<1-8>, p:<page>, t:"<quote>"}
+    ],
+    notes:""
+  },
+  "brothers-karamazov":{
+    title:"The Brothers Karamazov",
+    sub:"Fyodor Dostoevsky · 1880",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[
+      {v:"★★★★★",l:"Rating"}
+    ],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add favorite quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:"Favorite chapters — Book 5, Ch. 4–5 · Book 6, Ch. 2–3 · Book 7, Ch. 3–4 · Book 9, Ch. 8 · Book 10, Ch. 5–7 · Book 11, Ch. 4, 8–9 · all of Book 12, especially the prosecutor's closing argument and the defendant's closing statement."
+  },
+  "brave-new-world":{
+    title:"Brave New World",
+    sub:"Aldous Huxley · 1932",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:"One of my favorites."
+  },
+  "white-nights":{
+    title:"White Nights",
+    sub:"Fyodor Dostoevsky · 1848",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:"One of my favorites."
+  },
+  "nineteen-eighty-four":{
+    title:"1984",
+    sub:"George Orwell · 1949",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:""
+  },
+  "dorian-gray":{
+    title:"The Picture of Dorian Gray",
+    sub:"Oscar Wilde · 1890",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:""
+  },
+  "what-i-believe":{
+    title:"What I Believe",
+    sub:"Leo Tolstoy",
+    cover:"",
+    badge:{text:"Listened",type:"done"},
+    stats:[
+      {v:"Audiobook",l:"Format"}
+    ],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"} (or use loc:"<timestamp>" for audiobook)
+    ],
+    notes:""
+  },
+  "einstein-life-and-universe":{
+    title:"Einstein: His Life and Universe",
+    sub:"Walter Isaacson",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:""
+  },
+  "steve-jobs":{
+    title:"Steve Jobs",
+    sub:"Walter Isaacson",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:""
+  },
+  "mans-search-for-meaning":{
+    title:"Man's Search for Meaning",
+    sub:"Viktor Frankl",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:""
+  },
+  "slaughterhouse-five":{
+    title:"Slaughterhouse-Five",
+    sub:"Kurt Vonnegut",
+    cover:"",
+    badge:{text:"Finished",type:"done"},
+    stats:[],
+    quotesLabel:"Favorite Passages",
+    quotes:[
+      // add quotes: {p:<page>, t:"<quote>"}
+    ],
+    notes:""
   },
   "stalker":{
     title:"Stalker",
@@ -1501,22 +1611,32 @@ const entDetails = {
   }
 };
 
-/* sort a quote list by page (items without a page go last, keeping order) */
+/* sort a quote list by part, then page (items without one go last, keeping order) */
 function sortQuotes(qs){
   return qs.map((q,i)=>({q,i}))
     .sort((a,b)=>{
+      const parta=(a.q.part!=null)?a.q.part:Infinity, partb=(b.q.part!=null)?b.q.part:Infinity;
+      if(parta!==partb) return parta-partb;
       const pa=(a.q.p!=null)?a.q.p:Infinity, pb=(b.q.p!=null)?b.q.p:Infinity;
       return pa===pb ? a.i-b.i : pa-pb;
     })
     .map(x=>x.q);
 }
 function quoteLabel(q){
-  if(q.p!=null) return 'Page '+q.p;
-  if(q.loc) return q.loc;
-  return '';
+  const bits=[];
+  if(q.part!=null) bits.push('Part '+q.part);
+  if(q.p!=null) bits.push('Page '+q.p);
+  else if(q.loc) bits.push(q.loc);
+  return bits.join(' · ');
+}
+/* distinct part values, in the order they appear in an already-sorted list */
+function distinctParts(items){
+  const parts=[];
+  items.forEach(q=>{ if(q.part!=null && !parts.includes(q.part)) parts.push(q.part); });
+  return parts;
 }
 
-let qxState={items:[],idx:0};
+let qxState={items:[],idx:0,parts:[]};
 
 function openDetail(slug){
   const d=entDetails[slug];
@@ -1531,6 +1651,11 @@ function openDetail(slug){
   if(d.quotes&&d.quotes.length){
     sections+=`<div class="modal-section">
       <div class="modal-slabel">${d.quotesLabel||'Favorite Passages'}</div>
+      <div class="qx-part-row" id="qx-part-row">
+        <button class="qx-part-btn" onclick="qxPartGo(-1)" aria-label="Previous part">«</button>
+        <span class="qx-part-label" id="qx-part-label"></span>
+        <button class="qx-part-btn" onclick="qxPartGo(1)" aria-label="Next part">»</button>
+      </div>
       <div class="qx-stage"><div class="qx-page" id="qx-page"></div><div class="qx-text" id="qx-text"></div></div>
       <div class="qx-controls">
         <button class="qx-btn" onclick="qxGo(-1)" aria-label="Previous">‹</button>
@@ -1558,11 +1683,15 @@ function openDetail(slug){
   `;
 
   if(d.quotes&&d.quotes.length){
-    qxState={items:sortQuotes(d.quotes),idx:0};
+    const items=sortQuotes(d.quotes);
+    qxState={items,idx:0,parts:distinctParts(items)};
     // hide single-item controls
     if(qxState.items.length<2){
       modal.querySelectorAll('.qx-btn').forEach(b=>b.style.display='none');
     }
+    // only show the part flipper when there's more than one part to flip between
+    const partRow=document.getElementById('qx-part-row');
+    if(partRow)partRow.style.display=qxState.parts.length>1?'flex':'none';
     updateQx();
   }
 
@@ -1578,10 +1707,15 @@ function updateQx(){
   const pg=document.getElementById('qx-page');
   const tx=document.getElementById('qx-text');
   const ct=document.getElementById('qx-count');
+  const pl=document.getElementById('qx-part-label');
   const stage=document.querySelector('.qx-stage');
   if(pg)pg.textContent=quoteLabel(q);
   if(tx)tx.textContent=q.t;
   if(ct)ct.textContent=`${qxState.idx+1} / ${qxState.items.length}`;
+  if(pl&&qxState.parts&&qxState.parts.length){
+    const pi=qxState.parts.indexOf(q.part);
+    pl.textContent=pi>=0?`Part ${q.part} (${pi+1} of ${qxState.parts.length})`:'';
+  }
   if(stage)stage.scrollTop=0;
 }
 
@@ -1589,6 +1723,18 @@ function qxGo(dir){
   if(!qxState.items.length)return;
   qxState.idx=(qxState.idx+dir+qxState.items.length)%qxState.items.length;
   updateQx();
+}
+
+/* jump to the first quote of the next/previous part */
+function qxPartGo(dir){
+  if(!qxState.parts||qxState.parts.length<2)return;
+  const cur=qxState.items[qxState.idx];
+  let pi=qxState.parts.indexOf(cur?cur.part:undefined);
+  if(pi<0)pi=0;
+  pi=(pi+dir+qxState.parts.length)%qxState.parts.length;
+  const targetPart=qxState.parts[pi];
+  const idx=qxState.items.findIndex(x=>x.part===targetPart);
+  if(idx>=0){qxState.idx=idx;updateQx();}
 }
 
 function closeDetail(){
