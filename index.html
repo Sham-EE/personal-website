@@ -177,7 +177,7 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .tc{background:var(--cream-dark);color:var(--ink);border:1px solid var(--ink);}
 .ts{background:var(--cream-dark);color:var(--ink-faint);}
 
-/* ── WRITING ── */
+/* ── WRITING — REMOVED FROM SITE. Uncomment to restore. ──
 .writing-intro{margin-bottom:2.5rem;}
 .elist{list-style:none;}
 .er{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--cd);text-decoration:none;color:inherit;transition:opacity .15s;}
@@ -194,6 +194,7 @@ a.pcard:hover .parrow{opacity:1;transform:translate(2px,-2px);}
 .soc.open .soce{transform:rotate(45deg);}
 .socb{display:none;padding:0.3rem 0 1.3rem;font-family:var(--serif);font-size:0.97rem;line-height:1.85;color:var(--ink-mid);max-width:58ch;}
 .soc.open .socb{display:block;}
+   ── end WRITING ── */
 
 /* ── HOBBIES ── */
 .hobbies-intro{margin-bottom:2.2rem;}
@@ -522,7 +523,7 @@ body.modal-open{overflow:hidden;}
   <button class="nav-tab active" data-tab="home">Home</button>
   <button class="nav-tab" data-tab="philosophy">Philosophy</button>
   <button class="nav-tab" data-tab="projects">Projects</button>
-  <button class="nav-tab" data-tab="writing">Writing</button>
+  <!-- <button class="nav-tab" data-tab="writing">Writing</button> -->
   <button class="nav-tab" data-tab="hobbies">Hobbies</button>
   <button class="nav-tab" data-tab="entertainment">Entertainment</button>
   <button class="nav-tab" data-tab="food">Food</button>
@@ -697,7 +698,8 @@ body.modal-open{overflow:hidden;}
 </section>
 
 
-<!-- ═══ WRITING ═══ -->
+<!-- ═══ WRITING — REMOVED FROM SITE. Uncomment this block (plus the CSS,
+     the nav button, and the ts() helper in the script) to restore. ═══
 <section id="tab-writing" class="screen">
   <h1>Writing</h1>
   <div class="writing-intro">
@@ -721,6 +723,7 @@ body.modal-open{overflow:hidden;}
   <div class="soc"><button class="soct" onclick="ts(this)"><span class="soctl">Ran without headphones for the first time in months</span><div style="display:flex;gap:1rem;align-items:center;flex-shrink:0;"><span class="socm">Mar 5, 2025</span><span class="soce">+</span></div></button><div class="socb">I forgot what it sounds like. My own footsteps. The specific rhythm of breath when you're at that edge between comfortable and not. I've been filling that silence for years. Turns out it's mostly nothing. Which is the point, I think. The nothing is the thing.</div></div>
   <div class="soc"><button class="soct" onclick="ts(this)"><span class="soctl">On why I keep abandoning frameworks</span><div style="display:flex;gap:1rem;align-items:center;flex-shrink:0;"><span class="socm">Feb 17, 2025</span><span class="soce">+</span></div></button><div class="socb">Every time I pick up a new framework I feel capable and then I feel hollow. Like I built a sandcastle with a mold. I know it technically looks like a castle. But I didn't learn anything about sand. I didn't learn anything about castles. I keep going back to HTML and vanilla JS not out of nostalgia but because it forces me to know what I'm doing.</div></div>
 </section>
+═══ END WRITING ═══ -->
 
 
 <!-- ═══ HOBBIES ═══ -->
@@ -1290,8 +1293,8 @@ document.querySelectorAll('.crs').forEach(c=>{
   c.querySelector('.crsb').style.display=c.classList.contains('open')?'block':'none';
 });
 
-/* SOC EXPAND */
-function ts(btn){btn.closest('.soc').classList.toggle('open');}
+/* SOC EXPAND — used only by the commented-out Writing section */
+// function ts(btn){btn.closest('.soc').classList.toggle('open');}
 
 /* SCALES EXPAND */
 function toggleScales(btn){btn.closest('.scales-block').classList.toggle('open');}
