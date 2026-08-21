@@ -3,13 +3,13 @@
     "month": "August 2026",
     "artists": [
       {
-        "name": "The Cure",
-        "img": "https://i.scdn.co/image/ab67616100005174dd427c765c409ec02dc3a868",
+        "name": "Auji",
+        "img": "https://i.scdn.co/image/ab67616100005174600ceb41bce3a6f8bda0dd4a",
         "genres": []
       },
       {
-        "name": "Auji",
-        "img": "https://i.scdn.co/image/ab67616100005174600ceb41bce3a6f8bda0dd4a",
+        "name": "The Cure",
+        "img": "https://i.scdn.co/image/ab67616100005174dd427c765c409ec02dc3a868",
         "genres": []
       },
       {
@@ -57,12 +57,12 @@
         "artist": "Auji"
       },
       {
-        "title": "Miroirs, M. 43: III. Une barque sur l'océan",
-        "artist": "Maurice Ravel, Philippe Entremont"
-      },
-      {
         "title": "Is It Cold (Live)",
         "artist": "Auji"
+      },
+      {
+        "title": "Miroirs, M. 43: III. Une barque sur l'océan",
+        "artist": "Maurice Ravel, Philippe Entremont"
       }
     ]
   },
