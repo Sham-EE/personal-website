@@ -33,8 +33,8 @@
         "genres": []
       },
       {
-        "name": "Mac DeMarco",
-        "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
+        "name": "Peter Broderick",
+        "img": "https://i.scdn.co/image/ab67616100005174b99cd33bb8a19daeca9c4de2",
         "genres": []
       },
       {
@@ -49,12 +49,12 @@
         "artist": "Auji"
       },
       {
-        "title": "Malcolm In The Middle",
-        "artist": "Malcolm Todd"
-      },
-      {
         "title": "Let It Go",
         "artist": "Peter Broderick"
+      },
+      {
+        "title": "Malcolm In The Middle",
+        "artist": "Malcolm Todd"
       },
       {
         "title": "Wait (Live)",
