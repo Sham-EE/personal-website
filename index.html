@@ -277,8 +277,8 @@ th.desc .fing-toggle{transform:rotate(180deg);}
 @media(max-width:640px){.rgrid{grid-template-columns:1fr;}}
 .rcard{border:1px solid var(--cd);border-radius:6px;overflow:hidden;background:var(--cream);transition:box-shadow .22s,transform .22s;}
 .rcard:hover{box-shadow:0 6px 24px rgba(26,23,20,.09);transform:translateY(-2px);}
-.rimg{width:100%;aspect-ratio:4/3;background:var(--cd);overflow:hidden;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--cd);position:relative;}
-.recipe-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(0.9) brightness(0.92);display:block;z-index:1;}
+.rimg{width:100%;aspect-ratio:1/1;background:var(--cd);overflow:hidden;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--cd);position:relative;}
+.recipe-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1;}
 .rimg-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;position:relative;z-index:0;}
 .rimgph{font-family:var(--serif);font-style:italic;font-size:0.85rem;color:var(--ink-faint);text-align:center;padding:1rem;line-height:1.5;}
 .rbody{padding:1.3rem 1.4rem;}
@@ -304,11 +304,20 @@ th.desc .fing-toggle{transform:rotate(180deg);}
 .qr{background:var(--ink);border-radius:2px;margin-top:0.5rem;}
 .qt{font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,2.3vw,1.3rem);color:var(--ink);line-height:1.5;margin-bottom:0.55rem;}
 .qa{font-size:0.76rem;color:var(--ink-faint);letter-spacing:0.07em;}
+/* favourite: add class "qi-fav" to any <li class="qi"> — JS floats it to the top */
+.qi-fav{position:relative;}
+.qi-fav .qr{background:var(--gold);}
+.qi-fav .qa{color:var(--gold);}
+.qi-fav::after{
+  content:'\2605';position:absolute;top:2rem;right:0;
+  font-size:0.7rem;color:var(--gold);opacity:0.8;line-height:1;
+}
+.qi-fav .qt{padding-right:1.4rem;}
 
 /* ── QUESTIONS ── */
 .q-intro{
   font-family:var(--serif);font-size:clamp(0.95rem,1.8vw,1.1rem);
-  color:var(--ink-mid);line-height:1.8;max-width:62ch;
+  color:var(--ink-mid);line-height:1.8;max-width:none;
   margin-bottom:2.8rem;font-style:italic;
 }
 .q-section{margin-bottom:3rem;}
@@ -331,6 +340,18 @@ th.desc .fing-toggle{transform:rotate(180deg);}
   font-family:var(--serif);font-size:clamp(1rem,2vw,1.15rem);
   color:var(--ink);line-height:1.5;
 }
+/* prompt or example sitting under a question, and the note under a category heading */
+.q-note{
+  display:block;font-family:var(--sans);font-style:normal;
+  font-size:0.76rem;color:var(--ink-faint);line-height:1.65;
+  margin-top:0.45rem;letter-spacing:0.01em;
+}
+.q-sub{
+  font-family:var(--sans);font-size:0.76rem;color:var(--ink-faint);
+  line-height:1.65;margin:-0.5rem 0 1.1rem;max-width:none;
+}
+.q-note a,.q-sub a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-light);}
+.q-note a:hover,.q-sub a:hover{color:var(--ink);border-bottom-color:var(--gold);}
 
 /* ── ENTERTAINMENT DETAIL: CARD HINT ── */
 .has-detail{cursor:pointer;}
@@ -556,7 +577,6 @@ body.modal-open{overflow:hidden;}
 
 </section>
 
-
 <!-- ═══ PHILOSOPHY ═══ -->
 <section id="tab-philosophy" class="screen">
   <div class="phil-intro">
@@ -641,7 +661,6 @@ body.modal-open{overflow:hidden;}
   </ul>
 </section>
 
-
 <!-- ═══ PROJECTS ═══ -->
 <section id="tab-projects" class="screen">
   <h1>Projects</h1>
@@ -692,7 +711,6 @@ body.modal-open{overflow:hidden;}
 
 </section>
 
-
 <!-- ═══ WRITING — REMOVED FROM SITE. Uncomment this block (plus the CSS,
      the nav button, and the ts() helper in the script) to restore. ═══
 <section id="tab-writing" class="screen">
@@ -720,7 +738,6 @@ body.modal-open{overflow:hidden;}
 </section>
 ═══ END WRITING ═══ -->
 
-
 <!-- ═══ HOBBIES ═══ -->
 <section id="tab-hobbies" class="screen">
   <h1>Hobbies</h1>
@@ -740,7 +757,6 @@ body.modal-open{overflow:hidden;}
   <div class="hr2"><span class="hn">Farsi</span><span class="hno">Using Chai and Conversation to learn the alphabet paired with Mango languages to practice speaking. </span></div>
   
   <div class="hr2"><span class="hn">Linux</span><span class="hno">Flashed Ubuntu Server on my Dell OptiPlex 5060 and Fedora Workstation on my T480 Thinkpad.</span></div>
-
 
   <hr class="rule">
   <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:1.4rem;">
@@ -793,7 +809,6 @@ body.modal-open{overflow:hidden;}
       <div class="ssl">To Learn</div>
       <div class="songrow"><span class="song-t">City of Stars</span><span class="song-a">Justin Hurwitz · La La Land</span><span class="song-c">Dm</span></div>
       <div class="songrow"><span class="song-t">Chamber of Reflection</span><span class="song-a">Mac DeMarco</span><span class="song-c">Em</span></div>
-
 
       <div class="ssl">Learned Fragments</div>
       <div class="songrow"><span class="song-t">Mrs. Magic</span><span class="song-a">Strawberry Guy</span><span class="song-c">E♭ maj</span></div>
@@ -857,7 +872,6 @@ body.modal-open{overflow:hidden;}
     </div>
   </div>
 </section>
-
 
 <!-- ═══ ENTERTAINMENT ═══ -->
 <section id="tab-entertainment" class="screen">
@@ -1173,136 +1187,276 @@ body.modal-open{overflow:hidden;}
   </div>
 </section>
 
-
 <!-- ═══ FOOD ═══ -->
 <section id="tab-food" class="screen">
   <h1>Food</h1>
-  <p>What I'm cooking, learning, and thinking about in the kitchen.</p>
   <hr class="rule">
-  <span class="ey">Current Recipes</span>
-
+  <span class="ey">Persian</span>
   <div class="rgrid">
-    <!-- Ghormeh Sabzi -->
     <div class="rcard">
       <div class="rimg">
-        <img src="" alt="Ghormeh Sabzi" class="recipe-img" onerror="this.style.display='none'">
+        <img src="images/food/zereshk-polo.jpeg" alt="Zereshk Polo" class="recipe-img" onerror="this.style.display='none'">
         <div class="rimg-fallback">
           <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><circle cx="26" cy="26" r="20" stroke="#1A1714" stroke-width="1"/><path d="M14 34 C14 26 20 16 26 14 C32 16 38 26 38 34" stroke="#1A1714" stroke-width="0.9" fill="none"/><ellipse cx="26" cy="34" rx="12" ry="3.5" stroke="#1A1714" stroke-width="0.9"/></svg>
-          <div class="rimgph">Ghormeh Sabzi</div>
+          <div class="rimgph">Zereshk Polo</div>
         </div>
       </div>
       <div class="rbody">
-        <div class="rname">Ghormeh Sabzi</div>
-        <div class="rorig">Persian · Herb &amp; Kidney Bean Stew</div>
-        <div class="rstats"><div class="sb"><span class="sv">20m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">2–3h</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">4</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Med</span><span class="sl">Difficulty</span></div></div>
+        <div class="rname">Zereshk Polo</div>
+        <div class="rorig">Barberry, Saffron, & Turmeric Rice with Chicken</div>
+        <div class="rstats"><div class="sb"><span class="sv">10m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">45m</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">4</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Easy</span><span class="sl">Difficulty</span></div></div>
         <span class="rsl">Ingredients</span>
         <ul class="ing">
-          <li><span class="iq">500 g</span>lamb shoulder, cubed</li>
-          <li><span class="iq">300 g</span>fresh parsley, very finely chopped</li>
-          <li><span class="iq">100 g</span>fresh fenugreek leaves</li>
-          <li><span class="iq">2 cans</span>kidney beans, drained</li>
-          <li><span class="iq">3–4</span>dried Persian limes (limoo amani)</li>
-          <li><span class="iq">1 tsp</span>ground turmeric</li>
-          <li><span class="iq">to taste</span>salt &amp; black pepper</li>
+          <li><span class="iq">4 cups</span>basmati rice</li>
+          <li><span class="iq">1 pack</span>chicken breasts</li>
+          <li><span class="iq">1</span>onion</li>
+          <li><span class="iq">1 cup</span>barberries (zereshk), rinsed</li>
+          <li><span class="iq">1/2 tsp</span>saffron, bloomed</li>
+          <li><span class="iq">to taste</span>turmeric, paprika, salt &amp; pepper, onion &amp; garlic powder</li>
         </ul>
         <span class="rsl">Dish Data</span>
-        <div class="ddg"><div class="dd"><span>Origin</span>Iran — national dish</div><div class="dd"><span>Flavour</span>Sour, herbal, earthy</div><div class="dd"><span>Key technique</span>Long, slow braise</div><div class="dd"><span>Serve with</span>Saffron rice (chelow)</div></div>
-        <div class="dnotes">Pierce the limes before adding or they'll float without releasing flavour. Current ratio: 3 parts parsley, 1 part fenugreek.</div>
+        <div class="ddg"><div class="dd"><span>Origin</span>Iran</div><div class="dd"><span>Flavour</span>Tart, sweet, saffron</div><div class="dd"><span>Protein</span>Chicken breast</div><div class="dd"><span>Key technique</span>Barberries sautéed in butter</div></div>
+        <div class="dnotes">Rinse the barberries first to lift the grit, then sauté them in butter with sugar, they burn in under a minute, so keep the heat low and add the sugar last.</div>
       </div>
     </div>
 
-    <!-- Sourdough -->
     <div class="rcard">
       <div class="rimg">
-        <img src="" alt="Sourdough Boule" class="recipe-img" onerror="this.style.display='none'">
+        <img src="images/food/estamboli-polo.jpeg" alt="Estamboli Polo" class="recipe-img" onerror="this.style.display='none'">
         <div class="rimg-fallback">
-          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><path d="M8 36 Q12 16 26 14 Q40 16 44 36 Z" stroke="#1A1714" stroke-width="1" fill="none"/><ellipse cx="26" cy="36" rx="18" ry="5" stroke="#1A1714" stroke-width="1"/></svg>
-          <div class="rimgph">Sourdough Boule</div>
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><circle cx="26" cy="26" r="20" stroke="#1A1714" stroke-width="1"/><path d="M14 34 C14 26 20 16 26 14 C32 16 38 26 38 34" stroke="#1A1714" stroke-width="0.9" fill="none"/><ellipse cx="26" cy="34" rx="12" ry="3.5" stroke="#1A1714" stroke-width="0.9"/></svg>
+          <div class="rimgph">Estamboli Polo</div>
         </div>
       </div>
       <div class="rbody">
-        <div class="rname">Sourdough Boule</div>
-        <div class="rorig">Open-crumb · 75% Hydration</div>
-        <div class="rstats"><div class="sb"><span class="sv">30m</span><span class="sl">Active</span></div><div class="sb"><span class="sv">18–24h</span><span class="sl">Total</span></div><div class="sb"><span class="sv">1 loaf</span><span class="sl">Yield</span></div><div class="sb"><span class="sv">Hard</span><span class="sl">Difficulty</span></div></div>
+        <div class="rname">Estamboli Polo</div>
+        <div class="rorig">One-Pot Tomato Rice</div>
+        <div class="rstats"><div class="sb"><span class="sv">15m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">1h</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">4</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Med</span><span class="sl">Difficulty</span></div></div>
         <span class="rsl">Ingredients</span>
         <ul class="ing">
-          <li><span class="iq">450 g</span>bread flour (high-protein)</li>
-          <li><span class="iq">50 g</span>whole wheat flour</li>
-          <li><span class="iq">375 g</span>water (75% hydration)</li>
-          <li><span class="iq">100 g</span>active sourdough starter</li>
-          <li><span class="iq">10 g</span>fine sea salt</li>
-          <li><span class="iq">—</span>rice flour, for the banneton</li>
+          <li><span class="iq">4 cups</span>basmati rice</li>
+          <li><span class="iq">1.5 lb</span>ground beef</li>
+          <li><span class="iq">1</span>onion</li>
+          <li><span class="iq">2</span>potatoes</li>
+          <li><span class="iq">1 cup</span>peas</li>
+          <li><span class="iq">3 tbsp</span>tomato paste (or tomato sauce)</li>
+          <li><span class="iq">to taste</span>sumac, paprika, salt &amp; pepper, onion &amp; garlic powder</li>
         </ul>
         <span class="rsl">Dish Data</span>
-        <div class="ddg"><div class="dd"><span>Hydration</span>75% — high</div><div class="dd"><span>Starter</span>Fed 8–12h before use</div><div class="dd"><span>Bake temp</span>500°F, Dutch oven</div><div class="dd"><span>Bulk ferment</span>4–5h at 78°F</div></div>
-        <div class="dnotes">4 sets of stretch-and-fold every 30 min during bulk. Open crumb requires tension, not just hydration.</div>
+        <div class="ddg"><div class="dd"><span>Origin</span>Iran</div><div class="dd"><span>Flavour</span>Savoury, tomato-forward</div><div class="dd"><span>Key technique</span>One-pot layered rice</div><div class="dd"><span>Serve with</span>Yogurt or Shirazi salad</div></div>
+        <div class="dnotes">Runnier tomato paste works better than thick, loosen it with a splash of water before it goes in. Or just use tomato sauce. </div>
       </div>
     </div>
 
-    <!-- Shoyu Ramen -->
     <div class="rcard">
       <div class="rimg">
-        <img src="" alt="Shoyu Ramen" class="recipe-img" onerror="this.style.display='none'">
+        <img src="images/food/adas-polo.jpeg" alt="Adas Polo" class="recipe-img" onerror="this.style.display='none'">
         <div class="rimg-fallback">
-          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><path d="M8 28 Q26 14 44 28" stroke="#1A1714" stroke-width="1" fill="none"/><path d="M8 28 Q8 44 26 44 Q44 44 44 28" stroke="#1A1714" stroke-width="1" fill="none"/></svg>
-          <div class="rimgph">Shoyu Ramen</div>
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><circle cx="26" cy="26" r="20" stroke="#1A1714" stroke-width="1"/><path d="M14 34 C14 26 20 16 26 14 C32 16 38 26 38 34" stroke="#1A1714" stroke-width="0.9" fill="none"/><ellipse cx="26" cy="34" rx="12" ry="3.5" stroke="#1A1714" stroke-width="0.9"/></svg>
+          <div class="rimgph">Adas Polo</div>
         </div>
       </div>
       <div class="rbody">
-        <div class="rname">Shoyu Ramen</div>
-        <div class="rorig">Tokyo-style · Dashi-based</div>
-        <div class="rstats"><div class="sb"><span class="sv">45m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">3h</span><span class="sl">Broth</span></div><div class="sb"><span class="sv">2</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Med</span><span class="sl">Difficulty</span></div></div>
-        <span class="rsl">Ingredients — Dashi</span>
+        <div class="rname">Adas Polo</div>
+        <div class="rorig">Lentil Rice</div>
+        <div class="rstats"><div class="sb"><span class="sv">5m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">45min</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">4</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Easy</span><span class="sl">Difficulty</span></div></div>
+        <span class="rsl">Ingredients</span>
         <ul class="ing">
-          <li><span class="iq">1 L</span>cold water</li>
-          <li><span class="iq">20 g</span>kombu (dried kelp)</li>
-          <li><span class="iq">30 g</span>katsuobushi (bonito flakes)</li>
-        </ul>
-        <span class="rsl">Ingredients — Bowl</span>
-        <ul class="ing">
-          <li><span class="iq">200 g</span>fresh ramen noodles</li>
-          <li><span class="iq">2 tbsp</span>shoyu tare (soy sauce base)</li>
-          <li><span class="iq">2</span>soft-boiled eggs, marinated</li>
-          <li><span class="iq">4 slices</span>chashu pork belly</li>
-          <li><span class="iq">—</span>nori, scallions, sesame</li>
+          <li><span class="iq">3 cups</span>basmati rice</li>
+          <li><span class="iq">1 cup</span>green lentils</li>
+          <li><span class="iq">1</span>onion, diced</li>
         </ul>
         <span class="rsl">Dish Data</span>
-        <div class="ddg"><div class="dd"><span>Broth base</span>Dashi + shoyu tare</div><div class="dd"><span>Umami source</span>Kombu glutamates</div><div class="dd"><span>Critical rule</span>Never boil the dashi</div><div class="dd"><span>Noodle type</span>Alkaline wheat (fresh)</div></div>
-        <div class="dnotes">Above 80°C the kombu releases bitter compounds. Patience is a technique, not a virtue.</div>
+        <div class="ddg"><div class="dd"><span>Origin</span>Iran</div><div class="dd"><span>Flavour</span>Sweet-savoury, warm spice</div><div class="dd"><span>Key technique</span>Layered steam (dam)</div><div class="dd"><span>Serve with</span>Whole-milk yogurt</div></div>
+        <div class="dnotes">Dannon whole milk yogurt is a must with this. Rinse then cook the lentils separately only until just tender, or they go to mush in the steam.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="rule">
+  <span class="ey">Fish</span>
+  <div class="rgrid">
+    <div class="rcard">
+      <div class="rimg">
+        <img src="images/food/salmon.jpeg" alt="Salmon" class="recipe-img" onerror="this.style.display='none'">
+        <div class="rimg-fallback">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><path d="M6 26 C14 16 32 16 40 26 C32 36 14 36 6 26 Z" stroke="#1A1714" stroke-width="1" fill="none"/><path d="M40 26 L50 19 L50 33 Z" stroke="#1A1714" stroke-width="1" fill="none"/><circle cx="16" cy="23" r="1.5" fill="#1A1714"/></svg>
+          <div class="rimgph">Salmon</div>
+        </div>
+      </div>
+      <div class="rbody">
+        <div class="rname">Salmon</div>
+        <div class="rorig">Broccoli & Spinach</div>
+        <div class="rstats"><div class="sb"><span class="sv">5m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">20m</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">1</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Easy</span><span class="sl">Difficulty</span></div></div>
+        <span class="rsl">Ingredients</span>
+        <ul class="ing">
+          <li><span class="iq">3 slices</span>salmon</li>
+          <li><span class="iq">1 packet</span>green beans (or broccoli), boiled</li>
+          <li><span class="iq">—</span>mini potatoes, boiled</li>
+          <li><span class="iq">—</span>turmeric, black pepper, garlic powder</li>
+          <li><span class="iq">—</span>lemon juice</li>
+          <li><span class="iq">—</span>EVOO, for the pan</li>
+        </ul>
+        <span class="rsl">Dish Data</span>
+        <div class="ddg"><div class="dd"><span>Flavour</span>Warm spice, citrus</div><div class="dd"><span>Key technique</span>Skin-side down, undisturbed</div><div class="dd"><span>Fat</span>Extra-virgin olive oil</div><div class="dd"><span>Finish</span>Lemon juice off the heat</div></div>
+        <div class="dnotes">Boil the potatoes and beans while the salmon sears.</div>
+      </div>
+    </div>
+
+    <div class="rcard">
+      <div class="rimg">
+        <img src="images/food/tilapia.jpeg" alt="Tilapia" class="recipe-img" onerror="this.style.display='none'">
+        <div class="rimg-fallback">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><path d="M6 26 C14 16 32 16 40 26 C32 36 14 36 6 26 Z" stroke="#1A1714" stroke-width="1" fill="none"/><path d="M40 26 L50 19 L50 33 Z" stroke="#1A1714" stroke-width="1" fill="none"/><circle cx="16" cy="23" r="1.5" fill="#1A1714"/></svg>
+          <div class="rimgph">Tilapia</div>
+        </div>
+      </div>
+      <div class="rbody">
+        <div class="rname">Tilapia</div>
+        <div class="rorig">Broccoli & Spinach</div>
+        <div class="rstats"><div class="sb"><span class="sv">5m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">15m</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">1</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Easy</span><span class="sl">Difficulty</span></div></div>
+        <span class="rsl">Ingredients</span>
+        <ul class="ing">
+          <li><span class="iq">2 filets</span>tilapia</li>
+          <li><span class="iq">—</span>broccoli</li>
+          <li><span class="iq">—</span>spinach</li>
+          <li><span class="iq">—</span>lemon pepper, garlic powder, salt, pepper</li>
+          <li><span class="iq">—</span>lemon juice</li>
+          <li><span class="iq">1 bowl</span>rice (optional)</li>
+        </ul>
+        <span class="rsl">Dish Data</span>
+        <div class="ddg"><div class="dd"><span>Flavour</span>Bright, peppery</div><div class="dd"><span>Key technique</span>One pan, staged</div><div class="dd"><span>Order</span>Broccoli + tilapia together</div><div class="dd"><span>Finish</span>Spinach at the very end</div></div>
+        <div class="dnotes">Broccoli and tilapia go in the pan together; the spinach goes in last so it wilts without going grey.</div>
       </div>
     </div>
   </div>
 
   <hr class="rule">
-  <span class="ey">Techniques I'm Studying</span>
-  <div class="hr2"><span class="hn">Knife Skills</span><span class="hno">Working through Jacques Pépin's basics. Julienne was harder than expected.</span></div>
-  <div class="hr2"><span class="hn">Maillard Reaction</span><span class="hno">Reading about the chemistry of browning. Moisture is the enemy of a good sear.</span></div>
-  <div class="hr2" style="border-bottom:none;"><span class="hn">Fermentation</span><span class="hno">Sourdough starter as first experiment. Want to move into miso and kimchi next.</span></div>
-</section>
+  <span class="ey">Quick Eats</span>
+  <div class="rgrid">
+    <div class="rcard">
+      <div class="rimg">
+        <img src="images/food/peanut-butter-honey.jpeg" alt="Peanut Butter & Honey Sandwich" class="recipe-img" onerror="this.style.display='none'">
+        <div class="rimg-fallback">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><path d="M8 30 L26 18 L44 30 L26 38 Z" stroke="#1A1714" stroke-width="1" fill="none"/><path d="M8 30 L8 35 L26 43 L44 35 L44 30" stroke="#1A1714" stroke-width="1" fill="none"/><path d="M14 30 Q26 26 38 30" stroke="#1A1714" stroke-width="0.7" fill="none"/></svg>
+          <div class="rimgph">Peanut Butter &amp; Honey Sandwich</div>
+        </div>
+      </div>
+      <div class="rbody">
+        <div class="rname">Peanut Butter &amp; Honey Sandwich</div>
+        <div class="rstats"><div class="sb"><span class="sv">5m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">—</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">1</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Easy</span><span class="sl">Difficulty</span></div></div>
+        <span class="rsl">Ingredients</span>
+        <ul class="ing">
+          <li><span class="iq">2 slices</span>bread</li>
+          <li><span class="iq">2 tbsp</span>peanut butter</li>
+          <li><span class="iq">1 tbsp</span>honey</li>
+          <li><span class="iq">Optional</span>sliced bananas</li>
+        </ul>
+        <span class="rsl">Dish Data</span>
+        <div class="ddg"><div class="dd"><span>Flavour</span>Sweet, nutty</div><div class="dd"><span>Key technique</span>None: assembly</div><div class="dd"><span>Time</span>Under 2 minutes</div><div class="dd"><span>Best for</span>Running out the door</div></div>
+        <div class="dnotes">The fallback when there's no time. Honey goes on last so it doesn't soak through the bread.</div>
+      </div>
+    </div>
 
+    <div class="rcard">
+      <div class="rimg">
+        <img src="images/food/yogurt-tuna.jpeg" alt="Yogurt Tuna" class="recipe-img" onerror="this.style.display='none'">
+        <div class="rimg-fallback">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><circle cx="26" cy="26" r="20" stroke="#1A1714" stroke-width="1"/><path d="M14 34 C14 26 20 16 26 14 C32 16 38 26 38 34" stroke="#1A1714" stroke-width="0.9" fill="none"/><ellipse cx="26" cy="34" rx="12" ry="3.5" stroke="#1A1714" stroke-width="0.9"/></svg>
+          <div class="rimgph">Yogurt Tuna</div>
+        </div>
+      </div>
+      <div class="rbody">
+        <div class="rname">Yogurt Tuna</div>
+        <div class="rstats"><div class="sb"><span class="sv">3m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">—</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">1</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Easy</span><span class="sl">Difficulty</span></div></div>
+        <span class="rsl">Ingredients</span>
+        <ul class="ing">
+          <li><span class="iq">1 can</span>tuna, drained</li>
+          <li><span class="iq">3–4 tbsp</span>plain yogurt</li>
+          <li><span class="iq">to taste</span>salt &amp; black pepper</li>
+          <li><span class="iq">Optional</span>Bread</li>
+        </ul>
+        <span class="rsl">Dish Data</span>
+        <div class="ddg"><div class="dd"><span>Flavour</span>Cool, savoury</div><div class="dd"><span>Key technique</span>None: stir together</div><div class="dd"><span>Time</span>Under 5 minutes</div><div class="dd"><span>Serve with</span>Bread or crackers</div></div>
+        <div class="dnotes">Yogurt instead of mayo. Drain the tuna properly or it goes watery.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+  <span class="ey">Miscellaneous</span>
+  <div class="rgrid">
+    <div class="rcard">
+      <div class="rimg">
+        <img src="images/food/chicken-fried-rice.jpeg" alt="Chicken Fried Rice" class="recipe-img" onerror="this.style.display='none'">
+        <div class="rimg-fallback">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:0.18;margin-bottom:0.6rem;"><ellipse cx="22" cy="28" rx="16" ry="9" stroke="#1A1714" stroke-width="1"/><path d="M38 28 L50 24" stroke="#1A1714" stroke-width="1.2"/><path d="M14 22 C16 17 20 17 22 21" stroke="#1A1714" stroke-width="0.8" fill="none"/></svg>
+          <div class="rimgph">Chicken Fried Rice</div>
+        </div>
+      </div>
+      <div class="rbody">
+        <div class="rname">Chicken Fried Rice</div>
+        <div class="rorig">One Pan · High Heat</div>
+        <div class="rstats"><div class="sb"><span class="sv">15m</span><span class="sl">Prep</span></div><div class="sb"><span class="sv">45m</span><span class="sl">Cook</span></div><div class="sb"><span class="sv">3</span><span class="sl">Serves</span></div><div class="sb"><span class="sv">Easy</span><span class="sl">Difficulty</span></div></div>
+        <span class="rsl">Ingredients</span>
+        <ul class="ing">
+          <li><span class="iq">1 lb</span>chicken thigh or breast</li>
+          <li><span class="iq">2–3</span>eggs</li>
+          <li><span class="iq">4 cups</span>rice, day-old</li>
+          <li><span class="iq">1 bag</span>frozen veggies</li>
+          <li><span class="iq">1</span>onion</li>
+          <li><span class="iq">3 tbsp</span>soy sauce</li>
+          <li><span class="iq">2 stalks</span>green onions</li>
+        </ul>
+        <span class="rsl">Dish Data</span>
+        <div class="ddg"><div class="dd"><span>Flavour</span>Savoury, soy-forward</div><div class="dd"><span>Key technique</span>High heat, day-old rice</div><div class="dd"><span>Pan</span>Wide skillet or wok</div><div class="dd"><span>Finish</span>Green onions off the heat</div></div>
+        <div class="dnotes">Cold day-old rice fries; fresh rice steams. Scramble the eggs first, pull them out, fold them back in at the end.</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 <!-- ═══ QUOTES ═══ -->
 <section id="tab-quotes" class="screen">
   <h1>Quotes</h1>
-  <p>Words that lingered.</p>
+  <p>Some of my favorite qoutes that have stuck with me through the years.</p>
   <svg class="deco" width="60" height="46" viewBox="0 0 60 46" fill="none" style="opacity:0.08;margin:1.2rem 0 0.5rem;">
     <path d="M4 32 C4 20 10 10 22 6 L26 12 C18 16 14 22 14 28 L14 42 L4 42 Z" stroke="#1A1714" stroke-width="1" fill="none"/>
     <path d="M34 32 C34 20 40 10 52 6 L56 12 C48 16 44 22 44 28 L44 42 L34 42 Z" stroke="#1A1714" stroke-width="1" fill="none"/>
   </svg>
   <ul class="qlist" style="margin-top:1rem;">
-    <li class="qi"><div class="qr"></div><div><div class="qt">"The first principle is that you must not fool yourself — and you are the easiest person to fool."</div><div class="qa">Richard Feynman</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"An expert is a person who has made all the mistakes that can be made in a very narrow field."</div><div class="qa">Niels Bohr</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time."</div><div class="qa">T.S. Eliot — Little Gidding</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"It's not that I'm so smart, it's just that I stay with problems longer."</div><div class="qa">Albert Einstein</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"You must have chaos within you to give birth to a dancing star."</div><div class="qa">Friedrich Nietzsche — Thus Spoke Zarathustra</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"Be regular and orderly in your life, so that you may be violent and original in your work."</div><div class="qa">Gustave Flaubert</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"Do not seek to follow in the footsteps of the wise. Seek what they sought."</div><div class="qa">Matsuo Bashō</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"A language is not just words. It's a culture, a tradition, a whole history that creates what a community is."</div><div class="qa">Noam Chomsky</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"The measure of intelligence is the ability to change."</div><div class="qa">Albert Einstein</div></div></li>
-    <li class="qi"><div class="qr"></div><div><div class="qt">"Every tool is a weapon if you hold it right."</div><div class="qa">Ani DiFranco</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"To go wrong in one's own way is better than to go right in someone else's."</div><div class="qa">Fyodor Dostoevsky – Crime and Punishment</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"And those seen dancing were thought to be insane by those who could not hear the music."</div><div class="qa">Friedrich Nietzsche</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"Those who have a 'why' to live, can bear with almost any 'how'."</div><div class="qa">Friedrich Nietzsche – Twilight of the Idols</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"You cannot do a kindness too soon, for you never know how soon it will be too late."</div><div class="qa">Ralph Waldo Emerson – The Conduct of Life</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"Until you make the unconscious conscious, it will direct your life and you will call it fate."</div><div class="qa">Carl Jung</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"We don't see things as they are, we see them as we are."</div><div class="qa">Anaïs Nin</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"Be yourself; everyone else is already taken."</div><div class="qa">Oscar Wilde</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"Climb mountains not so the world can see you, but so you can see the world."</div><div class="qa">David McCullough Jr.</div></div></li>
+    <li class="qi qi-fav"><div class="qr"></div><div><div class="qt">"Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others. And having no respect he ceases to love."</div><div class="qa">Fyodor Dostoevsky &mdash; The Brothers Karamazov</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"If you spend your time chasing butterflies, they'll fly away. If you spend your time making a beautiful garden, the butterflies will come to you. And if they don't, then you still have that garden."</div><div class="qa">Mario Quintana</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"No person ever steps in the same river twice, for it is not the same river and they are not the same person."</div><div class="qa">Heraclitus</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"The man who asks a question is a fool for a minute, the man who does not ask is a fool for life."</div><div class="qa">Confucius</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"All of humanity's problems stem from man's inability to sit quietly in a room alone."</div><div class="qa">Blaise Pascal – Pensées</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"One of the greatest tragedies in life is that you will always be loved more than you will ever know."</div><div class="qa">Unknown</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"Simplicity is the ultimate sophistication."</div><div class="qa">Leonardo da Vinci</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"Those who want to lead the orchestra must be willing to turn their back on the crowd."</div><div class="qa">Unknown</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"Someone's intelligence can be measured by the quantity of uncertainties that he can bear."</div><div class="qa">Immanuel Kant</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"Jack of all trades, master of none, but oftentimes better than the master of one."</div><div class="qa">Proverb</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"The hardest thing to do is usually the right thing."</div><div class="qa">Unknown</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"Beware of answering too honestly, for to reveal the depth of your pain is to risk the world's indifference."</div><div class="qa">Friedrich Nietzsche</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"A candle loses nothing by lighting another candle."</div><div class="qa">James Keller</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"You can fail at what you don't want, so you might as well take a chance on doing what you love."</div><div class="qa">Jim Carrey</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion."</div><div class="qa">Albert Camus</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"Man is condemned to be free."</div><div class="qa">Jean-Paul Sartre</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"You have to engrave your failures upon your mind deeply. Those who forget their failures experience another failure."</div><div class="qa">Chung Ju-yung</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"They muddy the water to make it seem deep."</div><div class="qa">Friedrich Nietzsche &mdash; Thus Spoke Zarathustra</div></div></li>
+    <li class="qi"><div class="qr"></div><div><div class="qt">"If I have seen further it is by standing on the shoulders of giants."</div><div class="qa">Isaac Newton</div></div></li>
   </ul>
 </section>
-
 
 <!-- ═══ QUESTIONS ═══ -->
 <section id="tab-questions" class="screen">
@@ -1310,50 +1464,8 @@ body.modal-open{overflow:hidden;}
   <p class="q-intro">I believe communication is a medium of art, a bridge between unique universes that transforms a simple "hello" into a profound bond. Whether I'm joining someone eating solo or chatting with a neighbor in class, I find beauty in uncovering the hidden stories and perspectives every stranger carries. Inspired by the raw, wandering dialogues of the Before Trilogy, I've curated these questions to skip the small talk and reach the true essence of who someone is.</p>
 
   <div class="q-section">
-    <span class="q-cat">Self &amp; Identity</span>
-    <ul class="q-list">
-      <li class="q-item"><span class="q-num">1.</span><span class="q-text">When do you feel most like yourself — and when do you feel furthest from it?</span></li>
-      <li class="q-item"><span class="q-num">2.</span><span class="q-text">What's something you believe that most people around you don't?</span></li>
-      <li class="q-item"><span class="q-num">3.</span><span class="q-text">Is there a version of yourself you've left behind that you sometimes miss?</span></li>
-      <li class="q-item"><span class="q-num">4.</span><span class="q-text">What have you changed your mind about in the last few years — and what changed it?</span></li>
-      <li class="q-item"><span class="q-num">5.</span><span class="q-text">What part of yourself do you hide most often, and why?</span></li>
-      <li class="q-item"><span class="q-num">6.</span><span class="q-text">What would you do differently if you genuinely stopped caring what others thought?</span></li>
-    </ul>
-  </div>
-
-  <div class="q-section">
-    <span class="q-cat">Depth &amp; Desire</span>
-    <ul class="q-list">
-      <li class="q-item"><span class="q-num">7.</span><span class="q-text">What do you want that you've never told anyone?</span></li>
-      <li class="q-item"><span class="q-num">8.</span><span class="q-text">What's the most alive you've ever felt?</span></li>
-      <li class="q-item"><span class="q-num">9.</span><span class="q-text">What are you currently trying to figure out — in life, not just work?</span></li>
-      <li class="q-item"><span class="q-num">10.</span><span class="q-text">What do you think about just before you fall asleep?</span></li>
-      <li class="q-item"><span class="q-num">11.</span><span class="q-text">Is there something you've been meaning to say to someone but haven't?</span></li>
-      <li class="q-item"><span class="q-num">12.</span><span class="q-text">What's a question you're afraid of being asked?</span></li>
-    </ul>
-  </div>
-
-  <div class="q-section">
-    <span class="q-cat">Connection &amp; Others</span>
-    <ul class="q-list">
-      <li class="q-item"><span class="q-num">13.</span><span class="q-text">What does home feel like to you — is it a place, a person, or a state of mind?</span></li>
-      <li class="q-item"><span class="q-num">14.</span><span class="q-text">Who has shaped you most, and do they know it?</span></li>
-      <li class="q-item"><span class="q-num">15.</span><span class="q-text">What do you wish people asked you more about?</span></li>
-      <li class="q-item"><span class="q-num">16.</span><span class="q-text">What's the kindest thing a stranger has ever done for you?</span></li>
-      <li class="q-item"><span class="q-num">17.</span><span class="q-text">What do you need from people that you rarely ask for?</span></li>
-    </ul>
-  </div>
-
-  <div class="q-section">
-    <span class="q-cat">Wonder &amp; Ordinary Life</span>
-    <ul class="q-list">
-      <li class="q-item"><span class="q-num">18.</span><span class="q-text">What's a small thing that reliably makes you feel like the world is okay?</span></li>
-      <li class="q-item"><span class="q-num">19.</span><span class="q-text">If you had unlimited time, what subject would you study for the rest of your life?</span></li>
-      <li class="q-item"><span class="q-num">20.</span><span class="q-text">What would a perfect ordinary day look like for you?</span></li>
-      <li class="q-item"><span class="q-num">21.</span><span class="q-text">What's the most interesting place you've ever been — and what made it interesting?</span></li>
-      <li class="q-item"><span class="q-num">22.</span><span class="q-text">What's something you do for no reason other than that it makes you happy?</span></li>
-      <li class="q-item"><span class="q-num">23.</span><span class="q-text">What's something you've never been able to explain to someone else but you understand completely?</span></li>
-    </ul>
+    <span class="q-cat">Coming Soon</span>
+    <p class="q-sub">Still writing these.</p>
   </div>
 </section>
 
@@ -1961,6 +2073,19 @@ async function loadTopArchive(){
     if(Array.isArray(d)&&d.length){topArchive.length=0;topArchive.push(...d);topmIdx=0;topmRender();}}catch(e){/* no archive yet */}
 }
 topmRender(); loadTopArchive();
+
+/* Quotes: float favourites (li.qi-fav) to the top, stable within each group. */
+function sortFavouriteQuotes(){
+  const list=document.querySelector('.qlist'); if(!list)return;
+  const items=[...list.children];
+  const fav=items.filter(li=>li.classList.contains('qi-fav'));
+  if(!fav.length)return;
+  const rest=items.filter(li=>!li.classList.contains('qi-fav'));
+  const frag=document.createDocumentFragment();
+  [...fav,...rest].forEach(li=>frag.appendChild(li));
+  list.appendChild(frag);
+}
+sortFavouriteQuotes();
 
 </script>
 </body>
