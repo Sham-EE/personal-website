@@ -38,8 +38,8 @@
         "genres": []
       },
       {
-        "name": "Peter Broderick",
-        "img": "https://i.scdn.co/image/ab67616100005174b99cd33bb8a19daeca9c4de2",
+        "name": "André Laplante",
+        "img": "https://i.scdn.co/image/ab67616d00001e023041581d8dc408915d909e32",
         "genres": []
       }
     ],
@@ -53,12 +53,12 @@
         "artist": "Auji"
       },
       {
-        "title": "Let It Go",
-        "artist": "Peter Broderick"
-      },
-      {
         "title": "Paper Hearts (Live)",
         "artist": "Auji"
+      },
+      {
+        "title": "Let It Go",
+        "artist": "Peter Broderick"
       },
       {
         "title": "Which Way Is Up (Live)",
