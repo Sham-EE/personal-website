@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-08-30T07:13:47.735Z",
+    "when": "Aug 30 · 7:13 AM",
+    "title": "Sigh's Smell of Farewell",
+    "artist": "Cocteau Twins",
+    "album": "Love's Easy Tears"
+  },
+  {
+    "ts": "2026-08-30T05:50:31.077Z",
+    "when": "Aug 30 · 5:50 AM",
+    "title": "Out of This World",
+    "artist": "The Cure",
+    "album": "Bloodflowers"
+  },
+  {
     "ts": "2026-08-30T03:18:03.790Z",
     "when": "Aug 30 · 3:18 AM",
     "title": "The City Limit",
@@ -682,20 +696,6 @@
     "ts": "2026-08-28T13:50:28.205Z",
     "when": "Aug 28 · 1:50 PM",
     "title": "the feeling",
-    "artist": "Steve Lacy",
-    "album": "Oh yeah?"
-  },
-  {
-    "ts": "2026-08-28T13:44:53.721Z",
-    "when": "Aug 28 · 1:44 PM",
-    "title": "is it cool? (feat. SZA)",
-    "artist": "Steve Lacy, SZA",
-    "album": "Oh yeah?"
-  },
-  {
-    "ts": "2026-08-28T13:41:59.470Z",
-    "when": "Aug 28 · 1:41 PM",
-    "title": "oh yeah?",
     "artist": "Steve Lacy",
     "album": "Oh yeah?"
   }
