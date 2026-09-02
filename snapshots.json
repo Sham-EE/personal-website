@@ -1,5 +1,26 @@
 [
   {
+    "ts": "2026-09-02T12:30:34.067Z",
+    "when": "Sep 2 · 12:30 PM",
+    "title": "Stop Dead - Fitz / F2 Studios Demo 2/85",
+    "artist": "The Cure",
+    "album": "The Head on the Door (Deluxed Edition)"
+  },
+  {
+    "ts": "2026-09-02T12:27:13.746Z",
+    "when": "Sep 2 · 12:27 PM",
+    "title": "Squeeze-Wax",
+    "artist": "Cocteau Twins",
+    "album": "Four-Calendar Café"
+  },
+  {
+    "ts": "2026-09-02T12:23:19.917Z",
+    "when": "Sep 2 · 12:23 PM",
+    "title": "Malcolm In The Middle",
+    "artist": "Malcolm Todd",
+    "album": "Do That Again"
+  },
+  {
     "ts": "2026-09-02T03:53:54.202Z",
     "when": "Sep 2 · 3:53 AM",
     "title": "Georgy Porgy",
@@ -677,26 +698,5 @@
     "title": "South",
     "artist": "Hippo Campus",
     "album": "South"
-  },
-  {
-    "ts": "2026-08-30T17:44:55.485Z",
-    "when": "Aug 30 · 5:44 PM",
-    "title": "Buttercup",
-    "artist": "Hippo Campus",
-    "album": "Landmark"
-  },
-  {
-    "ts": "2026-08-30T17:37:33.067Z",
-    "when": "Aug 30 · 5:37 PM",
-    "title": "Know Who You Are At Every Age",
-    "artist": "Cocteau Twins",
-    "album": "Four-Calendar Café"
-  },
-  {
-    "ts": "2026-08-30T07:13:47.735Z",
-    "when": "Aug 30 · 7:13 AM",
-    "title": "Sigh's Smell of Farewell",
-    "artist": "Cocteau Twins",
-    "album": "Love's Easy Tears"
   }
 ]
