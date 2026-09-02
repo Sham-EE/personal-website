@@ -33,13 +33,13 @@
         "genres": []
       },
       {
-        "name": "Her's",
-        "img": "https://i.scdn.co/image/ab676161000051746e339cf31f00e472b1ddd1c5",
+        "name": "Mac DeMarco",
+        "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
         "genres": []
       },
       {
-        "name": "Mac DeMarco",
-        "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
+        "name": "Alison's Halo",
+        "img": "https://i.scdn.co/image/ab67616100005174c0844a0bc694e81fc14da948",
         "genres": []
       }
     ],
@@ -57,12 +57,12 @@
         "artist": "Auji"
       },
       {
-        "title": "Which Way Is Up (Live)",
+        "title": "Is It Cold (Live)",
         "artist": "Auji"
       },
       {
-        "title": "Stop Dead - Studio Demo",
-        "artist": "The Cure"
+        "title": "Which Way Is Up (Live)",
+        "artist": "Auji"
       }
     ]
   },
