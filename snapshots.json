@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-09-05T14:20:44.756Z",
+    "when": "Sep 5 · 2:20 PM",
+    "title": "Squeeze-Wax",
+    "artist": "Cocteau Twins",
+    "album": "Four-Calendar Café"
+  },
+  {
+    "ts": "2026-09-05T14:19:55.708Z",
+    "when": "Sep 5 · 2:19 PM",
+    "title": "I'm Not In Love",
+    "artist": "10cc",
+    "album": "The Original Soundtrack"
+  },
+  {
     "ts": "2026-09-05T02:28:21.081Z",
     "when": "Sep 5 · 2:28 AM",
     "title": "Cico Buff",
@@ -682,20 +696,6 @@
     "ts": "2026-09-04T00:46:37.450Z",
     "when": "Sep 4 · 12:46 AM",
     "title": "queen anon",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-09-04T00:44:38.500Z",
-    "when": "Sep 4 · 12:44 AM",
-    "title": "dead by october",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-09-04T00:42:09.975Z",
-    "when": "Sep 4 · 12:42 AM",
-    "title": "untitled",
     "artist": "drug bug",
     "album": "songs of a drug bug"
   }
