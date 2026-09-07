@@ -13,6 +13,11 @@
         "genres": []
       },
       {
+        "name": "drug bug",
+        "img": "https://i.scdn.co/image/ab676161000051741a163f165295422045a62945",
+        "genres": []
+      },
+      {
         "name": "Cocteau Twins",
         "img": "https://i.scdn.co/image/ab6761610000517400f01cecce8a4475c3de0998",
         "genres": []
@@ -20,11 +25,6 @@
       {
         "name": "Steve Lacy",
         "img": "https://i.scdn.co/image/ab676161000051747e3150cffbfda40c6eaf28dd",
-        "genres": []
-      },
-      {
-        "name": "drug bug",
-        "img": "https://i.scdn.co/image/ab676161000051741a163f165295422045a62945",
         "genres": []
       },
       {
