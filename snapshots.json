@@ -1,5 +1,26 @@
 [
   {
+    "ts": "2026-09-06T23:57:48.792Z",
+    "when": "Sep 6 · 11:57 PM",
+    "title": "I can't help myself",
+    "artist": "drug bug",
+    "album": "I can't help myself / I can't stop loving you"
+  },
+  {
+    "ts": "2026-09-06T23:55:25.648Z",
+    "when": "Sep 6 · 11:55 PM",
+    "title": "Grapefruit Technique",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-09-06T23:49:24.665Z",
+    "when": "Sep 6 · 11:49 PM",
+    "title": "piece of wick alight in a pine",
+    "artist": "Soulwhirlingsomewhere",
+    "album": "Pyewackit"
+  },
+  {
     "ts": "2026-09-06T20:15:19.717Z",
     "when": "Sep 6 · 8:15 PM",
     "title": "every female werewolf ever, listed alphabetically by crime",
@@ -677,26 +698,5 @@
     "title": "Slower Now",
     "artist": "Star Horse",
     "album": "Slower Now"
-  },
-  {
-    "ts": "2026-09-04T22:40:54.627Z",
-    "when": "Sep 4 · 10:40 PM",
-    "title": "Last Night's Haze",
-    "artist": "Star Horse",
-    "album": "Devour"
-  },
-  {
-    "ts": "2026-09-04T22:33:19.293Z",
-    "when": "Sep 4 · 10:33 PM",
-    "title": "funeral pop",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-09-04T22:31:09.907Z",
-    "when": "Sep 4 · 10:31 PM",
-    "title": "twisting up your hair",
-    "artist": "drug bug",
-    "album": "secret admirer"
   }
 ]
