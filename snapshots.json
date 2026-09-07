@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-09-07T21:15:40.526Z",
+    "when": "Sep 7 · 9:15 PM",
+    "title": "もぎたてのディスコミュニケーション",
+    "artist": "溶けない名前",
+    "album": "制服甘露倶楽部"
+  },
+  {
+    "ts": "2026-09-07T17:49:17.899Z",
+    "when": "Sep 7 · 5:49 PM",
+    "title": "What Cha’ Gonna Do For Me",
+    "artist": "Ned Doheny",
+    "album": "Separate Oceans"
+  },
+  {
     "ts": "2026-09-07T16:37:11.349Z",
     "when": "Sep 7 · 4:37 PM",
     "title": "Pennies - Remastered 2012",
@@ -684,19 +698,5 @@
     "title": "Spring",
     "artist": "Saint Etienne",
     "album": "Foxbase Alpha"
-  },
-  {
-    "ts": "2026-09-05T17:27:18.764Z",
-    "when": "Sep 5 · 5:27 PM",
-    "title": "Incense Of You",
-    "artist": "An April March",
-    "album": "Lessons in Vengeance"
-  },
-  {
-    "ts": "2026-09-05T17:21:38.345Z",
-    "when": "Sep 5 · 5:21 PM",
-    "title": "Paper Hearts (Live)",
-    "artist": "Auji",
-    "album": "LIVE at Brick"
   }
 ]
