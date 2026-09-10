@@ -33,13 +33,13 @@
         "genres": []
       },
       {
-        "name": "Mac DeMarco",
-        "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
+        "name": "The Radio Dept.",
+        "img": "https://i.scdn.co/image/ab67616100005174761a16ffa877c8086e28c5b0",
         "genres": []
       },
       {
-        "name": "Malcolm Todd",
-        "img": "https://i.scdn.co/image/ab676161000051749f6f7c2d12975d2a4b3a0fd8",
+        "name": "Mac DeMarco",
+        "img": "https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d",
         "genres": []
       }
     ],
@@ -57,12 +57,12 @@
         "artist": "The Cure"
       },
       {
-        "title": "Which Way Is Up (Live)",
-        "artist": "Auji"
-      },
-      {
         "title": "star sick - Alex Mix",
         "artist": "drug bug"
+      },
+      {
+        "title": "Which Way Is Up (Live)",
+        "artist": "Auji"
       }
     ]
   },
