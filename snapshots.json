@@ -1,5 +1,159 @@
 [
   {
+    "ts": "2026-09-14T20:41:44.407Z",
+    "when": "Sep 14 · 8:41 PM",
+    "title": "Not Worth It",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-09-14T20:39:25.059Z",
+    "when": "Sep 14 · 8:39 PM",
+    "title": "secret admirer",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-09-14T20:36:53.809Z",
+    "when": "Sep 14 · 8:36 PM",
+    "title": "In my eyes",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-09-14T20:34:05.301Z",
+    "when": "Sep 14 · 8:34 PM",
+    "title": "twisting up your hair",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-09-14T20:31:57.503Z",
+    "when": "Sep 14 · 8:31 PM",
+    "title": "Big Apple",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-09-14T20:29:57.487Z",
+    "when": "Sep 14 · 8:29 PM",
+    "title": "Blood Runs Cold",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-09-14T20:26:32.598Z",
+    "when": "Sep 14 · 8:26 PM",
+    "title": "dont talk to me or ill kill myself :3",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-14T20:23:29.614Z",
+    "when": "Sep 14 · 8:23 PM",
+    "title": "took my heart",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-14T20:19:42.966Z",
+    "when": "Sep 14 · 8:19 PM",
+    "title": "Love Is The Way",
+    "artist": "Thee Sacred Souls",
+    "album": "Love Is The Way"
+  },
+  {
+    "ts": "2026-09-14T19:32:16.176Z",
+    "when": "Sep 14 · 7:32 PM",
+    "title": "Sweet Baby",
+    "artist": "Stanley Clarke, George Duke",
+    "album": "The Clarke/Duke Project"
+  },
+  {
+    "ts": "2026-09-14T19:28:28.446Z",
+    "when": "Sep 14 · 7:28 PM",
+    "title": "Flew",
+    "artist": "Dog silent",
+    "album": "Flying Fish"
+  },
+  {
+    "ts": "2026-09-14T19:24:52.778Z",
+    "when": "Sep 14 · 7:24 PM",
+    "title": "Starting Over",
+    "artist": "LSD and the Search for God",
+    "album": "LSD and the Search for God"
+  },
+  {
+    "ts": "2026-09-14T19:19:48.014Z",
+    "when": "Sep 14 · 7:19 PM",
+    "title": "Sleeping in",
+    "artist": "The Radio Dept.",
+    "album": "Pet Grief"
+  },
+  {
+    "ts": "2026-09-14T19:16:15.701Z",
+    "when": "Sep 14 · 7:16 PM",
+    "title": "Natalie Wood",
+    "artist": "TV Girl",
+    "album": "Natalie Wood"
+  },
+  {
+    "ts": "2026-09-14T19:12:15.053Z",
+    "when": "Sep 14 · 7:12 PM",
+    "title": "Je te veux",
+    "artist": "Erik Satie, Klara Kormendi",
+    "album": "Satie: Piano Works, Vol. 3"
+  },
+  {
+    "ts": "2026-09-14T19:07:46.034Z",
+    "when": "Sep 14 · 7:07 PM",
+    "title": "Another One",
+    "artist": "Mac DeMarco",
+    "album": "Another One"
+  },
+  {
+    "ts": "2026-09-14T19:05:04.515Z",
+    "when": "Sep 14 · 7:05 PM",
+    "title": "What Cha’ Gonna Do For Me",
+    "artist": "Ned Doheny",
+    "album": "Separate Oceans"
+  },
+  {
+    "ts": "2026-09-14T19:00:56.999Z",
+    "when": "Sep 14 · 7:00 PM",
+    "title": "What Cha’ Gonna Do For Me",
+    "artist": "Ned Doheny",
+    "album": "Separate Oceans"
+  },
+  {
+    "ts": "2026-09-14T18:53:53.649Z",
+    "when": "Sep 14 · 6:53 PM",
+    "title": "boy kisser",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-14T18:51:57.849Z",
+    "when": "Sep 14 · 6:51 PM",
+    "title": "funeral pop",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-09-14T18:49:48.448Z",
+    "when": "Sep 14 · 6:49 PM",
+    "title": "cut your hair",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-14T18:46:49.023Z",
+    "when": "Sep 14 · 6:46 PM",
+    "title": "Not Worth It",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
     "ts": "2026-09-14T12:38:53.810Z",
     "when": "Sep 14 · 12:38 PM",
     "title": "secret admirer",
@@ -544,159 +698,5 @@
     "title": "I can't help myself",
     "artist": "drug bug",
     "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-09-13T19:11:26.877Z",
-    "when": "Sep 13 · 7:11 PM",
-    "title": "le crétin",
-    "artist": "drug bug",
-    "album": "your life is meaning less lol"
-  },
-  {
-    "ts": "2026-09-13T19:09:29.216Z",
-    "when": "Sep 13 · 7:09 PM",
-    "title": "Rift",
-    "artist": "The Fencesitters, Catgrove St., drug bug",
-    "album": "Rift"
-  },
-  {
-    "ts": "2026-09-13T19:04:52.615Z",
-    "when": "Sep 13 · 7:04 PM",
-    "title": "queen anon",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-09-13T19:02:53.139Z",
-    "when": "Sep 13 · 7:02 PM",
-    "title": "(waking up again)",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-09-13T19:01:17.174Z",
-    "when": "Sep 13 · 7:01 PM",
-    "title": "star child",
-    "artist": "drug bug",
-    "album": "your life is meaning less lol"
-  },
-  {
-    "ts": "2026-09-13T18:57:21.293Z",
-    "when": "Sep 13 · 6:57 PM",
-    "title": "star child",
-    "artist": "drug bug",
-    "album": "your life is meaning less lol"
-  },
-  {
-    "ts": "2026-09-13T18:06:53.623Z",
-    "when": "Sep 13 · 6:06 PM",
-    "title": "Star Sick",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-09-13T17:59:20.008Z",
-    "when": "Sep 13 · 5:59 PM",
-    "title": "interlinked infinity",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-09-13T17:55:46.562Z",
-    "when": "Sep 13 · 5:55 PM",
-    "title": "⋆ kerosene ⋆",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-09-13T17:52:04.925Z",
-    "when": "Sep 13 · 5:52 PM",
-    "title": "life of a bumblebee",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-09-13T17:50:43.931Z",
-    "when": "Sep 13 · 5:50 PM",
-    "title": "my love for you is limited",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-09-13T17:48:16.527Z",
-    "when": "Sep 13 · 5:48 PM",
-    "title": "I can't stop loving you",
-    "artist": "drug bug",
-    "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-09-13T17:45:51.314Z",
-    "when": "Sep 13 · 5:45 PM",
-    "title": "such a thrill to be with you again",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-09-13T17:43:04.131Z",
-    "when": "Sep 13 · 5:43 PM",
-    "title": "Sleep, Pretty Baby",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-09-13T17:40:55.668Z",
-    "when": "Sep 13 · 5:40 PM",
-    "title": "Slingshot",
-    "artist": "The Fencesitters, Catgrove St., drug bug",
-    "album": "Slingshot"
-  },
-  {
-    "ts": "2026-09-13T17:37:26.235Z",
-    "when": "Sep 13 · 5:37 PM",
-    "title": "red velvet",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-09-13T17:34:35.550Z",
-    "when": "Sep 13 · 5:34 PM",
-    "title": "Discotheque of My Own Misery",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-09-13T17:31:37.990Z",
-    "when": "Sep 13 · 5:31 PM",
-    "title": "tuck me in",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-09-13T17:29:45.690Z",
-    "when": "Sep 13 · 5:29 PM",
-    "title": "sometimes it gets worse",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-09-13T17:24:57.190Z",
-    "when": "Sep 13 · 5:24 PM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-09-13T17:22:37.785Z",
-    "when": "Sep 13 · 5:22 PM",
-    "title": "secret admirer",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-09-13T17:20:06.485Z",
-    "when": "Sep 13 · 5:20 PM",
-    "title": "In my eyes",
-    "artist": "drug bug",
-    "album": "Grapefruit Technique"
   }
 ]
