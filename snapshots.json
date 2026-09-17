@@ -1,5 +1,82 @@
 [
   {
+    "ts": "2026-09-17T12:27:51.747Z",
+    "when": "Sep 17 · 12:27 PM",
+    "title": "Big Apple",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-09-17T12:25:51.838Z",
+    "when": "Sep 17 · 12:25 PM",
+    "title": "Blood Runs Cold",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-09-17T12:23:08.067Z",
+    "when": "Sep 17 · 12:23 PM",
+    "title": "dont talk to me or ill kill myself :3",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-17T12:20:05.107Z",
+    "when": "Sep 17 · 12:20 PM",
+    "title": "took my heart",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-17T12:10:01.077Z",
+    "when": "Sep 17 · 12:10 PM",
+    "title": "boy kisser",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-17T12:08:05.304Z",
+    "when": "Sep 17 · 12:08 PM",
+    "title": "cut your hair",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-17T12:05:08.384Z",
+    "when": "Sep 17 · 12:05 PM",
+    "title": "funeral pop",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-09-17T12:04:59.340Z",
+    "when": "Sep 17 · 12:04 PM",
+    "title": "We're Both Alone",
+    "artist": "Rocketship",
+    "album": "A Certain Smile, a Certain Sadness"
+  },
+  {
+    "ts": "2026-09-17T12:02:59.017Z",
+    "when": "Sep 17 · 12:02 PM",
+    "title": "Hell for a Basement",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-09-17T11:52:05.856Z",
+    "when": "Sep 17 · 11:52 AM",
+    "title": "I can't help myself",
+    "artist": "drug bug",
+    "album": "I can't help myself / I can't stop loving you"
+  },
+  {
+    "ts": "2026-09-17T11:49:42.104Z",
+    "when": "Sep 17 · 11:49 AM",
+    "title": "Grapefruit Technique",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
     "ts": "2026-09-17T01:49:18.215Z",
     "when": "Sep 17 · 1:49 AM",
     "title": "I Wanted You to Feel the Same",
@@ -621,82 +698,5 @@
     "title": "funeral pop",
     "artist": "drug bug",
     "album": "secret admirer"
-  },
-  {
-    "ts": "2026-09-16T01:44:02.020Z",
-    "when": "Sep 16 · 1:44 AM",
-    "title": "Fade Into You",
-    "artist": "Mazzy Star",
-    "album": "So Tonight That I Might See"
-  },
-  {
-    "ts": "2026-09-16T01:39:05.897Z",
-    "when": "Sep 16 · 1:39 AM",
-    "title": "Birch Tree",
-    "artist": "Strawberry Guy",
-    "album": "Taking My Time to Be"
-  },
-  {
-    "ts": "2026-09-16T00:55:22.357Z",
-    "when": "Sep 16 · 12:55 AM",
-    "title": "You've Been Had",
-    "artist": "An April March",
-    "album": "Lessons in Vengeance"
-  },
-  {
-    "ts": "2026-09-16T00:51:04.435Z",
-    "when": "Sep 16 · 12:51 AM",
-    "title": "I can't help myself",
-    "artist": "drug bug",
-    "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-09-16T00:48:00.743Z",
-    "when": "Sep 16 · 12:48 AM",
-    "title": "cut your hair",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-09-16T00:43:27.135Z",
-    "when": "Sep 16 · 12:43 AM",
-    "title": "funeral pop",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-09-16T00:04:17.891Z",
-    "when": "Sep 16 · 12:04 AM",
-    "title": "Still Ill - 2011 Remaster",
-    "artist": "The Smiths",
-    "album": "The Smiths"
-  },
-  {
-    "ts": "2026-09-16T00:00:55.689Z",
-    "when": "Sep 16 · 12:00 AM",
-    "title": "Hedonists",
-    "artist": "Dreamgirl",
-    "album": "Dreamgirl"
-  },
-  {
-    "ts": "2026-09-15T23:57:24.591Z",
-    "when": "Sep 15 · 11:57 PM",
-    "title": "funeral pop",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-09-15T23:55:07.555Z",
-    "when": "Sep 15 · 11:55 PM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-09-15T23:52:48.102Z",
-    "when": "Sep 15 · 11:52 PM",
-    "title": "sometimes it gets worse",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
   }
 ]
