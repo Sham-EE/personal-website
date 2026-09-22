@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-09-22T14:31:23.379Z",
+    "when": "Sep 22 · 2:31 PM",
+    "title": "Everybody Here Wants You",
+    "artist": "Jeff Buckley",
+    "album": "Sketches for My Sweetheart The Drunk (Expanded Edition)"
+  },
+  {
     "ts": "2026-09-22T14:26:03.580Z",
     "when": "Sep 22 · 2:26 PM",
     "title": "Vancouver",
@@ -691,12 +698,5 @@
     "title": "Future Lover",
     "artist": "Thee Sacred Souls",
     "album": "Thee Sacred Souls"
-  },
-  {
-    "ts": "2026-09-20T20:16:59.013Z",
-    "when": "Sep 20 · 8:16 PM",
-    "title": "cut your hair",
-    "artist": "drug bug",
-    "album": "a seasons end."
   }
 ]
