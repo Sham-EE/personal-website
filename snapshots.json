@@ -1,5 +1,47 @@
 [
   {
+    "ts": "2026-09-25T00:41:13.809Z",
+    "when": "Sep 25 · 12:41 AM",
+    "title": "Big Apple",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-09-25T00:35:57.707Z",
+    "when": "Sep 25 · 12:35 AM",
+    "title": "boy kisser",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-25T00:34:01.915Z",
+    "when": "Sep 25 · 12:34 AM",
+    "title": "took my heart",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-25T00:30:14.200Z",
+    "when": "Sep 25 · 12:30 AM",
+    "title": "cut your hair",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-09-25T00:27:17.214Z",
+    "when": "Sep 25 · 12:27 AM",
+    "title": "funeral pop",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-09-24T22:44:59.674Z",
+    "when": "Sep 24 · 10:44 PM",
+    "title": "Middy Titty",
+    "artist": "Paulie Leparik",
+    "album": "Neon Daydream"
+  },
+  {
     "ts": "2026-09-24T21:59:56.961Z",
     "when": "Sep 24 · 9:59 PM",
     "title": "Is It Cold (Live)",
@@ -656,47 +698,5 @@
     "title": "discotheque of my own misery - Alex Mix",
     "artist": "drug bug",
     "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-09-23T11:53:24.903Z",
-    "when": "Sep 23 · 11:53 AM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-09-23T11:50:47.028Z",
-    "when": "Sep 23 · 11:50 AM",
-    "title": "Kinky Love",
-    "artist": "Pale Saints",
-    "album": "Flesh Balloon"
-  },
-  {
-    "ts": "2026-09-23T03:10:34.340Z",
-    "when": "Sep 23 · 3:10 AM",
-    "title": "October",
-    "artist": "Laura Watling",
-    "album": "Early Morning Walk"
-  },
-  {
-    "ts": "2026-09-23T03:07:27.678Z",
-    "when": "Sep 23 · 3:07 AM",
-    "title": "Celia's Dream",
-    "artist": "Slowdive",
-    "album": "Just For A Day"
-  },
-  {
-    "ts": "2026-09-23T03:03:17.665Z",
-    "when": "Sep 23 · 3:03 AM",
-    "title": "A Window",
-    "artist": "The Radio Dept.",
-    "album": "Pet Grief"
-  },
-  {
-    "ts": "2026-09-23T02:59:49.269Z",
-    "when": "Sep 23 · 2:59 AM",
-    "title": "She Will Destroy You",
-    "artist": "Cocteau Twins, Harold Budd",
-    "album": "The Moon and the Melodies"
   }
 ]
