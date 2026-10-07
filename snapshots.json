@@ -1,5 +1,68 @@
 [
   {
+    "ts": "2026-10-07T19:54:13.384Z",
+    "when": "Oct 7 · 7:54 PM",
+    "title": "Requiem",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-07T17:28:44.653Z",
+    "when": "Oct 7 · 5:28 PM",
+    "title": "kennel",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-07T17:26:02.690Z",
+    "when": "Oct 7 · 5:26 PM",
+    "title": "boy kisser",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-10-07T17:24:06.924Z",
+    "when": "Oct 7 · 5:24 PM",
+    "title": "Hell for a Basement",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-07T17:13:13.770Z",
+    "when": "Oct 7 · 5:13 PM",
+    "title": "dead by october",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-07T17:10:44.757Z",
+    "when": "Oct 7 · 5:10 PM",
+    "title": "sometimes it gets worse",
+    "artist": "drug bug",
+    "album": "sometimes it gets worse..."
+  },
+  {
+    "ts": "2026-10-07T17:05:56.296Z",
+    "when": "Oct 7 · 5:05 PM",
+    "title": "Blood Runs Cold",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-07T17:03:12.551Z",
+    "when": "Oct 7 · 5:03 PM",
+    "title": "Not Worth It",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-07T17:00:53.240Z",
+    "when": "Oct 7 · 5:00 PM",
+    "title": "funeral pop",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
     "ts": "2026-10-07T03:55:20.849Z",
     "when": "Oct 7 · 3:55 AM",
     "title": "Hai Bby",
@@ -635,68 +698,5 @@
     "title": "Always a Relief",
     "artist": "The Radio Dept.",
     "album": "Pet Grief"
-  },
-  {
-    "ts": "2026-10-05T19:26:24.620Z",
-    "when": "Oct 5 · 7:26 PM",
-    "title": "#doyalike",
-    "artist": "mikeeysmind",
-    "album": "#doyalike"
-  },
-  {
-    "ts": "2026-10-05T19:23:21.095Z",
-    "when": "Oct 5 · 7:23 PM",
-    "title": "Earrings",
-    "artist": "Malcolm Todd",
-    "album": "Sweet Boy"
-  },
-  {
-    "ts": "2026-10-05T19:20:45.607Z",
-    "when": "Oct 5 · 7:20 PM",
-    "title": "funeral pop",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-05T19:12:06.364Z",
-    "when": "Oct 5 · 7:12 PM",
-    "title": "Who Do You Know",
-    "artist": "Kevin Krauter",
-    "album": "Toss Up"
-  },
-  {
-    "ts": "2026-10-05T19:07:48.713Z",
-    "when": "Oct 5 · 7:07 PM",
-    "title": "limn",
-    "artist": "isobel",
-    "album": "limn"
-  },
-  {
-    "ts": "2026-10-05T19:04:21.174Z",
-    "when": "Oct 5 · 7:04 PM",
-    "title": "Stay // Honestly",
-    "artist": "Ax and the Hatchetmen",
-    "album": "So Much To Tell You"
-  },
-  {
-    "ts": "2026-10-05T19:01:09.505Z",
-    "when": "Oct 5 · 7:01 PM",
-    "title": "Last",
-    "artist": "Tamaryn",
-    "album": "Cranekiss"
-  },
-  {
-    "ts": "2026-10-05T18:55:45.473Z",
-    "when": "Oct 5 · 6:55 PM",
-    "title": "Collection",
-    "artist": "Tamaryn",
-    "album": "Cranekiss"
-  },
-  {
-    "ts": "2026-10-05T18:51:53.778Z",
-    "when": "Oct 5 · 6:51 PM",
-    "title": "Heavydirtysoul",
-    "artist": "Twenty One Pilots",
-    "album": "Blurryface"
   }
 ]
