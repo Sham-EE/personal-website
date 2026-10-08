@@ -1,5 +1,61 @@
 [
   {
+    "ts": "2026-10-07T22:57:08.752Z",
+    "when": "Oct 7 · 10:57 PM",
+    "title": "discotheque of my own misery - Alex Mix",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-07T22:51:36.526Z",
+    "when": "Oct 7 · 10:51 PM",
+    "title": "In my eyes",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-10-07T22:48:48.042Z",
+    "when": "Oct 7 · 10:48 PM",
+    "title": "Not Worth It",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-07T22:45:35.857Z",
+    "when": "Oct 7 · 10:45 PM",
+    "title": "Marginalia #63",
+    "artist": "Masakatsu Takagi",
+    "album": "Marginalia III"
+  },
+  {
+    "ts": "2026-10-07T21:54:44.502Z",
+    "when": "Oct 7 · 9:54 PM",
+    "title": "Marginalia #65",
+    "artist": "Masakatsu Takagi",
+    "album": "Marginalia III"
+  },
+  {
+    "ts": "2026-10-07T21:43:23.519Z",
+    "when": "Oct 7 · 9:43 PM",
+    "title": "Ravel: Miroirs, M. 43: III. Une barque sur l'océan",
+    "artist": "Maurice Ravel, Bertrand Chamayou",
+    "album": "Ravel: Complete Works for Solo Piano"
+  },
+  {
+    "ts": "2026-10-07T21:36:22.843Z",
+    "when": "Oct 7 · 9:36 PM",
+    "title": "Jeux D'Eau",
+    "artist": "Maurice Ravel, André Laplante",
+    "album": "Ravel: Miroirs, Jeux D'Eau, Pavane Pour Une Infante Défunte"
+  },
+  {
+    "ts": "2026-10-07T21:30:27.282Z",
+    "when": "Oct 7 · 9:30 PM",
+    "title": "Miroirs: III. Une barque sur l'océan",
+    "artist": "Maurice Ravel, André Laplante",
+    "album": "Ravel: Miroirs, Jeux D'Eau, Pavane Pour Une Infante Défunte"
+  },
+  {
     "ts": "2026-10-07T19:54:13.384Z",
     "when": "Oct 7 · 7:54 PM",
     "title": "Requiem",
@@ -642,61 +698,5 @@
     "title": "took my heart",
     "artist": "drug bug",
     "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-05T20:08:51.681Z",
-    "when": "Oct 5 · 8:08 PM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-05T20:06:32.348Z",
-    "when": "Oct 5 · 8:06 PM",
-    "title": "dead by october",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-10-05T20:04:03.373Z",
-    "when": "Oct 5 · 8:04 PM",
-    "title": "secret admirer",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-05T20:01:32.090Z",
-    "when": "Oct 5 · 8:01 PM",
-    "title": "dont talk to me or ill kill myself :3",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-05T19:58:29.194Z",
-    "when": "Oct 5 · 7:58 PM",
-    "title": "Discotheque of My Own Misery",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-05T19:55:31.608Z",
-    "when": "Oct 5 · 7:55 PM",
-    "title": "sometimes it gets worse",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-10-05T19:34:18.081Z",
-    "when": "Oct 5 · 7:34 PM",
-    "title": "Pitch the Baby",
-    "artist": "Cocteau Twins",
-    "album": "Heaven or Las Vegas"
-  },
-  {
-    "ts": "2026-10-05T19:31:03.531Z",
-    "when": "Oct 5 · 7:31 PM",
-    "title": "Always a Relief",
-    "artist": "The Radio Dept.",
-    "album": "Pet Grief"
   }
 ]
