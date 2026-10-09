@@ -1,5 +1,159 @@
 [
   {
+    "ts": "2026-10-09T01:21:09.145Z",
+    "when": "Oct 9 · 1:21 AM",
+    "title": "Prélude",
+    "artist": "Maurice Ravel, André Laplante",
+    "album": "Ravel: Miroirs, Jeux D'Eau, Pavane Pour Une Infante Défunte"
+  },
+  {
+    "ts": "2026-10-09T01:15:26.079Z",
+    "when": "Oct 9 · 1:15 AM",
+    "title": "some kind of love",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-09T01:12:10.483Z",
+    "when": "Oct 9 · 1:12 AM",
+    "title": "twisting up your hair",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-10-09T01:10:02.645Z",
+    "when": "Oct 9 · 1:10 AM",
+    "title": "sometimes it gets worse",
+    "artist": "drug bug",
+    "album": "sometimes it gets worse..."
+  },
+  {
+    "ts": "2026-10-09T00:56:51.464Z",
+    "when": "Oct 9 · 12:56 AM",
+    "title": "star sick - Alex Mix",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-09T00:35:44.180Z",
+    "when": "Oct 9 · 12:35 AM",
+    "title": "I can't help myself",
+    "artist": "drug bug",
+    "album": "I can't help myself / I can't stop loving you"
+  },
+  {
+    "ts": "2026-10-09T00:33:08.435Z",
+    "when": "Oct 9 · 12:33 AM",
+    "title": "boy kisser",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-10-09T00:31:12.668Z",
+    "when": "Oct 9 · 12:31 AM",
+    "title": "cut your hair",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-10-09T00:28:15.667Z",
+    "when": "Oct 9 · 12:28 AM",
+    "title": "took my heart",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-10-09T00:24:22.864Z",
+    "when": "Oct 9 · 12:24 AM",
+    "title": "Big Apple",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-10-09T00:22:22.842Z",
+    "when": "Oct 9 · 12:22 AM",
+    "title": "Hell for a Basement",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-08T22:41:23.864Z",
+    "when": "Oct 8 · 10:41 PM",
+    "title": "In my eyes",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-10-08T22:38:35.402Z",
+    "when": "Oct 8 · 10:38 PM",
+    "title": "I can't stop loving you",
+    "artist": "drug bug",
+    "album": "I can't help myself / I can't stop loving you"
+  },
+  {
+    "ts": "2026-10-08T22:36:10.181Z",
+    "when": "Oct 8 · 10:36 PM",
+    "title": "dead by october",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-08T22:33:41.172Z",
+    "when": "Oct 8 · 10:33 PM",
+    "title": "funeral pop",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-10-08T22:31:31.802Z",
+    "when": "Oct 8 · 10:31 PM",
+    "title": "Not Worth It",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-08T21:45:06.065Z",
+    "when": "Oct 8 · 9:45 PM",
+    "title": "Chalkboard James",
+    "artist": "Alison's Halo",
+    "album": "Eyedazzler"
+  },
+  {
+    "ts": "2026-10-08T21:37:09.805Z",
+    "when": "Oct 8 · 9:37 PM",
+    "title": "Always April",
+    "artist": "Alison's Halo",
+    "album": "Eyedazzler"
+  },
+  {
+    "ts": "2026-10-08T21:31:23.867Z",
+    "when": "Oct 8 · 9:31 PM",
+    "title": "Chime",
+    "artist": "Alison's Halo",
+    "album": "Eyedazzler"
+  },
+  {
+    "ts": "2026-10-08T21:26:20.852Z",
+    "when": "Oct 8 · 9:26 PM",
+    "title": "Melt",
+    "artist": "Alison's Halo",
+    "album": "Eyedazzler"
+  },
+  {
+    "ts": "2026-10-08T21:20:02.125Z",
+    "when": "Oct 8 · 9:20 PM",
+    "title": "Sunshy",
+    "artist": "Alison's Halo",
+    "album": "Eyedazzler"
+  },
+  {
+    "ts": "2026-10-08T21:14:11.487Z",
+    "when": "Oct 8 · 9:14 PM",
+    "title": "Leech",
+    "artist": "Alison's Halo",
+    "album": "Eyedazzler"
+  },
+  {
     "ts": "2026-10-08T21:07:26.768Z",
     "when": "Oct 8 · 9:07 PM",
     "title": "Torn",
@@ -541,160 +695,6 @@
   {
     "ts": "2026-10-07T01:34:26.151Z",
     "when": "Oct 7 · 1:34 AM",
-    "title": "cut your hair",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-07T01:31:29.196Z",
-    "when": "Oct 7 · 1:31 AM",
-    "title": "boy kisser",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-07T01:29:27.168Z",
-    "when": "Oct 7 · 1:29 AM",
-    "title": "I can't help myself",
-    "artist": "drug bug",
-    "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-10-07T01:27:03.938Z",
-    "when": "Oct 7 · 1:27 AM",
-    "title": "Requiem",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-07T01:17:30.886Z",
-    "when": "Oct 7 · 1:17 AM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-06T21:04:33.757Z",
-    "when": "Oct 6 · 9:04 PM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-06T21:02:14.766Z",
-    "when": "Oct 6 · 9:02 PM",
-    "title": "Blood Runs Cold",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-06T20:59:31.474Z",
-    "when": "Oct 6 · 8:59 PM",
-    "title": "Hell for a Basement",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-06T19:19:05.731Z",
-    "when": "Oct 6 · 7:19 PM",
-    "title": "In my eyes",
-    "artist": "drug bug",
-    "album": "Grapefruit Technique"
-  },
-  {
-    "ts": "2026-10-06T19:16:07.191Z",
-    "when": "Oct 6 · 7:16 PM",
-    "title": "boy kisser",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-06T19:14:11.429Z",
-    "when": "Oct 6 · 7:14 PM",
-    "title": "I can't stop loving you",
-    "artist": "drug bug",
-    "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-10-06T19:11:46.749Z",
-    "when": "Oct 6 · 7:11 PM",
-    "title": "I can't help myself",
-    "artist": "drug bug",
-    "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-10-06T19:09:23.585Z",
-    "when": "Oct 6 · 7:09 PM",
-    "title": "Requiem",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-06T19:00:51.839Z",
-    "when": "Oct 6 · 7:00 PM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-06T16:47:15.956Z",
-    "when": "Oct 6 · 4:47 PM",
-    "title": "kennel",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-10-06T16:44:33.924Z",
-    "when": "Oct 6 · 4:44 PM",
-    "title": "dead by october",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-10-06T16:42:04.922Z",
-    "when": "Oct 6 · 4:42 PM",
-    "title": "red velvet",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-10-06T16:39:14.259Z",
-    "when": "Oct 6 · 4:39 PM",
-    "title": "sometimes it gets worse",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-10-06T16:34:25.818Z",
-    "when": "Oct 6 · 4:34 PM",
-    "title": "funeral pop",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-06T16:32:16.459Z",
-    "when": "Oct 6 · 4:32 PM",
-    "title": "twisting up your hair",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-06T16:30:09.176Z",
-    "when": "Oct 6 · 4:30 PM",
-    "title": "secret admirer",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-06T16:27:37.891Z",
-    "when": "Oct 6 · 4:27 PM",
-    "title": "took my heart",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-06T16:23:50.231Z",
-    "when": "Oct 6 · 4:23 PM",
     "title": "cut your hair",
     "artist": "drug bug",
     "album": "a seasons end."

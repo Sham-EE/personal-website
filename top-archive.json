@@ -18,6 +18,11 @@
         "genres": []
       },
       {
+        "name": "Alison's Halo",
+        "img": "https://i.scdn.co/image/ab67616100005174c0844a0bc694e81fc14da948",
+        "genres": []
+      },
+      {
         "name": "The Radio Dept.",
         "img": "https://i.scdn.co/image/ab67616100005174761a16ffa877c8086e28c5b0",
         "genres": []
@@ -35,11 +40,6 @@
       {
         "name": "The Cure",
         "img": "https://i.scdn.co/image/ab67616100005174dd427c765c409ec02dc3a868",
-        "genres": []
-      },
-      {
-        "name": "Vacations",
-        "img": "https://i.scdn.co/image/ab67616100005174ebf16e0b8ab49ecac25d0a3e",
         "genres": []
       }
     ],
@@ -61,7 +61,7 @@
         "artist": "drug bug"
       },
       {
-        "title": "took my heart",
+        "title": "Not Worth It",
         "artist": "drug bug"
       }
     ]
