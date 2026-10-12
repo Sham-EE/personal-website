@@ -38,8 +38,8 @@
         "genres": []
       },
       {
-        "name": "Vacations",
-        "img": "https://i.scdn.co/image/ab67616100005174ebf16e0b8ab49ecac25d0a3e",
+        "name": "The Cure",
+        "img": "https://i.scdn.co/image/ab67616100005174dd427c765c409ec02dc3a868",
         "genres": []
       }
     ],
@@ -57,11 +57,11 @@
         "artist": "drug bug"
       },
       {
-        "title": "boy kisser",
+        "title": "Not Worth It",
         "artist": "drug bug"
       },
       {
-        "title": "Not Worth It",
+        "title": "boy kisser",
         "artist": "drug bug"
       }
     ]
