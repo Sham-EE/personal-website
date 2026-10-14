@@ -1,5 +1,75 @@
 [
   {
+    "ts": "2026-10-14T12:48:43.105Z",
+    "when": "Oct 14 · 12:48 PM",
+    "title": "I can't help myself",
+    "artist": "drug bug",
+    "album": "I can't help myself / I can't stop loving you"
+  },
+  {
+    "ts": "2026-10-14T12:46:19.996Z",
+    "when": "Oct 14 · 12:46 PM",
+    "title": "Big Apple",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-10-14T12:44:19.971Z",
+    "when": "Oct 14 · 12:44 PM",
+    "title": "Requiem",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "ts": "2026-10-14T12:35:04.639Z",
+    "when": "Oct 14 · 12:35 PM",
+    "title": "twisting up your hair",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-10-14T12:32:56.881Z",
+    "when": "Oct 14 · 12:32 PM",
+    "title": "kennel",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-14T12:30:11.556Z",
+    "when": "Oct 14 · 12:30 PM",
+    "title": "discotheque of my own misery - Alex Mix",
+    "artist": "drug bug",
+    "album": "songs of a drug bug"
+  },
+  {
+    "ts": "2026-10-14T12:27:13.903Z",
+    "when": "Oct 14 · 12:27 PM",
+    "title": "took my heart",
+    "artist": "drug bug",
+    "album": "a seasons end."
+  },
+  {
+    "ts": "2026-10-14T12:08:10.270Z",
+    "when": "Oct 14 · 12:08 PM",
+    "title": "In my eyes",
+    "artist": "drug bug",
+    "album": "Grapefruit Technique"
+  },
+  {
+    "ts": "2026-10-14T12:05:20.240Z",
+    "when": "Oct 14 · 12:05 PM",
+    "title": "secret admirer",
+    "artist": "drug bug",
+    "album": "secret admirer"
+  },
+  {
+    "ts": "2026-10-14T12:02:48.969Z",
+    "when": "Oct 14 · 12:02 PM",
+    "title": "Hell for a Basement",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
     "ts": "2026-10-14T04:24:04.810Z",
     "when": "Oct 14 · 4:24 AM",
     "title": "Hit #2",
@@ -628,75 +698,5 @@
     "title": "Is It Cold (Live)",
     "artist": "Auji",
     "album": "LIVE at Brick"
-  },
-  {
-    "ts": "2026-10-12T23:06:45.198Z",
-    "when": "Oct 12 · 11:06 PM",
-    "title": "Lost in Your Eyes",
-    "artist": "Tommy James & The Shondells",
-    "album": "Gettin' Together"
-  },
-  {
-    "ts": "2026-10-12T23:04:30.503Z",
-    "when": "Oct 12 · 11:04 PM",
-    "title": "sometimes it gets worse",
-    "artist": "drug bug",
-    "album": "sometimes it gets worse..."
-  },
-  {
-    "ts": "2026-10-12T22:59:07.068Z",
-    "when": "Oct 12 · 10:59 PM",
-    "title": "desire machine",
-    "artist": "spirit blue",
-    "album": "ps / dm"
-  },
-  {
-    "ts": "2026-10-12T22:37:14.072Z",
-    "when": "Oct 12 · 10:37 PM",
-    "title": "Between Months",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-12T22:31:55.886Z",
-    "when": "Oct 12 · 10:31 PM",
-    "title": "dead by october",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-10-12T22:28:20.195Z",
-    "when": "Oct 12 · 10:28 PM",
-    "title": "boy kisser",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-12T22:26:24.425Z",
-    "when": "Oct 12 · 10:26 PM",
-    "title": "star sick - Alex Mix",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-10-12T22:19:41.147Z",
-    "when": "Oct 12 · 10:19 PM",
-    "title": "Grapefruit Technique",
-    "artist": "drug bug",
-    "album": "Grapefruit Technique"
-  },
-  {
-    "ts": "2026-10-12T22:16:11.959Z",
-    "when": "Oct 12 · 10:16 PM",
-    "title": "twisting up your hair",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-12T22:14:04.203Z",
-    "when": "Oct 12 · 10:14 PM",
-    "title": "funeral pop",
-    "artist": "drug bug",
-    "album": "secret admirer"
   }
 ]
