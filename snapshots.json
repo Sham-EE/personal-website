@@ -1,5 +1,54 @@
 [
   {
+    "ts": "2026-10-17T02:31:55.154Z",
+    "when": "Oct 17 · 2:31 AM",
+    "title": "Last",
+    "artist": "Tamaryn",
+    "album": "Cranekiss"
+  },
+  {
+    "ts": "2026-10-17T02:27:26.194Z",
+    "when": "Oct 17 · 2:27 AM",
+    "title": "Stay // Honestly",
+    "artist": "Ax and the Hatchetmen",
+    "album": "So Much To Tell You"
+  },
+  {
+    "ts": "2026-10-17T02:24:14.484Z",
+    "when": "Oct 17 · 2:24 AM",
+    "title": "limn",
+    "artist": "isobel",
+    "album": "limn"
+  },
+  {
+    "ts": "2026-10-17T02:10:05.855Z",
+    "when": "Oct 17 · 2:10 AM",
+    "title": "If I Had (feat. Charlie Wilson)",
+    "artist": "Don Toliver, Charlie Wilson",
+    "album": "Love Sick"
+  },
+  {
+    "ts": "2026-10-17T02:06:36.967Z",
+    "when": "Oct 17 · 2:06 AM",
+    "title": "TMW",
+    "artist": "Avenoir",
+    "album": "TMW"
+  },
+  {
+    "ts": "2026-10-17T02:04:27.546Z",
+    "when": "Oct 17 · 2:04 AM",
+    "title": "Drugs N Hella Melodies (feat. Kali Uchis)",
+    "artist": "Don Toliver, Kali Uchis",
+    "album": "Life of a DON"
+  },
+  {
+    "ts": "2026-10-17T01:58:38.227Z",
+    "when": "Oct 17 · 1:58 AM",
+    "title": "Requiem",
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
     "ts": "2026-10-16T23:00:58.649Z",
     "when": "Oct 16 · 11:00 PM",
     "title": "I can't help myself",
@@ -647,55 +696,6 @@
     "ts": "2026-10-15T12:30:03.927Z",
     "when": "Oct 15 · 12:30 PM",
     "title": "Grapefruit Technique",
-    "artist": "drug bug",
-    "album": "Grapefruit Technique"
-  },
-  {
-    "ts": "2026-10-15T12:26:34.735Z",
-    "when": "Oct 15 · 12:26 PM",
-    "title": "kennel",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-10-15T12:23:52.745Z",
-    "when": "Oct 15 · 12:23 PM",
-    "title": "discotheque of my own misery - Alex Mix",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-10-15T12:20:55.093Z",
-    "when": "Oct 15 · 12:20 PM",
-    "title": "took my heart",
-    "artist": "drug bug",
-    "album": "a seasons end."
-  },
-  {
-    "ts": "2026-10-15T12:17:07.412Z",
-    "when": "Oct 15 · 12:17 PM",
-    "title": "twisting up your hair",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-15T12:14:59.638Z",
-    "when": "Oct 15 · 12:14 PM",
-    "title": "Hell for a Basement",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-15T12:04:06.448Z",
-    "when": "Oct 15 · 12:04 PM",
-    "title": "Between Months",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-10-15T11:58:48.237Z",
-    "when": "Oct 15 · 11:58 AM",
-    "title": "In my eyes",
     "artist": "drug bug",
     "album": "Grapefruit Technique"
   }
