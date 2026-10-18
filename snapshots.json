@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-10-18T15:08:08.581Z",
+    "when": "Oct 18 · 3:08 PM",
+    "title": "Love Takes Miles",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
+    "ts": "2026-10-18T15:04:47.557Z",
+    "when": "Oct 18 · 3:04 PM",
+    "title": "If You Turn Back Now - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
     "ts": "2026-10-18T05:12:34.437Z",
     "when": "Oct 18 · 5:12 AM",
     "title": "Drinking Age - Live at Carnegie Hall",
@@ -684,19 +698,5 @@
     "title": "I can't stop loving you",
     "artist": "drug bug",
     "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-10-16T22:47:43.912Z",
-    "when": "Oct 16 · 10:47 PM",
-    "title": "secret admirer",
-    "artist": "drug bug",
-    "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-16T22:45:12.593Z",
-    "when": "Oct 16 · 10:45 PM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
   }
 ]
