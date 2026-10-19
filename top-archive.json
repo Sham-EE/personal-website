@@ -43,28 +43,7 @@
         "genres": []
       }
     ],
-    "tracks": [
-      {
-        "title": "I can't help myself",
-        "artist": "drug bug"
-      },
-      {
-        "title": "funeral pop",
-        "artist": "drug bug"
-      },
-      {
-        "title": "Not Worth It",
-        "artist": "drug bug"
-      },
-      {
-        "title": "sometimes it gets worse",
-        "artist": "drug bug"
-      },
-      {
-        "title": "took my heart",
-        "artist": "drug bug"
-      }
-    ]
+    "tracks": []
   },
   {
     "month": "September 2026",
