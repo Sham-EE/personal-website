@@ -1,5 +1,19 @@
 [
   {
+    "ts": "2026-10-24T18:17:30.889Z",
+    "when": "Oct 24 · 6:17 PM",
+    "title": "It Breaks (Chapter IX)",
+    "artist": "Leon Vynehall",
+    "album": "Nothing Is Still"
+  },
+  {
+    "ts": "2026-10-24T18:14:59.529Z",
+    "when": "Oct 24 · 6:14 PM",
+    "title": "The Scientist",
+    "artist": "Coldplay",
+    "album": "A Rush of Blood to the Head"
+  },
+  {
     "ts": "2026-10-24T17:38:52.411Z",
     "when": "Oct 24 · 5:38 PM",
     "title": "The Scientist",
@@ -682,20 +696,6 @@
     "ts": "2026-10-20T21:26:10.780Z",
     "when": "Oct 20 · 9:26 PM",
     "title": "Drinking Age - Live at Carnegie Hall",
-    "artist": "Cameron Winter",
-    "album": "Live at Carnegie Hall"
-  },
-  {
-    "ts": "2026-10-20T21:23:10.240Z",
-    "when": "Oct 20 · 9:23 PM",
-    "title": "Love Takes Miles - Live at Carnegie Hall",
-    "artist": "Cameron Winter",
-    "album": "Live at Carnegie Hall"
-  },
-  {
-    "ts": "2026-10-20T21:22:22.623Z",
-    "when": "Oct 20 · 9:22 PM",
-    "title": "Love Takes Miles - Live at Carnegie Hall",
     "artist": "Cameron Winter",
     "album": "Live at Carnegie Hall"
   }
