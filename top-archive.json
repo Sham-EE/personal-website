@@ -33,13 +33,13 @@
         "genres": []
       },
       {
-        "name": "An April March",
-        "img": "https://i.scdn.co/image/ab67616100005174ca3a3374c45fae5c11dbe159",
+        "name": "The Autocollants",
+        "img": "https://i.scdn.co/image/ab67616d00001e02489e5a9f8e72a80fe983713b",
         "genres": []
       },
       {
-        "name": "The Autocollants",
-        "img": "https://i.scdn.co/image/ab67616d00001e02489e5a9f8e72a80fe983713b",
+        "name": "Beach House",
+        "img": "https://i.scdn.co/image/ab67616100005174b3e38a46a56a423d8f741c09",
         "genres": []
       }
     ],
@@ -57,12 +57,12 @@
         "artist": "drug bug"
       },
       {
-        "title": "Love Takes Miles - Live at Carnegie Hall",
-        "artist": "Cameron Winter"
-      },
-      {
         "title": "I can't help myself",
         "artist": "drug bug"
+      },
+      {
+        "title": "Love Takes Miles - Live at Carnegie Hall",
+        "artist": "Cameron Winter"
       }
     ]
   },
