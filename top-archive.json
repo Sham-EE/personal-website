@@ -28,11 +28,6 @@
         "genres": []
       },
       {
-        "name": "Tamaryn",
-        "img": "https://i.scdn.co/image/ab67616100005174b9d5aa671ef5286534b94a30",
-        "genres": []
-      },
-      {
         "name": "The Autocollants",
         "img": "https://i.scdn.co/image/ab67616d00001e02489e5a9f8e72a80fe983713b",
         "genres": []
@@ -40,6 +35,11 @@
       {
         "name": "Beach House",
         "img": "https://i.scdn.co/image/ab67616100005174b3e38a46a56a423d8f741c09",
+        "genres": []
+      },
+      {
+        "name": "Geese",
+        "img": "https://i.scdn.co/image/ab67616100005174bc9546a945c7563a9eb21f3d",
         "genres": []
       }
     ],
