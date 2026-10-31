@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-10-31T03:50:44.892Z",
+    "when": "Oct 31 · 3:50 AM",
+    "title": "ALUCARDA",
+    "artist": "INOHA",
+    "album": "ALUCARDA"
+  },
+  {
     "ts": "2026-10-30T23:51:47.366Z",
     "when": "Oct 30 · 11:51 PM",
     "title": "Stay // Honestly",
@@ -691,12 +698,5 @@
     "title": "Ben's My Friend",
     "artist": "Sun Kil Moon",
     "album": "Benji"
-  },
-  {
-    "ts": "2026-10-28T22:57:50.739Z",
-    "when": "Oct 28 · 10:57 PM",
-    "title": "Voice of no Return - Guitar",
-    "artist": "岡部啓一",
-    "album": "NieR:Automata Original Soundtrack"
   }
 ]
