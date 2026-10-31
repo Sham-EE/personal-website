@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-10-31T06:04:36.985Z",
+    "when": "Oct 31 · 6:04 AM",
+    "title": "never meant to belong",
+    "artist": "Shiro SAGISU",
+    "album": "TV Animation BLEACH Original Soundtrack 1"
+  },
+  {
     "ts": "2026-10-31T03:50:44.892Z",
     "when": "Oct 31 · 3:50 AM",
     "title": "ALUCARDA",
@@ -691,12 +698,5 @@
     "title": "funeral pop",
     "artist": "drug bug",
     "album": "secret admirer"
-  },
-  {
-    "ts": "2026-10-29T00:06:25.629Z",
-    "when": "Oct 29 · 12:06 AM",
-    "title": "Ben's My Friend",
-    "artist": "Sun Kil Moon",
-    "album": "Benji"
   }
 ]
