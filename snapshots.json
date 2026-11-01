@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-11-01T01:26:36.496Z",
+    "when": "Nov 1 · 1:26 AM",
+    "title": "Slow Dance",
+    "artist": "Clairo",
+    "album": "Charm"
+  },
+  {
     "ts": "2026-11-01T01:19:00.680Z",
     "when": "Nov 1 · 1:19 AM",
     "title": "Till There Was You - Remastered 2009",
@@ -691,12 +698,5 @@
     "title": "For Jasmine",
     "artist": "bôa",
     "album": "Twilight"
-  },
-  {
-    "ts": "2026-10-30T03:41:16.809Z",
-    "when": "Oct 30 · 3:41 AM",
-    "title": "Last",
-    "artist": "Tamaryn",
-    "album": "Cranekiss"
   }
 ]
