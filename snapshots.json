@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-11-03T23:29:26.722Z",
+    "when": "Nov 3 · 11:29 PM",
+    "title": "Take It With You - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
     "ts": "2026-11-03T19:35:40.074Z",
     "when": "Nov 3 · 7:35 PM",
     "title": "Love Takes Miles",
@@ -691,12 +698,5 @@
     "title": "Is It Cold (Live)",
     "artist": "Auji",
     "album": "LIVE at Brick"
-  },
-  {
-    "ts": "2026-10-31T19:34:34.023Z",
-    "when": "Oct 31 · 7:34 PM",
-    "title": "Pictures of You - 2010 Remaster",
-    "artist": "The Cure",
-    "album": "Disintegration (Deluxe Edition)"
   }
 ]
