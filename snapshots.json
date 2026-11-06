@@ -1,5 +1,75 @@
 [
   {
+    "ts": "2026-11-06T16:27:02.755Z",
+    "when": "Nov 6 · 4:27 PM",
+    "title": "Emperor XIII in Shades - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-06T16:22:43.921Z",
+    "when": "Nov 6 · 4:22 PM",
+    "title": "Try as I May - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-06T16:17:08.035Z",
+    "when": "Nov 6 · 4:17 PM",
+    "title": "It All Fell in the River - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-06T16:10:44.025Z",
+    "when": "Nov 6 · 4:10 PM",
+    "title": "Drinking Age",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
+    "ts": "2026-11-06T16:07:12.715Z",
+    "when": "Nov 6 · 4:07 PM",
+    "title": "Try as I May",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
+    "ts": "2026-11-06T15:57:10.173Z",
+    "when": "Nov 6 · 3:57 PM",
+    "title": "We're Thinking the Same Thing",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
+    "ts": "2026-11-06T15:54:22.272Z",
+    "when": "Nov 6 · 3:54 PM",
+    "title": "$0",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
+    "ts": "2026-11-06T15:47:37.810Z",
+    "when": "Nov 6 · 3:47 PM",
+    "title": "Love Takes Miles",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
+    "ts": "2026-11-06T15:44:18.904Z",
+    "when": "Nov 6 · 3:44 PM",
+    "title": "Cancer of the Skull",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
+    "ts": "2026-11-06T06:46:15.972Z",
+    "when": "Nov 6 · 6:46 AM",
+    "title": "Cancer of the Skull",
+    "artist": "Cameron Winter",
+    "album": "Heavy Metal"
+  },
+  {
     "ts": "2026-11-06T06:46:06.847Z",
     "when": "Nov 6 · 6:46 AM",
     "title": "Love Takes Miles",
@@ -628,75 +698,5 @@
     "title": "star sick - Alex Mix",
     "artist": "drug bug",
     "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-11-05T00:14:38.065Z",
-    "when": "Nov 5 · 12:14 AM",
-    "title": "I can't help myself",
-    "artist": "drug bug",
-    "album": "I can't help myself / I can't stop loving you"
-  },
-  {
-    "ts": "2026-11-05T00:08:47.407Z",
-    "when": "Nov 5 · 12:08 AM",
-    "title": "discotheque of my own misery - Alex Mix",
-    "artist": "drug bug",
-    "album": "songs of a drug bug"
-  },
-  {
-    "ts": "2026-11-05T00:05:49.705Z",
-    "when": "Nov 5 · 12:05 AM",
-    "title": "Between Months",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-11-05T00:00:31.607Z",
-    "when": "Nov 5 · 12:00 AM",
-    "title": "Not Worth It",
-    "artist": "drug bug",
-    "album": "Hell for a Basement"
-  },
-  {
-    "ts": "2026-11-04T23:57:27.817Z",
-    "when": "Nov 4 · 11:57 PM",
-    "title": "Boys Don't Cry - Single Version",
-    "artist": "The Cure",
-    "album": "Three Imaginary Boys (Deluxe Edition)"
-  },
-  {
-    "ts": "2026-11-04T23:54:35.887Z",
-    "when": "Nov 4 · 11:54 PM",
-    "title": "Golden Brown",
-    "artist": "The Stranglers",
-    "album": "Golden Brown"
-  },
-  {
-    "ts": "2026-11-04T20:57:49.383Z",
-    "when": "Nov 4 · 8:57 PM",
-    "title": "Hit #2",
-    "artist": "125 Rue Montmartre",
-    "album": "Discography"
-  },
-  {
-    "ts": "2026-11-04T19:53:24.046Z",
-    "when": "Nov 4 · 7:53 PM",
-    "title": "I Keep Your Voice Close To Me",
-    "artist": "An April March",
-    "album": "Lessons in Vengeance"
-  },
-  {
-    "ts": "2026-11-04T19:49:21.046Z",
-    "when": "Nov 4 · 7:49 PM",
-    "title": "Hit #2",
-    "artist": "125 Rue Montmartre",
-    "album": "Discography"
-  },
-  {
-    "ts": "2026-11-04T19:45:48.913Z",
-    "when": "Nov 4 · 7:45 PM",
-    "title": "Talk 2 Me",
-    "artist": "54 Ultra",
-    "album": "Talk 2 Me"
   }
 ]
