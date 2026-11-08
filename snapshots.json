@@ -1,5 +1,33 @@
 [
   {
+    "ts": "2026-11-08T04:30:02.325Z",
+    "when": "Nov 8 · 4:30 AM",
+    "title": "Nina + Field of Cops - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-08T04:23:58.418Z",
+    "when": "Nov 8 · 4:23 AM",
+    "title": "Nina + Field of Cops - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-08T02:16:48.202Z",
+    "when": "Nov 8 · 2:16 AM",
+    "title": "If You Turn Back Now - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-08T00:42:30.866Z",
+    "when": "Nov 8 · 12:42 AM",
+    "title": "Mysterious Girl",
+    "artist": "Neggy Gemmy",
+    "album": "She Comes from Nowhere"
+  },
+  {
     "ts": "2026-11-07T23:59:42.393Z",
     "when": "Nov 7 · 11:59 PM",
     "title": "Emperor XIII in Shades - Live at Carnegie Hall",
@@ -668,34 +696,6 @@
     "ts": "2026-11-06T16:07:12.715Z",
     "when": "Nov 6 · 4:07 PM",
     "title": "Try as I May",
-    "artist": "Cameron Winter",
-    "album": "Heavy Metal"
-  },
-  {
-    "ts": "2026-11-06T15:57:10.173Z",
-    "when": "Nov 6 · 3:57 PM",
-    "title": "We're Thinking the Same Thing",
-    "artist": "Cameron Winter",
-    "album": "Heavy Metal"
-  },
-  {
-    "ts": "2026-11-06T15:54:22.272Z",
-    "when": "Nov 6 · 3:54 PM",
-    "title": "$0",
-    "artist": "Cameron Winter",
-    "album": "Heavy Metal"
-  },
-  {
-    "ts": "2026-11-06T15:47:37.810Z",
-    "when": "Nov 6 · 3:47 PM",
-    "title": "Love Takes Miles",
-    "artist": "Cameron Winter",
-    "album": "Heavy Metal"
-  },
-  {
-    "ts": "2026-11-06T15:44:18.904Z",
-    "when": "Nov 6 · 3:44 PM",
-    "title": "Cancer of the Skull",
     "artist": "Cameron Winter",
     "album": "Heavy Metal"
   }
