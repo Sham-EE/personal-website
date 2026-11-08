@@ -1,5 +1,26 @@
 [
   {
+    "ts": "2026-11-07T23:59:42.393Z",
+    "when": "Nov 7 · 11:59 PM",
+    "title": "Emperor XIII in Shades - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-07T23:55:23.189Z",
+    "when": "Nov 7 · 11:55 PM",
+    "title": "It All Fell in the River - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
+    "ts": "2026-11-07T23:50:52.585Z",
+    "when": "Nov 7 · 11:50 PM",
+    "title": "Love Takes Miles - Live at Carnegie Hall",
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall"
+  },
+  {
     "ts": "2026-11-07T19:34:09.350Z",
     "when": "Nov 7 · 7:34 PM",
     "title": "$0 - Live at Carnegie Hall",
@@ -675,27 +696,6 @@
     "ts": "2026-11-06T15:44:18.904Z",
     "when": "Nov 6 · 3:44 PM",
     "title": "Cancer of the Skull",
-    "artist": "Cameron Winter",
-    "album": "Heavy Metal"
-  },
-  {
-    "ts": "2026-11-06T06:46:15.972Z",
-    "when": "Nov 6 · 6:46 AM",
-    "title": "Cancer of the Skull",
-    "artist": "Cameron Winter",
-    "album": "Heavy Metal"
-  },
-  {
-    "ts": "2026-11-06T06:46:06.847Z",
-    "when": "Nov 6 · 6:46 AM",
-    "title": "Love Takes Miles",
-    "artist": "Cameron Winter",
-    "album": "Heavy Metal"
-  },
-  {
-    "ts": "2026-11-06T06:42:47.946Z",
-    "when": "Nov 6 · 6:42 AM",
-    "title": "Can't Keep Anything",
     "artist": "Cameron Winter",
     "album": "Heavy Metal"
   }
