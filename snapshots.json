@@ -1,5 +1,12 @@
 [
   {
+    "ts": "2026-11-20T05:02:39.411Z",
+    "when": "Nov 20 · 5:02 AM",
+    "title": "when you sleep",
+    "artist": "my bloody valentine",
+    "album": "loveless"
+  },
+  {
     "ts": "2026-11-20T01:12:30.228Z",
     "when": "Nov 20 · 1:12 AM",
     "title": "Drowning Love - Chasing Kou",
@@ -689,13 +696,6 @@
     "ts": "2026-11-18T01:42:08.406Z",
     "when": "Nov 18 · 1:42 AM",
     "title": "Clair-Obscur",
-    "artist": "Lorien Testard, Alice Duport-Percier",
-    "album": "Clair Obscur: Expedition 33 (Original Soundtrack)"
-  },
-  {
-    "ts": "2026-11-18T01:38:28.960Z",
-    "when": "Nov 18 · 1:38 AM",
-    "title": "Sciel",
     "artist": "Lorien Testard, Alice Duport-Percier",
     "album": "Clair Obscur: Expedition 33 (Original Soundtrack)"
   }
